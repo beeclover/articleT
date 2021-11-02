@@ -13,14 +13,22 @@ class Header extends Composer
     public function with()
     {
         return [
-          'top' => $this->top(),
+          'tnb' => $this->tnb(),
+          'gnb' => $this->gnb(),
         ];
     }
 
-    public function top() {
+    public function tnb() {
       return wp_nav_menu([ 
         'menu' => 'top', 'container' => false, 'echo' => false, 'depth' => 1, 'walker' => new top_nav_menu(),
         'menu_class' => 'header__top-nav coldiv__s1'
+      ]);
+    }
+
+    public function gnb() {
+      return wp_nav_menu([ 
+        'menu' => 'main', 'container' => false, 'echo' => false, 'depth' => 1,
+        'menu_class' => 'header__global-nav'
       ]);
     }
 }

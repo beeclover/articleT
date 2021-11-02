@@ -2,11 +2,22 @@
 
 &__global {
   --h-gnb: 96px;
+
   &-inner {
-    @apply h-[var(--h-gnb)]
-      px-[80px]
+    @apply h-[var(--h-gnb)] px-[80px]
       flex
       items-center
       justify-between;
+  }
+
+  &-logo {
+    @apply mr-[144px];
+  }
+
+  &-nav {
+    @apply flex
+      items-center
+      gap-x-[96px]
+      text-[24px];
   }
 }
