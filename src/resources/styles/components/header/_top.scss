@@ -1,5 +1,9 @@
+// TNB
+
 &__top {
   $p: &;
+  --h-tnb: 44px;
+
   @apply border-steam
     border-b-[1px]
     hidden
@@ -7,7 +11,7 @@
     bg-lighthouse;
 
   &-inner {
-    @apply px-[80px] h-[44px] flex items-center justify-between;
+    @apply px-[80px] h-[var(--h-tnb)] flex items-center justify-between;
   }
 
   &-nav {

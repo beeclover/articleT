@@ -1,4 +1,4 @@
-<header id="top" class="header__top">
+<header id="header__top" class="header__top">
   <div class="header__top-inner">
     {!! $top !!}
     <div class="coldiv__s1 header__top-menu">
