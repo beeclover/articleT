@@ -11,6 +11,8 @@ const colors = {
   carbon: '#333333',
   steam: '#dddddd',
   squant: '#666666',
+  gravelFint: '#bbbbbb',
+  blackOut: '#222222',
 };
 
 module.exports = {
@@ -21,6 +23,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      screens: {
+        xxl: '1536px',
+        'max:xxl': { max: '1535px' },
+        'max:xl': { max: '1279px' },
+        'max:lg': { max: '1023px' },
+        'max:md': { max: '767px' },
+        'max:sm': { max: '639px' },
+      },
       // container: {
       //   padding: {
       //     DEFAULT: '2rem',
@@ -30,6 +40,7 @@ module.exports = {
       //     '2xl': '7.1875rem',
       //   },
       // },
+      // pixel token
       padding: {
         'container-x': 'var(--container-px)',
         'container-y': 'var(--container-py)',
@@ -64,7 +75,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        sans: ['"Noto Sans KR"', ...defaultTheme.fontFamily.sans],
       },
     },
   },

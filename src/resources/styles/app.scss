@@ -1,7 +1,10 @@
-@import 'common/tailwind.css';
+@import 'tailwindcss/base';
 
 @import 'functions/*';
 @import 'common/global';
 @import 'components/module/*';
 
 @import 'components/header';
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';

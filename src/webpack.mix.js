@@ -21,7 +21,7 @@ mix
   .sass('resources/styles/editor.scss', 'styles')
   .options({
     processCssUrls: false,
-    postCss: [require('tailwindcss')],
+    postCss: [require('@tailwindcss/jit')],
     autoprefixer: {
       options: {
         browsers: ['last 6 versions'],
