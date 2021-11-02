@@ -1,0 +1,62 @@
+&__top {
+  $p: &;
+  @apply border-steam
+    border-b-[1px]
+    hidden
+    sm:block
+    bg-lighthouse;
+
+  &-inner {
+    @apply px-[80px] h-[44px] flex items-center justify-between;
+  }
+
+  &-nav {
+    @apply flex h-full;
+
+    &-item {
+      @apply px-[28px] text-basaltGrey;
+
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      &:hover #{$p}-nav-icon {
+        background-color: var(--bgColor);
+      }
+
+      // active 스타일
+      &.active {
+        @apply bg-white text-carbon border-r-[1px] border-l-[1px] border-steam;
+
+        & #{$p}-nav-icon {
+          background-color: var(--bgColor);
+        }
+
+        &:after {
+          @apply bg-white;
+
+          content: '';
+          display: block;
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          top: calc(100% + 1px);
+        }
+      }
+    }
+
+    &-icon {
+      @apply w-[16px] h-[16px] flex items-center justify-center rounded-full bg-basaltGrey;
+
+      transition: background-color 0.2s ease-in-out;
+    }
+  }
+
+  &-menu {
+    @apply flex text-squant;
+
+    &-item {
+      @apply flex items-center gap-x-[4px] text-[14px] px-[20px];
+    }
+  }
+}
