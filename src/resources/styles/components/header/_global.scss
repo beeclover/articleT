@@ -1,0 +1,12 @@
+// GNB
+
+&__global {
+  --h-gnb: 96px;
+  &-inner {
+    @apply h-[var(--h-gnb)]
+      px-[80px]
+      flex
+      items-center
+      justify-between;
+  }
+}

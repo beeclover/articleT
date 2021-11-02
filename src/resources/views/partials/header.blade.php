@@ -12,3 +12,15 @@
     </div>
   </div>
 </header>
+<header id="header__global" class="header__global">
+  <div class="header__global-inner">
+    <div class="col">
+      <div class="header__global-logo">
+        <img src="{!! $siteLogo !!}" alt="homepage logo">
+      </div>
+    </div>
+    <div class="col">
+
+    </div>
+  </div>
+</header>
