@@ -1,0 +1,19 @@
+.coldiv {
+  &__s1 {
+    > * {
+      position: relative;
+
+      &:not(:last-child)::after {
+        @apply bg-cerebralGrey;
+
+        content: '';
+        width: 1px;
+        height: 16px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
