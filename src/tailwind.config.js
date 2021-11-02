@@ -4,37 +4,23 @@ const colorReset = {
   color: null,
 };
 
-function px(min, max) {
-  let result = {};
-  for (let i = min; i < max + 1; i++) {
-    const key = i < 0 ? `-${i}px` : `${i}px`;
-    result[key] = `${i}px`;
-  }
-  return result;
-}
-
-const colors = {};
+const colors = {
+  lighthouse: '#f4f4f4',
+  basaltGrey: '#999999',
+  cerebralGrey: '#cccccc',
+  carbon: '#333333',
+  steam: '#dddddd',
+  squant: '#666666',
+};
 
 module.exports = {
+  mode: 'jit',
   purge: {
-    content: [
-      './app/**/*.php',
-      './resources/**/*.{php,vue,js}',
-    ],
+    content: ['./app/**/*.php', './resources/**/*.{php,vue,js}'],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      // screens: {
-      //   xxl: '1536px',
-      //   labtop: '1440px',
-      //   'max:labtop': { max: '1439px' },
-      //   'max:xxl': { max: '1535px' },
-      //   'max:xl': { max: '1279px' },
-      //   'max:lg': { max: '1023px' },
-      //   'max:md': { max: '767px' },
-      //   'max:sm': { max: '639px' },
-      // },
       // container: {
       //   padding: {
       //     DEFAULT: '2rem',
@@ -44,21 +30,10 @@ module.exports = {
       //     '2xl': '7.1875rem',
       //   },
       // },
-      // pixel token
-      height: px(0, 300),
-      width: px(0, 1000),
-      margin: px(0, 300),
-      fontSize: px(0, 120),
       padding: {
         'container-x': 'var(--container-px)',
         'container-y': 'var(--container-py)',
-        ...px(0, 300),
       },
-      gap: px(0, 300),
-      maxWidth: px(0, 1000),
-      maxHeight: px(0, 1000),
-      translate: px(0, 300),
-      minWidth: px(0, 1000),
       colors,
       borderColor: colors,
       backgroundColor: colors,
@@ -93,11 +68,5 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-    },
-  },
-  plugins: [
-    require('@tailwindcss/typography'),
-  ],
+  plugins: [require('@tailwindcss/typography')],
 };
