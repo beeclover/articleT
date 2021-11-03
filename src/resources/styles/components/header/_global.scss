@@ -1,22 +1,38 @@
 // GNB
+@at-root {
+  :root {
+    --h-gnb: 60px;
+
+    @media (min-width: theme('screens.sm')) {
+      --h-gnb: 96px;
+    }
+  }
+}
 
 &__global {
-  --h-gnb: 60px;
-  @apply border-b-[1px] border-gravelFint;
-
-  @media (min-width: theme('screens.sm')) {
-    --h-gnb: 96px;
-  }
-
   &-inner {
-    @apply h-[var(--h-gnb)] px-[80px]
+    @apply border-b-[1px] border-gravelFint;
+    @apply h-[var(--h-gnb)]
+      px-[20px]
       flex
       items-center
       justify-between;
+
+    @media (min-width: theme('screens.sm')) {
+      @apply px-[80px];
+    }
   }
 
   &-logo {
-    @apply mr-[144px];
+    @apply h-[24px];
+
+    @media (min-width: theme('screens.sm')) {
+      @apply h-[36px] mr-[144px];
+    }
+
+    img {
+      height: 100%;
+    }
   }
 
   &-nav {

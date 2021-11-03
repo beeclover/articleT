@@ -1,0 +1,41 @@
+// GNB
+@at-root {
+  :root {
+    --h-gnb: 60px;
+
+    @media (min-width: theme('screens.sm')) {
+      --h-gnb: 96px;
+    }
+  }
+}
+
+&__m_global {
+  &-nav {
+    @apply flex
+      items-center
+      gap-x-[40px]
+      text-[16px]
+      leading-snug
+      relative;
+
+    &-item {
+    }
+  }
+
+  &-subnav {
+    @apply w-full text-[18px] grid grid-cols-1 border border-dugong bg-steam gap-[1px];
+
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 0;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+
+    > li {
+      @apply h-[58px] flex items-center px-[16px] bg-[#f8f8f8] text-black font-medium;
+
+      &:hover {
+        @apply bg-white text-deepSpaceRodeo;
+      }
+    }
+  }
+}
