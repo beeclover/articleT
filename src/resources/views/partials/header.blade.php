@@ -29,4 +29,7 @@
       <button class="block sm:hidden btn-menu">menu</button>
     </div>
   </div>
+  <div class="block sm:hidden" x-data="{selected: {!! $id !!}}">
+    {!! $m_gnb !!}
+  </div>
 </header>

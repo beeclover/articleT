@@ -25,6 +25,7 @@ class App extends Composer
         return [
             'siteName' => $this->siteName(),
             'siteLogo' => $this->siteLogo(),
+            'id' => get_the_id(),
         ];
     }
 
