@@ -29,7 +29,7 @@
       <button class="block sm:hidden btn-menu">menu</button>
     </div>
   </div>
-  <div class="block sm:hidden" x-data="{selected: {!! $id !!}}">
+  <div class="block sm:hidden" x-data="{selected: @if(!empty($id)) {!! $id !!} @else 0 @endif}">
     {!! $m_gnb !!}
   </div>
 </header>

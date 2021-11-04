@@ -11,30 +11,74 @@
 
 &__m_global {
   &-nav {
-    @apply flex
-      items-center
+    @at-root {
+      :root {
+        --h-m_gnb-nav: 44px;
+      }
+    }
+
+    @apply h-[var(--h-m_gnb-nav)]
+      flex
       gap-x-[40px]
       text-[16px]
       leading-snug
-      relative;
+      justify-center
+      relative
+      border-black
+      border-b-[1px]
+      border-opacity-30;
 
     &-item {
+      @apply h-full flex items-center text-[16px];
+
+      &-parent > .active {
+        position: relative;
+        &::after {
+          @apply border-deepSpaceRodeo border-b-[4px];
+
+          content: '';
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          left: 50%;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          transform: translateX(-50%);
+        }
+      }
     }
   }
 
   &-subnav {
-    @apply w-full text-[18px] grid grid-cols-1 border border-dugong bg-steam gap-[1px];
+    @apply w-full text-[14px] flex bg-deepSpaceRodeo gap-[40px] justify-center;
+
+    overflow-x: scroll;
+    @include no-scrollbar;
 
     position: absolute;
-    top: calc(100% + 16px);
+    top: 100%;
     left: 0;
-    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
 
     > li {
-      @apply h-[58px] flex items-center px-[16px] bg-[#f8f8f8] text-black font-medium;
+      @apply h-[var(--h-m_gnb-nav)] flex items-center text-white text-opacity-50;
 
-      &:hover {
-        @apply bg-white text-deepSpaceRodeo;
+      &:hover,
+      &.current-menu-item {
+        @apply text-opacity-100;
+        position: relative;
+
+        &::after {
+          @apply bg-white;
+
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          height: 4px;
+          width: 100%;
+          transform: translateX(-50%);
+        }
       }
     }
   }

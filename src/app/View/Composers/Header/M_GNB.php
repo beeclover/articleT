@@ -38,12 +38,6 @@ class M_GNB extends Walker_Nav_Menu
       $dapth_alpinejs = $depth === 0 ? <<<EOD
             x-show="selected === $this->id"
             x-cloak
-            x-transition:enter="transition ease-out duration-100"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100"
-            x-transition:leave="transition ease-in duration-75"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0"
         EOD : '';
 
       // Build HTML for output.
@@ -67,7 +61,7 @@ class M_GNB extends Walker_Nav_Menu
       $classes = empty( $item->classes ) ? array() : (array) $item->classes;
 
       // 최상위 부모 메뉴 아이템 클래스 추가
-      $advance_class_names = $depth === 0 ? ' header__m_global-nav-item-parent ' : '';
+      $advance_class_names = $depth === 0 ? ' header__m_global-nav-item-parent ' : ' ';
       $class_names = esc_attr( implode( $advance_class_names, apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
 
       // Build HTML.
@@ -87,7 +81,8 @@ EOD;
       $alpinejs = '';
       if (array_search('menu-item-has-children',$classes)) {
         $alpinejs = <<<EOD
-          @click.prevent="selected = $item->ID"
+          @click.prevent="selected === $item->ID ? selected = 0 : selected = $item->ID"
+          :class="{'active': selected === $item->ID}"
 EOD;
       }
 

@@ -11,7 +11,7 @@
 
 &__global {
   &-inner {
-    @apply border-b-[1px] border-gravelFint;
+    @apply border-b-[1px] border-[#eee];
     @apply h-[var(--h-gnb)]
       px-[20px]
       flex
@@ -21,6 +21,10 @@
     @media (min-width: theme('screens.sm')) {
       @apply px-[80px];
     }
+  }
+
+  @media (min-width: theme('screens.sm')) {
+    @apply border-gravelFint;
   }
 
   &-logo {

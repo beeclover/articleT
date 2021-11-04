@@ -9,3 +9,13 @@ body {
 [x-cloak] {
   display: none !important;
 }
+
+@mixin no-scrollbar {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+[no-scrollbar] {
+  @include no-scrollbar;
+}
