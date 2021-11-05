@@ -13,7 +13,14 @@
     }
 
     &-nav {
-      @apply grid grid-cols-1;
+      @apply grid grid-cols-2;
+
+      @media (max-width: theme('screens.sm')) {
+        width: 100%;
+      }
+      @media (min-width: theme('screens.sm')) {
+        @apply grid-cols-1;
+      }
 
       .group > a {
         @include h2;
@@ -28,7 +35,12 @@
       }
 
       .freeapp {
+        @apply col-span-2;
+
         order: 1;
+        @media (max-width: theme('screens.sm')) {
+          @apply py-[20px] mx-[-16px] px-[16px] my-[20px] border-t-[1px] border-b-[1px] border-gravelFint border-opacity-5;
+        }
       }
 
       .icon-label:before {
@@ -47,6 +59,8 @@
         }
 
         .freeapp {
+          @apply col-span-1;
+
           order: 3;
         }
 
@@ -60,9 +74,21 @@
       }
     }
 
+    .freeapp > .sub-menu {
+      column-gap: 50px;
+      display: flex;
+
+      @media (min-width: theme('screens.sm')) {
+        display: grid;
+        row-gap: 20px;
+      }
+    }
     .sub-menu {
       display: grid;
-      row-gap: 20px;
+      row-gap: 18px;
+      @media (min-width: theme('screens.sm')) {
+        row-gap: 20px;
+      }
     }
 
     .h2 {
@@ -71,6 +97,9 @@
   }
 
   &-inner {
-    @apply py-[40px];
+    @apply py-[28px];
+    @media (min-width: theme('screens.sm')) {
+      @apply py-[40px];
+    }
   }
 }
