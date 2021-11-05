@@ -11,7 +11,7 @@
     bg-lighthouse;
 
   &-inner {
-    @apply px-[80px] h-[var(--h-tnb)] flex items-center justify-between;
+    @apply h-[var(--h-tnb)] flex items-center justify-between;
   }
 
   &-nav {

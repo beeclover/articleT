@@ -15,14 +15,9 @@
   &-inner {
     @apply border-b-[1px] border-[#eee];
     @apply h-[var(--h-gnb)]
-      px-[20px]
       flex
       items-center
       justify-between;
-
-    @media (min-width: theme('screens.sm')) {
-      @apply px-[80px];
-    }
   }
 
   @media (min-width: theme('screens.sm')) {
