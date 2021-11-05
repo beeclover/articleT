@@ -11,11 +11,6 @@
 
 &__main {
   @apply bg-white;
-  position: fixed;
-  z-index: 9000;
-  top: var(--bar-wp, 0);
-  left: 0;
-  width: 100%;
 
   &-inner {
     @apply border-b-[1px] border-[#eee];
