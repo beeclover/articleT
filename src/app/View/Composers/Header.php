@@ -6,6 +6,7 @@ use Roots\Acorn\View\Composer;
 use Wp\Nav\Walker\TNB;
 use Wp\Nav\Walker\GNB;
 use Wp\Nav\Walker\M_GNB;
+use Wp\Nav\Walker\CoverMenu;
 
 class Header extends Composer
 {
@@ -18,6 +19,7 @@ class Header extends Composer
           'tnb' => $this->tnb(),
           'gnb' => $this->gnb(),
           'm_gnb' => $this->m_gnb(),
+          'gnc' => $this->gnc(),
         ];
     }
 
@@ -42,6 +44,14 @@ class Header extends Composer
         'menu' => 'main', 'container' => false, 'echo' => false, 'depth' => 2,
         'menu_class' => 'header__m_global-nav',
         'walker' => new M_GNB(),
+      ]);
+    }
+
+    public function gnc() {
+      return wp_nav_menu([ 
+        'menu' => 'main', 'container' => false, 'echo' => false, 'depth' => 2,
+        'menu_class' => 'header__cover',
+        'walker' => new CoverMenu(),
       ]);
     }
 }
