@@ -18,6 +18,8 @@ const colors = {
   cultured: '#f8f8f8',
   brightGray: '#eeeeee',
   davyGrey: '#555555',
+  jet: '#343434',
+  raisinBlack: '#212121',
 };
 
 module.exports = {

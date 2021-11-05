@@ -1,0 +1,76 @@
+&__main {
+  @apply text-gravelFint;
+
+  &-1 {
+    @apply bg-jet;
+
+    @mixin h2 {
+      @apply text-white;
+
+      display: block;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    &-nav {
+      @apply grid grid-cols-1;
+
+      .group > a {
+        @include h2;
+      }
+
+      .comoany {
+        order: 2;
+      }
+
+      .policies {
+        order: 3;
+      }
+
+      .freeapp {
+        order: 1;
+      }
+
+      .icon-label:before {
+        font-size: 32px;
+      }
+
+      @media (min-width: theme('screens.sm')) {
+        @apply grid-cols-[190px,190px,190px] gap-x-[15px];
+
+        .comoany {
+          order: 1;
+        }
+
+        .policies {
+          order: 2;
+        }
+
+        .freeapp {
+          order: 3;
+        }
+
+        .icon-label {
+          display: flex;
+        }
+
+        .icon-label:before {
+          font-size: 1em;
+        }
+      }
+    }
+
+    .sub-menu {
+      display: grid;
+      row-gap: 20px;
+    }
+
+    .h2 {
+      @include h2;
+    }
+  }
+
+  &-inner {
+    @apply py-[40px];
+  }
+}
