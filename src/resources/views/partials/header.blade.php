@@ -1,4 +1,4 @@
-<header id="header__root" x-data="{menuSelected: null, selected: @if(!empty($id)) {!! $id !!} @else null @endif}">
+<header id="header__root" x-data="{selected: @if(!empty($id)) {!! $id !!} @else null @endif}">
   <header id="header__top" class="header__top">
     <div class="header__top-inner">
       {!! $tnb !!}
@@ -13,7 +13,7 @@
       </div>
     </div>
   </header>
-  <header id="header__global" class="header__global">
+  <header id="header__global" class="header__global" :class="{'menu-open': menuSelected === 'menu'}">
     <div class="header__global-inner">
       <div class="flex items-center">
         <a href="/" class="header__global-logo">
@@ -26,12 +26,19 @@
       <div class="flex gap-x-[17px] sm:gap-x-[36px] items-center">
         <button class="hidden sm:block py-[11px] px-[28px] btn-black">뉴스레터 구독</button>
         <div class="hidden sm:block w-[1px] h-[60px] bg-steam"></div>
-        <button class="btn-search" @click.prevent="
-          menuSelected === 'search' ? menuSelected = null : menuSelected = 'search';
-          $nextTick(() => $refs.searchInput.focus());
-          selected = null;
+        <button 
+          class="btn-search" 
+          @click.prevent="
+            menuSelected === 'search' ? menuSelected = null : menuSelected = 'search';
+            $nextTick(() => $refs.searchInput.focus());
+            selected = null;
         ">search</button>
-        <button class="block sm:hidden btn-menu" @click.prevent="menuSelected === 'menu' ? menuSelected = null : menuSelected = 'menu'">menu</button>
+        <button 
+          class="block sm:hidden btn-menu"
+          @click.prevent="
+            menuSelected === 'menu' ? menuSelected = null : menuSelected = 'menu';
+            selected = null;
+        ">menu</button>
       </div>
     </div>
     <div class="block sm:hidden relative">

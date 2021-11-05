@@ -15,6 +15,9 @@ const colors = {
   blackOut: '#222222',
   deepSpaceRodeo: '#332878',
   dugong: '#707070',
+  cultured: '#f8f8f8',
+  brightGray: '#eeeeee',
+  davyGrey: '#555555',
 };
 
 module.exports = {

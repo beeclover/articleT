@@ -6,4 +6,28 @@
   padding-top: var(--h-gnb);
   width: 100%;
   height: 100%;
+  overflow-y: scroll;
+
+  @include no-scrollbar;
+
+  &-nav {
+    &-item-parent > &-link {
+      @apply text-[16px] font-medium  text-black;
+    }
+    &-link {
+      @apply px-[20px]
+      py-[18px]
+      items-center
+      justify-between
+      gap-x-[4px]
+      flex;
+
+      @apply border-brightGray
+      border-b-[1px];
+    }
+  }
+
+  &-subnav {
+    @apply bg-cultured text-davyGrey text-[14px];
+  }
 }

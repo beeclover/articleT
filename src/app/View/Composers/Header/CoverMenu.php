@@ -31,7 +31,7 @@ class CoverMenu extends Walker_Nav_Menu
       );
       
       // 자식을 가지고있는 alpinejs가 적용되야하는 element에 클래스 적용
-      $advance_class_names = $depth === 0 ? ' header__m_global-subnav ' : '';
+      $advance_class_names = $depth === 0 ? ' header__gnc-subnav ' : '';
       $class_names = implode($advance_class_names, $classes);
 
       // depth data
@@ -61,7 +61,7 @@ class CoverMenu extends Walker_Nav_Menu
       $classes = empty( $item->classes ) ? array() : (array) $item->classes;
 
       // 최상위 부모 메뉴 아이템 클래스 추가
-      $advance_class_names = $depth === 0 ? ' header__m_global-nav-item-parent ' : ' ';
+      $advance_class_names = $depth === 0 ? ' header__gnc-nav-item-parent ' : ' ';
       $class_names = esc_attr( implode( $advance_class_names, apply_filters( 'nav_menu_css_class', array_filter( $classes ), $item ) ) );
 
       // Build HTML.
@@ -74,27 +74,27 @@ EOD;
       $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
       $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
       $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-      $attributes .= ' class="menu-link ' . ( $depth > 0 ? 'sub-menu-link header__m_global-nav-item-'.$depth : 'main-menu-link header__m_global-nav-item' ) . '"';
+      $attributes .= ' class="menu-link ' . ( $depth > 0 ? 'sub-menu-link header__gnc-nav-item-'.$depth : 'main-menu-link header__gnc-nav-item' ) . '"';
       
       $this->id = $item->ID;
 
-      $alpinejs = '';
-      if (array_search('menu-item-has-children',$classes)) {
-        $alpinejs = <<<EOD
+      $arrow = $depth === 0 ? <<<EOD
+        <button 
+          class="btn-arrow" 
           @click.prevent="selected === $item->ID ? selected = 0 : selected = $item->ID"
           :class="{'active': selected === $item->ID}"
-EOD;
-      }
+        >arrow</button>
+EOD: '';
 
       // Build HTML output and pass through the proper filter.
-      $item_output = sprintf( '%1$s<a%2$s%7$s>%3$s%4$s%5$s</a>%6$s',
+      $item_output = sprintf( '<div class="header__gnc-nav-link">%1$s<a%2$s>%3$s%4$s%5$s</a>%6$s%7$s</div>',
           $args->before,
           $attributes,
           $args->link_before,
           apply_filters( 'the_title', $item->title, $item->ID ),
           $args->link_after,
           $args->after,
-          $alpinejs
+          $arrow,
       );
       $output .= apply_filters( 'walker_nav_menu_start_el', $item_output, $item, $depth, $args );
   }
