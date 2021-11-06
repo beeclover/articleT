@@ -1,4 +1,8 @@
 &__main {
+  $p: &;
+
+  font-size: 14px;
+
   @apply text-gravelFint;
 
   &-1 {
@@ -93,6 +97,54 @@
 
     .h2 {
       @include h2;
+    }
+  }
+
+  &-2 {
+    @apply bg-raisinBlack;
+
+    #{$p}-inner {
+      @apply py-[28px];
+      @media (min-width: theme('screens.sm')) {
+        @apply py-[60px];
+      }
+    }
+
+    &-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4em 16px;
+      position: relative;
+
+      @media (min-width: theme('screens.sm')) {
+        gap: 12px 16px;
+      }
+
+      &:after {
+        @apply bg-raisinBlack;
+
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: -8px;
+      }
+
+      .menu-item {
+        position: relative;
+
+        &:after {
+          @apply bg-gravelFint;
+
+          content: '';
+          width: 1px;
+          height: 1em;
+          top: 50%;
+          left: -8px;
+          position: absolute;
+          transform: translateY(-50%);
+        }
+      }
     }
   }
 
