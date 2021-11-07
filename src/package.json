@@ -48,6 +48,7 @@
   },
   "dependencies": {
     "@alpinejs/intersect": "^3.4.2",
+    "@tailwindcss/aspect-ratio": "^0.3.0",
     "alpinejs": "^3.4.2",
     "headroom.js": "^0.12.0"
   }

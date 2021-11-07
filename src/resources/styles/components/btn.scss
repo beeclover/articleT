@@ -16,6 +16,19 @@
     focus:ring-opacity-75;
 }
 
+.btn-deepSpaceRodeo {
+  @apply py-2 
+    px-4
+    bg-deepSpaceRodeo
+    text-white
+    font-semibold
+    hover:bg-opacity-90
+    focus:outline-none
+    focus:ring-2
+    focus:ring-deepSpaceRodeo
+    focus:ring-opacity-75;
+}
+
 .btn-search {
   @extend .btn;
   @apply w-[24px] h-[24px];

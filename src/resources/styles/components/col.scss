@@ -16,4 +16,39 @@
       }
     }
   }
+
+  &__s2 {
+    display: flex;
+    gap: 12px 24px;
+    position: relative;
+
+    &:after {
+      @apply bg-white;
+
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      left: -12px;
+    }
+
+    > * {
+      position: relative;
+
+      &:first-child:after {
+        content: none;
+      }
+    }
+    > *:after {
+      @apply bg-gravelFint;
+
+      content: '';
+      width: 1px;
+      height: 1em;
+      top: 50%;
+      left: -12px;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+  }
 }
