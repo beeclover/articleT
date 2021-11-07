@@ -29,6 +29,20 @@
     focus:ring-opacity-75;
 }
 
+.btn-seaSerpent {
+  @apply py-2 
+    px-4
+    bg-seaSerpent
+    text-white
+    font-semibold
+    rounded-full
+    hover:bg-opacity-90
+    focus:outline-none
+    focus:ring-2
+    focus:ring-seaSerpent
+    focus:ring-opacity-75;
+}
+
 .btn-search {
   @extend .btn;
   @apply w-[24px] h-[24px];
