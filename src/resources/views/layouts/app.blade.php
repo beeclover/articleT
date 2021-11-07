@@ -1,3 +1,5 @@
 @include('partials.header')
-@yield('content')
+<div class="layouts__content">
+  @yield('content')
+</div>
 @include('partials.footer')

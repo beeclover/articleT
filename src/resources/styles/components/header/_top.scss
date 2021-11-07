@@ -1,8 +1,16 @@
 // TNB
+@at-root {
+  :root {
+    --h-tnb: 0px;
+
+    @media (min-width: theme('screens.sm')) {
+      --h-tnb: 44px;
+    }
+  }
+}
 
 &__top {
   $p: &;
-  --h-tnb: 44px;
 
   @apply border-steam
     border-b-[1px]
