@@ -1,76 +1,78 @@
-.listDivider {
-  &__cols1 {
-    > * {
+@layer components {
+  .listDivider {
+    &__cols1 {
+      > * {
+        position: relative;
+
+        &:not(:last-child)::after {
+          @apply bg-cerebralGrey;
+
+          content: '';
+          width: 1px;
+          height: 16px;
+          position: absolute;
+          right: -1px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &__cols2 {
+      display: flex;
+      gap: 12px 24px;
       position: relative;
 
-      &:not(:last-child)::after {
-        @apply bg-cerebralGrey;
+      &:after {
+        @apply bg-white;
+
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 100%;
+        left: -12px;
+      }
+
+      > * {
+        position: relative;
+
+        &:first-child:after {
+          content: none;
+        }
+      }
+      > *:after {
+        @apply bg-gravelFint;
 
         content: '';
         width: 1px;
-        height: 16px;
-        position: absolute;
-        right: -1px;
+        height: 1em;
         top: 50%;
+        left: -12px;
+        position: absolute;
         transform: translateY(-50%);
       }
     }
-  }
 
-  &__cols2 {
-    display: flex;
-    gap: 12px 24px;
-    position: relative;
+    &__rows1 {
+      --gap-y: 88px;
+      display: grid;
+      row-gap: var(--gap-y);
 
-    &:after {
-      @apply bg-white;
-
-      content: '';
-      position: absolute;
-      width: 1px;
-      height: 100%;
-      left: -12px;
-    }
-
-    > * {
-      position: relative;
-
-      &:first-child:after {
-        content: none;
+      > * {
+        position: relative;
       }
-    }
-    > *:after {
-      @apply bg-gravelFint;
 
-      content: '';
-      width: 1px;
-      height: 1em;
-      top: 50%;
-      left: -12px;
-      position: absolute;
-      transform: translateY(-50%);
-    }
-  }
+      > *:not(:last-child)::after {
+        @apply bg-cerebralGrey;
 
-  &__rows1 {
-    --gap-y: 88px;
-    display: grid;
-    row-gap: var(--gap-y);
-
-    > * {
-      position: relative;
-    }
-
-    > *:not(:last-child)::after {
-      @apply bg-cerebralGrey;
-
-      content: '';
-      width: 100%;
-      height: 1px;
-      position: absolute;
-      left: 0;
-      bottom: calc(-1 * var(--gap-y, 0) / 2);
-      transform: translateY(-50%);
+        content: '';
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        left: 0;
+        bottom: calc(-1 * var(--gap-y, 0) / 2);
+        transform: translateY(-50%);
+      }
     }
   }
 }
