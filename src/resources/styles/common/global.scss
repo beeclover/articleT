@@ -1,3 +1,13 @@
+:root {
+  --container-px: 16px;
+  @media (min-width: theme('screens.md')) {
+    --container-px: 40px;
+  }
+  @media (min-width: theme('screens.xxl')) {
+    --container-px: 80px;
+  }
+}
+
 body {
   @apply font-sans;
 
