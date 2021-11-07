@@ -1,5 +1,5 @@
-.coldiv {
-  &__s1 {
+.listDivider {
+  &__cols1 {
     > * {
       position: relative;
 
@@ -17,7 +17,7 @@
     }
   }
 
-  &__s2 {
+  &__cols2 {
     display: flex;
     gap: 12px 24px;
     position: relative;

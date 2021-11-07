@@ -5,7 +5,7 @@
       Talent Bank 스토리
     </a>
   </div>
-  <div class="content__hero-meta coldiv__s2">
+  <div class="content__hero-meta listDivider__cols2">
     <time datetime="2021-10-20">2021/10/20</time><a href="#" class="content__hero-meta-term">탤런트뱅크 소식</a>
   </div>
   <div class="content__hero-main">

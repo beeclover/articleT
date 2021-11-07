@@ -27,7 +27,7 @@ class Header extends Composer
     public function tnb() {
       return wp_nav_menu([ 
         'menu' => 'top', 'container' => false, 'echo' => false, 'depth' => 1,
-        'menu_class' => 'header__top-nav coldiv__s1',
+        'menu_class' => 'header__top-nav listDivider__cols1',
         'walker' => new Top(),
       ]);
     }
