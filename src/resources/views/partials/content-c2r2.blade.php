@@ -14,10 +14,15 @@
   <div class="content__c2r2-thumbnail">
     <img src="https://picsum.photos/1920?random=0">
   </div>
-  <div class="content__c2r2-main col-span-2 prose text-[18px]">
-    <p>
-      인력 매칭 플랫폼 '탤런트뱅크'  기존 헤드헌팅 업체들과 달리 하루부터 수개월까지 단기 채용
-      중소기업 인건비 부담 덜어주고 고경력 전문가들 역량 발휘 기회기업은 사업의...
-    </p>
+  <div class="content__c2r2-main col-span-2">
+    <div class="prose text-[14px] sm:text-[18px]">
+      <p>
+        인력 매칭 플랫폼 '탤런트뱅크'  기존 헤드헌팅 업체들과 달리 하루부터 수개월까지 단기 채용
+        중소기업 인건비 부담 덜어주고 고경력 전문가들 역량 발휘 기회기업은 사업의...
+      </p>
+    </div>
+    <div class="hiddn mt-[16px]">
+      <a href="#" class="underline power" style="--uph: 1px">Read on</a>
+    </div>
   </div>
 </div>

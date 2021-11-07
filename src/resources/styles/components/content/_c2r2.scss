@@ -1,16 +1,24 @@
 &__c2r2 {
-  @apply grid grid-cols-2 gap-[40px];
+  @apply flex flex-col;
+
+  @media (min-width: theme('screens.sm')) {
+    @apply grid grid-cols-2 gap-[40px];
+  }
 
   &-meta {
     @apply text-carbon flex items-center;
 
-    margin-bottom: 32px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 1;
+    margin-bottom: 28px;
 
-    time {
-      font-size: 20px;
+    @media (min-width: theme('screens.sm')) {
+      font-size: 18px;
+      margin-bottom: 32px;
+      time {
+        font-size: 20px;
+      }
     }
 
     .btn-seaSerpent {
@@ -26,17 +34,37 @@
   }
 
   &-title {
-    font-size: 28px;
+    display: block;
+    font-size: 20px;
     font-weight: bold;
+
+    @media (max-width: theme('screens.sm')) {
+      margin-bottom: 24px;
+    }
+
+    @media (min-width: theme('screens.sm')) {
+      font-size: 28px;
+    }
   }
 
   &-thumbnail {
     @apply aspect-w-16 aspect-h-9;
+
+    @media (max-width: theme('screens.sm')) {
+      order: -1;
+      margin-bottom: 28px;
+    }
+
+    img {
+      object-fit: cover;
+    }
   }
 
   &-main {
     @apply text-davyGrey;
 
-    font-size: 18px;
+    @media (min-width: theme('screens.sm')) {
+      font-size: 18px;
+    }
   }
 }
