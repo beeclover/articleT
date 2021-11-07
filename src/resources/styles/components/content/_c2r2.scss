@@ -1,0 +1,42 @@
+&__c2r2 {
+  @apply grid grid-cols-2 gap-[40px];
+
+  &-meta {
+    @apply text-carbon flex items-center;
+
+    margin-bottom: 32px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+
+    time {
+      font-size: 20px;
+    }
+
+    .btn-seaSerpent {
+      @apply py-[6px] px-[14px];
+
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    &-term {
+      @apply flex items-center gap-x-[8px];
+    }
+  }
+
+  &-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  &-thumbnail {
+    @apply aspect-w-16 aspect-h-9;
+  }
+
+  &-main {
+    @apply text-davyGrey;
+
+    font-size: 18px;
+  }
+}
