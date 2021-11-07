@@ -5,7 +5,7 @@
 <section>
   <div class="container mx-auto grid grid-cols-1 sm:grid-cols-[1fr,1px,1fr] gap-x-[52px]">
     <div class="sm:py-[100px] mb-[54px] sm:mb-0">
-      @include('partials.content-hero')
+      @include('partials.content-hero', ['post' => $heroPost])
       <div class="sm:h-px bg-steam w-full mt-[60px] sm:mb-[36px]"></div>
       <div class="py-[20px] sm:py-0 bg-[#f7f7f7] sm:bg-transparent px-[var(--container-px)] sm:px-0 mx-full sm:mx-0">
         @include('partials.banner.client_announcement')
