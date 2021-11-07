@@ -51,4 +51,26 @@
       transform: translateY(-50%);
     }
   }
+
+  &__rows1 {
+    --gap-y: 88px;
+    display: grid;
+    row-gap: var(--gap-y);
+
+    > * {
+      position: relative;
+    }
+
+    > *:not(:last-child)::after {
+      @apply bg-cerebralGrey;
+
+      content: '';
+      width: 100%;
+      height: 1px;
+      position: absolute;
+      left: 0;
+      bottom: calc(-1 * var(--gap-y, 0) / 2);
+      transform: translateY(-50%);
+    }
+  }
 }
