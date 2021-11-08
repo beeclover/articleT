@@ -7,6 +7,7 @@
 namespace App;
 
 use function Roots\asset;
+use function Roots\view;
 
 /**
  * Register the theme assets.
@@ -202,3 +203,19 @@ add_action('widgets_init', function () {
         'id' => 'sidebar-footer'
     ] + $config);
 });
+
+/**
+ * ACF Options 활성화
+ *
+ * @author       Hansanghyeon
+ * @copyright    Hansanghyeon <999@hyeon.pro>
+ **/
+
+if (function_exists('acf_add_options_sub_page')) {
+  acf_add_options_sub_page(array(
+  'page_title'  => 'main',
+  'menu_title'  => 'main',
+  'menu_slug' 	=> 'main',
+  'capability'	=> 'edit_posts',
+));
+}
