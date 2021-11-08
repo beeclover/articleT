@@ -14,23 +14,23 @@ class Hook {
 
   function setPostData()
   {
-      $setPost = $this->post;
-      $setPost->permalink = get_the_permalink($setPost->ID);
-      $setPost->thumbnail = get_the_post_thumbnail_url($setPost->ID);
-      $setPost->excerpt = get_the_excerpt($setPost->ID);
-      $setPost->date = get_the_date('Y/m/d', $setPost->ID);
+      $post = $this->post;
+      $post->permalink = get_the_permalink($post->ID);
+      $post->thumbnail = get_the_post_thumbnail_url($post->ID);
+      $post->excerpt = get_the_excerpt($post->ID);
+      $post->date = get_the_date('Y/m/d', $post->ID);
       // 카테고리 추가
       
-      $cats = get_the_terms($setPost->ID, str_replace('-', '_', $this->postType )."_category");
+      $cats = get_the_terms($post->ID, str_replace('-', '_', $this->postType )."_category");
       if (!is_wp_error($cats) && !empty($cats)) {
-          $setPost->category = array_map(function ($cat) {
+          $post->category = array_map(function ($cat) {
               $cat->link = "/{$this->postType}/category/".$cat->slug;
               return $cat;
           }, $cats);
       } else {
-          $setPost->category = [];
+          $post->category = [];
       }
 
-      return $setPost;
+      return $post;
   }
 }
