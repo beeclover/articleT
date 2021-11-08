@@ -15,21 +15,13 @@
     <div class="sm:py-[100px] mb-[54px] sm:mb-0">
       <div class="text-[24px] sm:text-[32px] font-bold mb-[45px] sm:mb-[72px]">인기 포스트</div>
       <ul class="sm:listDivider__rows1 grid gap-y-[54px] sm:gap-y-[88px]">
-        <li>
-          @include('partials.content-c2r2')
-        </li>
-        <li>
-          @include('partials.content-c2r2')
-        </li>
-        <li>
-          @include('partials.content-c2r2')
-        </li>
+        @foreach ($popularityPosts as $post)
+          <li>
+            @include('partials.content-c2r2', ['post' => $post])
+          </li>
+        @endforeach
       </ul>
     </div>
   </div>
 </section>
-<div class="bg-blue-500 h-[400px]">
-
-</div>
-
 @endsection

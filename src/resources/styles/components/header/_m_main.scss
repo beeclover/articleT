@@ -3,6 +3,7 @@
   :root {
     --h-gnb: 60px;
     --h-m_search: 60px;
+    --h-m_gnb-nav: 0px;
 
     @media (max-width: theme('screens.sm')) {
       --h-m_gnb-nav: 44px;

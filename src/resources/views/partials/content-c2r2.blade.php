@@ -1,28 +1,39 @@
 <div class="content__c2r2">
   <div>
     <div class="content__c2r2-meta listDivider__cols2">
-      <time datetime="2021-10-20">2021/10/20</time>
-      <div class="content__c2r2-meta-term">
-        <a href="#" class="btn-seaSerpent">시리즈</a>
-        <a href="#">탤런트뱅크 소식</a>
-      </div>
+      <time datetime="{!! $post->date !!}">{!! $post->date !!}</time>
+      @if (count($post->collection) > 0)
+        @foreach ($post->collection as $term)
+          <div class="content__c2r2-meta-term">
+            <a href="{!! $term->link !!}" class="btn-seaSerpent">{!! $term->name !!}</a>
+            @if (count($term->children) > 0)
+                @foreach ($term->children as $child)
+                    <a href="{!! $child->link !!}">{!! $child->name !!}</a>
+                @endforeach
+            @endif
+          </div>
+        @endforeach
+      @elseif(count($post->category) > 0)
+        @foreach ($post->category as $term)
+          <div class="content__c2r2-meta-term">
+            <a href="{!! $term->link !!}">{!! $term->name !!}</a>
+          </div>
+        @endforeach
+      @endif
     </div>
-    <a href="#" class="content__c2r2-title">
-      '고급인력 공유' 신고용시대 연다
+    <a href="{!! $post->permalink !!}" class="content__c2r2-title">
+      {!! $post->post_title !!}
     </a>
   </div>
   <div class="content__c2r2-thumbnail">
-    <img src="https://picsum.photos/1920?random=0">
+    <img src="{!! $post->thumbnail !!}">
   </div>
   <div class="content__c2r2-main col-span-2">
     <div class="prose text-[14px] sm:text-[18px]">
-      <p>
-        인력 매칭 플랫폼 '탤런트뱅크'  기존 헤드헌팅 업체들과 달리 하루부터 수개월까지 단기 채용
-        중소기업 인건비 부담 덜어주고 고경력 전문가들 역량 발휘 기회기업은 사업의...
-      </p>
+      {!! $post->post_excerpt !!}
     </div>
     <div class="hiddn mt-[16px]">
-      <a href="#" class="underline power" style="--uph: 1px">Read on</a>
+      <a href="{!! $post->permalink !!}" class="underline power" style="--uph: 1px">Read on</a>
     </div>
   </div>
 </div>
