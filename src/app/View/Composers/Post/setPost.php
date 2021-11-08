@@ -4,33 +4,98 @@ namespace Wp\Post;
 
 
 class Hook {
-  public $post;
-  public $postType;
-  public function __construct($post)
+  public static $posts;
+  public $taxonomies = ['category' => ['insight_category', 'future_lab_category', 'tb_story_category']];
+
+  /**
+   * Create the component instance.
+   *
+   * @param  array   $posts
+   * @param  array   $taxonomies
+   * @return void
+   */
+  public function __construct($posts, $taxonomies = null)
   {
-    $this->post = $post;
-    $this->postType = get_post_type($post);
+    self::$posts = $this->setPostData($posts);
+    foreach($taxonomies ?? $this->taxonomies as $type => $_) {
+      if (is_array($_)) {
+        foreach ($_ as $taxonomy) {
+          $this->setPostTaxonomy($taxonomy, $type);
+        }
+      } else {
+        $this->setPostTaxonomy($_, $_);
+      }
+    }
   }
 
-  function setPostData()
+  public function setPostData($posts)
   {
-      $post = $this->post;
-      $post->permalink = get_the_permalink($post->ID);
-      $post->thumbnail = get_the_post_thumbnail_url($post->ID);
-      $post->excerpt = get_the_excerpt($post->ID);
-      $post->date = get_the_date('Y/m/d', $post->ID);
-      // 카테고리 추가
-      
-      $cats = get_the_terms($post->ID, str_replace('-', '_', $this->postType )."_category");
-      if (!is_wp_error($cats) && !empty($cats)) {
-          $post->category = array_map(function ($cat) {
-              $cat->link = "/{$this->postType}/category/".$cat->slug;
-              return $cat;
-          }, $cats);
-      } else {
-          $post->category = [];
-      }
+      return array_map(function ($post) {
+        $post->permalink = get_the_permalink($post->ID);
+        $post->thumbnail = get_the_post_thumbnail_url($post->ID);
+        $post->excerpt = get_the_excerpt($post->ID);
+        $post->date = get_the_date('Y/m/d', $post->ID);
+        return $post;
+      }, $posts);
+  }
 
-      return $post;
+
+  /**
+   * TODO: array_map 두번사용하는거 리팩토링
+   */
+  public function setTaxonomyData($terms)
+  {
+    $terms = array_map(function ($term) {
+      $term->link = get_term_link($term);
+      if ($label = get_field('label', $term->taxonomy."_".$term->term_id)) {
+        $term->label = $label;
+      }
+      return $term;
+    }, $terms);
+    $termsHierarchy = array();
+    $this->find_parent_terms_hierarchically($terms, $termsHierarchy);
+    $terms = array_map(function ($term) {
+      $term->link = get_term_link($term);
+      if ($label = get_field('label', $term->taxonomy."_".$term->term_id)) {
+        $term->label = $label;
+      }
+      return $term;
+    }, $termsHierarchy);
+
+    return $terms;
+  }
+
+  public function setPostTaxonomy($taxonomy, $type)
+  {
+      return array_map(function ($post) use ($taxonomy, $type) {
+        // 카테고리 추가
+        $terms = get_the_terms($post->ID, $taxonomy);
+        $post->{$type} = !is_wp_error($terms) && !empty($terms) ? $this->setTaxonomyData($terms) : [];
+      }, self::$posts);
+  }
+
+  /**
+   * 부모를 가진 자식 taxonomy를 통해 부모 - 자식 위계질서 배열 만들기
+   *
+   * @param  array   $terms   taxonomy
+   * @param  array   $into    최종적으로 내부 배열을 셋팅할 배열
+   * @return void
+   */
+  public function find_parent_terms_hierarchically(array &$terms, array &$into)
+  {
+    foreach ($terms as $term) {
+      if ($term->parent !== 0) {
+        $parentTerm = get_term($term->parent, $term->taxonomy);
+        $parentTerm->children = array();
+        array_push($parentTerm->children, $term);
+        array_push($into, $parentTerm);
+      }
+    }
+
+    foreach ($into as $parentTerm) {
+      if ($parentTerm->parent !== 0) {
+        $this->find_parent_terms_hierarchically($into, $into);
+      }
+    }
   }
 }
