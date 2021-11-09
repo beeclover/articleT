@@ -26,9 +26,28 @@
     </div>
   </div>
 </section>
-<section>
-  <div class="container mx-auto grid grid-cols-2">
-
+<section class="bg-lighthouse">
+  <div class="container mx-auto pt-[100px] pb-[120px]">
+    <h2 class="text-center text-[48px] font-bold mb-[72px]">탤런트뱅크 소개</h2>
+    <div class="grid grid-cols-2">
+      @include('partials.img', ['ex' => 'jpg', 'name' => 'front-01'])
+      <div class="pl-[48px] relative">
+        <p class="text-[26px] text-carbon leading-loose">
+          가장 가치 있는 지식은 경험을 기반으로 합니다. 하지만 경험을 <br/>
+          공유 하기 어렵습니다. 전통적인 지식공유 방법은 한계가 있습니다.<br/>
+          <span class="pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 99.9%">탤런트뱅크만이 혁신적인 테크놀로지와 프로세스</span>에서 경험지식을 <br/>
+          가진 전문가와 함께 기업의 고민을 해결해보세요.
+        </p>
+        <div class="absolute left-1/2 bottom-[80px] transform -translate-x-1/2 flex gap-x-[52px]">
+          @for ($i = 0; $i < 3; $i++)
+            <div class="w-[280px] h-[280px] text-white bg-aero rounded-full flex items-center justify-center flex-col">
+              <img src="{!! get_theme_file_uri('resources/images/main-icon-'.$i.'.svg') !!}" alt="">
+              <div class="text-[26px] mb-[30px]">talentbank</div>
+            </div>
+          @endfor
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 @endsection

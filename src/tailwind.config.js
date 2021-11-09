@@ -22,6 +22,7 @@ const colors = {
   raisinBlack: '#212121',
   seaSerpent: '#58bbd5',
   darkSilver: '#6f6f6f',
+  aero: '#6bc5db',
 };
 
 module.exports = {
