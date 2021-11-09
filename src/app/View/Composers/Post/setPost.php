@@ -68,7 +68,6 @@ class Hook {
   public function setPostTaxonomy($taxonomy, $type)
   {
       return array_map(function ($post) use ($taxonomy, $type) {
-        // 카테고리 추가
         $terms = get_the_terms($post->ID, $taxonomy);
         $post->{$type} = !is_wp_error($terms) && !empty($terms) ? $this->setTaxonomyData($terms) : [];
       }, self::$posts);
@@ -89,6 +88,8 @@ class Hook {
         $parentTerm->children = array();
         array_push($parentTerm->children, $term);
         array_push($into, $parentTerm);
+      } else {
+        array_push($into, $term);
       }
     }
 
