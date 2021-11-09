@@ -4452,6 +4452,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dom7@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "dom7@npm:4.0.1"
+  dependencies:
+    ssr-window: ^4.0.0
+  checksum: 5572cb46f25e447f3ad0bbedccb73c1a381459fab30aa3688579f52601fdc9d1c0f6b06ea84dff1aecb5f550c435f904f6b3649625cee2f141daf811f960803a
+  languageName: node
+  linkType: hard
+
 "domain-browser@npm:^1.1.1":
   version: 1.2.0
   resolution: "domain-browser@npm:1.2.0"
@@ -10210,6 +10219,7 @@ __metadata:
     sass-loader: 11.1.1
     stylelint: ^13.13.1
     stylelint-config-standard: ^22.0.0
+    swiper: ^7.2.0
     tailwindcss: ^2.1.2
   peerDependencies:
     jquery: ^3.5.1
@@ -10852,6 +10862,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ssr-window@npm:^4.0.0, ssr-window@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "ssr-window@npm:4.0.1"
+  checksum: 177baff9535131ab8673d3a63f86e16d1890ea845c89d31cfa71e3a9e89dccf46a7f6a031c31db520f78441155b64d6e2f3c07717ab442ab9e9f7027b9171786
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^8.0.0, ssri@npm:^8.0.1":
   version: 8.0.1
   resolution: "ssri@npm:8.0.1"
@@ -11249,6 +11266,16 @@ __metadata:
   bin:
     svgo: ./bin/svgo
   checksum: 28a5680a61245eb4a1603bc03459095bb01ad5ebd23e95882d886c3c81752313c0a9a9fe48dd0bcbb9a27c52e11c603640df952971573b2b550d9e15a9ee6116
+  languageName: node
+  linkType: hard
+
+"swiper@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "swiper@npm:7.2.0"
+  dependencies:
+    dom7: ^4.0.1
+    ssr-window: ^4.0.1
+  checksum: 2c7181356bf0bdd7edeec2777d1a90bda54b68d40ce11013a4c79c7014d5c5878c6ca652f8555bec47bbebede68bc82b79a8e31ceb210c2996af08fd44c7d41d
   languageName: node
   linkType: hard
 
