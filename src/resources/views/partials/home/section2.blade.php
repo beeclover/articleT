@@ -2,7 +2,7 @@
   Section Name: 탤런트뱅크 소개
 --}}
 
-<section class="bg-lighthouse">
+<section class="bg-lighthouse overflow-hidden">
   <div class="container mx-auto sm:pt-[100px] py-[50px] sm:pb-[120px]">
     <h2 class="text-center text-[24px] sm:text-[48px] font-bold mb-[28px] sm:mb-[72px]">탤런트뱅크 소개</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2">
