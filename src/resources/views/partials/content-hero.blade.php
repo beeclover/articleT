@@ -13,7 +13,9 @@
     @endif
   </div>
   <div class="content__hero-main">
-    <a href="{!! $post->permalink !!}" class="content__hero-title underline power">{!! $post->post_title !!}</a>
+    <div class="content__hero-title">
+      <a class="underline power" href="{!! $post->permalink !!}">{!! $post->post_title !!}</a>
+    </div>
     <div class="prose">
       {!! $post->post_excerpt !!}
     </div>

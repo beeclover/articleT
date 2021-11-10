@@ -21,9 +21,9 @@
         @endforeach
       @endif
     </div>
-    <a href="{!! $post->permalink !!}" class="content__c2r2-title">
-      {!! $post->post_title !!}
-    </a>
+    <div class="content__c2r2-title">
+      <a href="{!! $post->permalink !!}">{!! $post->post_title !!}</a>
+    </div>
   </div>
   <div class="content__c2r2-thumbnail">
     <img src="{!! $post->thumbnail !!}">
