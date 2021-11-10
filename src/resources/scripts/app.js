@@ -18,6 +18,7 @@ import header from './components/header';
 import shrink from './components/shrink';
 // Routers
 import Router from './util/router';
+import home from './routes/home';
 
 const routes = new Router({
   // All pages
@@ -29,6 +30,7 @@ const routes = new Router({
     },
     finalize() {},
   },
+  home,
 });
 
 // Load Events

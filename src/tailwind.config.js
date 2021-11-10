@@ -83,6 +83,11 @@ module.exports = {
       },
     },
   },
+  variants: {
+    extend: {
+      filter: ['hover', 'focus'],
+    },
+  },
   plugins: [
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
+    <defs>
+        <filter id="사각형_119" x="0" y="0" width="98" height="98" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur stdDeviation="3" result="blur"/>
+            <feFlood flood-opacity=".161"/>
+            <feComposite operator="in" in2="blur"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <style>
+            .cls-2{fill:none;stroke:#000;stroke-linecap:round;stroke-width:3px}
+        </style>
+    </defs>
+    <g id="btn80_prew" transform="translate(-1475 -989)">
+        <g transform="translate(1475 989)" style="filter:url(#사각형_119)">
+            <rect id="사각형_119-2" data-name="사각형 119" width="80" height="80" rx="40" transform="translate(9 6)" style="fill:#fff"/>
+        </g>
+        <g id="그룹_145" data-name="그룹 145" transform="translate(1507.028 1020.411)">
+            <path id="선_6" data-name="선 6" class="cls-2" transform="translate(.972 .589)" d="M13 0 0 14"/>
+            <path id="선_7" data-name="선 7" class="cls-2" transform="translate(.972 14.589)" d="M13 14 0 0"/>
+            <path id="선_30" data-name="선 30" class="cls-2" transform="translate(2.938 14.589)" d="M0 0h30.701"/>
+        </g>
+    </g>
+</svg>
