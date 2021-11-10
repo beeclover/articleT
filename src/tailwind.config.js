@@ -80,6 +80,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['"Noto Sans KR"', ...defaultTheme.fontFamily.sans],
+        mj: ['"Nanum Myeongjo"', ...defaultTheme.fontFamily.sans],
       },
     },
   },
