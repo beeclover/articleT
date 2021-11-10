@@ -1,0 +1,12 @@
+.recentPost__pagination {
+  @apply listDivider__cols2;
+
+  justify-content: center;
+  column-gap: 96px;
+  margin-bottom: 54px;
+  font-size: 24px;
+
+  > *:after {
+    left: -48px;
+  }
+}

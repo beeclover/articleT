@@ -27,6 +27,7 @@ class FrontPage extends Composer
         return [
           'heroPost' => $this->heroPost(),
           'popularityPosts' => $this->popularityPosts(),
+          'recentTagsPosts' => $this->recentTagsPosts(),
         ];
     }
 
@@ -55,5 +56,11 @@ class FrontPage extends Composer
         unset($post->post_content);
         return $post;
       }, $posts);
+    }
+
+    public function recentTagsPosts()
+    {
+      // mock data
+      return ['tech' => $this->popularityPosts(), 'business' => $this->popularityPosts(), 'economy' => $this->popularityPosts()];
     }
 }
