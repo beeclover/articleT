@@ -21,10 +21,11 @@
         @foreach ($recentTagsPosts as $tag => $posts)
           <div id="{!! $tag !!}" class="swiper-slide">
             <div class="listDivider__rows1 grid grid-cols-1 lg:grid-cols-3 gap-x-[70px] gap-y-[56px] mt-[28px]" style="--gap-y: 56px">
-              @foreach ($posts as $post)
+              @foreach ($posts as $key => $post)
                 <div class="-lg:card__s3 !lg:card__s2 after:block lg:after:hidden">
                   @include('partials.content-card', ['post' => $post])
                 </div>
+                @if ($key === 2) @break @endif
               @endforeach
             </div>
           </div>
