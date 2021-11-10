@@ -1,0 +1,37 @@
+&__page {
+  &-inner {
+    @apply container mx-auto text-white relative overflow-hidden py-[80px];
+  }
+  &-labelWrap {
+    --px: 80px;
+
+    @apply absolute z-20 h-full px-[var(--px)] bg-deepSpaceRodeo top-0 left-0 flex items-center justify-center;
+  }
+  &-label {
+    @apply text-[36px] relative;
+
+    margin-bottom: 0.2em;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: calc(100% + 0.4em);
+      display: block;
+      width: calc(100% + 2 * var(--px));
+      height: 4px;
+      background-color: #fff;
+    }
+  }
+  &-main {
+    @apply relative z-10 flex justify-center;
+  }
+  &-title {
+    @apply text-[28px] mb-[26px];
+  }
+  &-subtitle {
+    @apply text-[16px] opacity-50;
+  }
+  &-bg {
+    @apply absolute w-full h-full object-cover top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+}
