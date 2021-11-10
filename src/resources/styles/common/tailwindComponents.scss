@@ -5,3 +5,18 @@
     @apply max-w-[1920px];
   }
 }
+
+@variants {
+  .ball {
+    @apply bg-black
+    w-[60px]
+    h-[60px]
+    flex
+    items-center
+    justify-center
+    pb-[0.2em]
+    text-[28px]
+    text-white
+    rounded-full;
+  }
+}
