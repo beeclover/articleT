@@ -74,5 +74,21 @@
         transform: translateY(-50%);
       }
     }
+
+    &__middle {
+      position: relative;
+
+      &::before {
+        @apply bg-cerebralGrey;
+
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
   }
 }
