@@ -1,4 +1,43 @@
-@import 'c1r3';
+@mixin content__card {
+}
+@mixin variants($class) {
+  $screens: (
+    sm: theme('screens.sm') theme('screens.md'),
+    md: theme('screens.md') theme('screens.lg'),
+    lg: theme('screens.lg') theme('screens.xl'),
+    xl: theme('screens.xl') theme('screens.xxl'),
+    xxl: theme('screens.xl'),
+  );
+
+  .\!card__#{$class} {
+    @include content__card;
+  }
+
+  @each $key, $value in $screens {
+    @media (max-width: nth($value, 1)) {
+      .\-#{$key}\:card__#{$class} {
+        @include content__card;
+      }
+    }
+    @if $key != xxl {
+      @media (min-width: nth($value, 1)) and (max-width: nth($value, 2)) {
+        .#{$key}\:card__#{$class} {
+          @include content__card;
+        }
+      }
+    }
+    @media (min-width: nth($value, 1)) {
+      .\!#{$key}\:card__#{$class} {
+        @include content__card;
+      }
+    }
+  }
+}
+@import 's2';
+@include variants(s2);
+
+@import 's3';
+@include variants(s3);
 
 .content {
   @import 'hero';

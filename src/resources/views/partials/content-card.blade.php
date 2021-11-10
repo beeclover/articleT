@@ -26,12 +26,11 @@
     </div>
   </div>
   <div class="content__card-thumbnail">
-    {{-- <img src="{!! $post->thumbnail !!}"> --}}
-    <img src="https://picsum.photos/1920?random=0">
+    <img src="{!! $post->thumbnail !!}">
   </div>
   <div class="content__card-main col-span-2">
     <div class="prose">
-      {!! $post->post_excerpt !!}
+      {!! $post->excerpt !!}
     </div>
     <div class="hidden mt-[16px]">
       <a href="{!! $post->permalink !!}" class="underline power" style="--uph: 1px">Read on</a>

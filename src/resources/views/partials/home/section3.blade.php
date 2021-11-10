@@ -20,20 +20,24 @@
       <div class="swiper-wrapper">
         @foreach ($recentTagsPosts as $tag => $posts)
           <div id="{!! $tag !!}" class="swiper-slide">
-            <div class="grid grid-cols-3 gap-x-[70px]">
+            <div class="listDivider__rows1 grid grid-cols-1 lg:grid-cols-3 gap-x-[70px] gap-y-[56px] mt-[28px]" style="--gap-y: 56px">
               @foreach ($posts as $post)
-                @include('partials.content-c1r3', ['post' => $post])
+                <div class="-lg:card__s3 !lg:card__s2 after:block lg:after:hidden">
+                  @include('partials.content-card', ['post' => $post])
+                </div>
               @endforeach
             </div>
           </div>
         @endforeach
       </div>
-      <button id="prev" class="btn absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 z-10 filter disabled:brightness-95 disabled:cursor-default">
-        <img src="{!! get_theme_file_uri('resources/images/btn-80-prev.svg') !!}" alt="">
-      </button>
-      <button id="next" class="btn absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 z-10 filter disabled:brightness-95 disabled:cursor-default">
-        <img src="{!! get_theme_file_uri('resources/images/btn-80-next.svg') !!}" alt="">
-      </button>
+      <div class="btn-group hidden lg:block">
+        <button id="prev" class="btn absolute left-0 top-[150px] transform -translate-y-1/2 -translate-x-1/2 z-10 filter disabled:brightness-95 disabled:cursor-default">
+          <img src="{!! get_theme_file_uri('resources/images/btn-80-prev.svg') !!}" alt="">
+        </button>
+        <button id="next" class="btn absolute right-0 top-[150px] transform -translate-y-1/2 translate-x-1/2 z-10 filter disabled:brightness-95 disabled:cursor-default">
+          <img src="{!! get_theme_file_uri('resources/images/btn-80-next.svg') !!}" alt="">
+        </button>
+      </div>
     </div>
   </div>
 </section>
