@@ -76,7 +76,43 @@ class FrontPage extends Composer
 
     public function recentTagsPosts()
     {
-      // mock data
-      return ['tech' => $this->popularityPosts(), 'business' => $this->popularityPosts(), 'economy' => $this->popularityPosts()];
+      $taxonomies = [
+        'category' => ['insight_category', 'future_lab_category', 'tb_story_category'],
+        'collection',
+      ];
+
+      /**
+       * tags의 키값을들 쿼리할 태그들로 가져오기
+       */
+      $tags = [
+        'tech' => [],
+        'business' => [],
+        'economy' => [],
+      ];
+      foreach($tags as $key => $tag) {
+        $posts = [];
+        foreach(['insight','future-lab','tb-story'] as $postType) {
+          $posts = array_merge($posts, get_posts(array(
+            'post_type' => $postType,
+            'numberposts' => 10,
+            'order' => 'DESC',
+            'orderby' => 'date'
+          )));
+        }
+        $posts = (new Hook($posts, $taxonomies))::$posts;
+        $posts = array_map(function($post) {
+          $post->excerpt = $this->get_excerpt(100, $post->excerpt);
+          unset($post->post_content);
+          return $post;
+        }, $posts);
+  
+        usort($posts, function($post_a, $post_b) {
+            return $post_b->post_date <=> $post_a->post_date;
+        });
+        $tags[$key] = $posts;
+      }
+
+      // return ['tech' => $this->popularityPosts(), 'business' => $this->popularityPosts(), 'economy' => $this->popularityPosts()];
+      return $tags;
     }
 }
