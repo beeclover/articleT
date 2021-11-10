@@ -1,68 +1,103 @@
-&__c1r3 {
-  @apply flex flex-col gap-y-[38px] justify-between;
+@mixin c1r3 {
+  .content__card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 38px;
+    justify-content: space-between;
 
-  &-inner {
-    @apply flex flex-col gap-y-[38px];
-  }
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      row-gap: 38px;
+    }
 
-  &-meta {
-    @apply text-carbon flex items-center;
+    &-meta {
+      @apply text-carbon;
 
-    font-size: 14px;
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 28px;
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1;
 
-    @media (min-width: theme('screens.sm')) {
-      font-size: 18px;
-      margin-bottom: 32px;
-      time {
-        font-size: 20px;
+      @media (min-width: theme('screens.sm')) {
+        font-size: 18px;
+        time {
+          font-size: 20px;
+        }
+      }
+
+      .btn-seaSerpent {
+        @apply py-[6px] px-[14px];
+
+        font-size: 12px;
+        font-weight: normal;
+      }
+
+      &-term {
+        @apply flex items-center gap-x-[8px];
       }
     }
 
-    .btn-seaSerpent {
-      @apply py-[6px] px-[14px];
+    &-title {
+      font-size: 20px;
+      font-weight: bold;
 
-      font-size: 12px;
-      font-weight: normal;
+      @media (min-width: theme('screens.sm')) {
+        font-size: 28px;
+      }
     }
 
-    &-term {
-      @apply flex items-center gap-x-[8px];
+    &-thumbnail {
+      @apply aspect-w-16 aspect-h-9;
+
+      order: -1;
+
+      img {
+        object-fit: cover;
+      }
+    }
+
+    &-main {
+      @apply text-davyGrey;
+
+      @media (min-width: theme('screens.sm')) {
+        font-size: 18px;
+      }
+
+      .prose {
+        font-size: 14px;
+
+        @media (min-width: theme('screens.sm')) {
+          font-size: 18px;
+        }
+      }
     }
   }
+}
 
-  &-title {
-    font-size: 20px;
-    font-weight: bold;
-
-    @media (max-width: theme('screens.sm')) {
-      margin-bottom: 24px;
-    }
-
-    @media (min-width: theme('screens.sm')) {
-      font-size: 28px;
-    }
+@screen sm {
+  .sm\:card__c1r3 {
+    @include c1r3;
   }
-
-  &-thumbnail {
-    @apply aspect-w-16 aspect-h-9;
-
-    @media (max-width: theme('screens.sm')) {
-      margin-bottom: 28px;
-    }
-
-    img {
-      object-fit: cover;
-    }
+}
+@screen md {
+  .md\:card__c1r3 {
+    @include c1r3;
   }
-
-  &-main {
-    @apply text-davyGrey;
-
-    @media (min-width: theme('screens.sm')) {
-      font-size: 18px;
-    }
+}
+@screen lg {
+  .lg\:card__c1r3 {
+    @include c1r3;
+  }
+}
+@screen xl {
+  .xl\:card__c1r3 {
+    @include c1r3;
+  }
+}
+@screen xxl {
+  .xxl\:card__c1r3 {
+    @include c1r3;
   }
 }
