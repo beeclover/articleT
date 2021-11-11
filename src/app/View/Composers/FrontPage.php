@@ -5,6 +5,7 @@ namespace App\View\Composers;
 use Roots\Acorn\View\Composer;
 
 use Wp\Post\Hook;
+use Wp\Post\Tool;
 
 class FrontPage extends Composer
 {
@@ -43,21 +44,6 @@ class FrontPage extends Composer
       return $post;
     }
 
-    public function get_excerpt($limit, $source = null, $link = null){
-        // $excerpt = $source == "content" ? get_the_content() : get_the_excerpt();
-        $excerpt = preg_replace(" (\[.*?\])",'',$source);
-        $excerpt = strip_shortcodes($excerpt);
-        $excerpt = strip_tags($excerpt);
-        $excerpt = substr($excerpt, 0, $limit);
-        $excerpt = substr($excerpt, 0, strripos($excerpt, " "));
-        $excerpt = trim(preg_replace( '/\s+/', ' ', $excerpt));
-        $excerpt .= '... ';
-        if ($link) {
-          $excerpt .= '<a href="'.$link.'">more</a>';
-        }
-        return $excerpt;
-    }
-
     public function popularityPosts()
     {
       $taxonomies = [
@@ -68,7 +54,7 @@ class FrontPage extends Composer
       $posts = get_field('main-popularity_post', 'option');
       $posts = (new Hook($posts, $taxonomies))::$posts;
       return array_map(function($post) {
-        $post->excerpt = $this->get_excerpt(100, $post->excerpt);
+        $post->excerpt = (new Tool())->get_excerpt(100, $post->excerpt);
         unset($post->post_content);
         return $post;
       }, $posts);
@@ -101,7 +87,7 @@ class FrontPage extends Composer
         }
         $posts = (new Hook($posts, $taxonomies))::$posts;
         $posts = array_map(function($post) {
-          $post->excerpt = $this->get_excerpt(100, $post->excerpt);
+          $post->excerpt = (new Tool())->get_excerpt(100, $post->excerpt);
           unset($post->post_content);
           return $post;
         }, $posts);
