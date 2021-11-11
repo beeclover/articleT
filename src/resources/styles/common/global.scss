@@ -17,6 +17,10 @@ body {
   }
 }
 
+* {
+  word-break: keep-all;
+}
+
 .brand {
   @apply text-3xl font-medium text-indigo-500;
 }
