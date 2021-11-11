@@ -225,3 +225,26 @@ add_action('init', function () {
     get_template_part('rss', 'popularity_post');
   });
 });
+
+add_action( 'pre_get_posts' , function ($query) {
+  if ( ! is_admin() && $query->is_post_type_archive( 'insight' ) && $query->is_main_query() )
+  {
+      $query->set( 'post_type', 'insight' ); //set query arg ( key, value )
+      $query->set( 'posts_per_page', 15 ); //set query arg ( key, value )
+
+      return $query;
+  }
+} );
+
+// function archive_videos_template( $template )
+// {
+//     remove_filter( 'template_include', 'archive_videos_template', 99 );
+
+//     $target_tpl = 'archive-videos_cpt.php';
+//     $new_template = locate_template( array( $target_tpl ) );
+//     if ( ! empty( $new_template ) )
+//         $template = $new_template;
+//     }
+
+//     return $template;
+// }
