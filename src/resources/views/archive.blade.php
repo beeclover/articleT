@@ -11,7 +11,7 @@
     전문가의 경험, 전문지식, 네트워크를 제공하는 전문가 매칭 플랫폼입니다.
 EOD,
 ])
-  <div class="container mx-auto pt-[100px] pb-[120px]">
+  <div class="container mx-auto pt-[100px] pb-[100px]">
     <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[70px] gap-y-[56px] lg:gap-y-[85px]">
       @while(have_posts()) @php(the_post())
         <div class="!card__s2">
@@ -19,6 +19,8 @@ EOD,
         </div>
       @endwhile
     </div>
+  </div>
+  <div class="container mx-auto pb-[120px]">
     {!! $pagination !!}
   </div>
 @endsection
