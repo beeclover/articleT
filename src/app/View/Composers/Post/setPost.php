@@ -5,7 +5,7 @@ namespace Wp\Post;
 
 class Hook {
   public static $posts;
-  public $taxonomies = ['category' => ['insight_category', 'future_lab_category', 'tb_story_category']];
+  public $taxonomies = ['category' => ['insight_category', 'future_lab_category', 'tb_story_category'], 'collection'];
 
   /**
    * Create the component instance.
@@ -14,16 +14,18 @@ class Hook {
    * @param  array   $taxonomies
    * @return void
    */
-  public function __construct($posts, $taxonomies = null)
+  public function __construct($posts = null, $taxonomies = null)
   {
-    self::$posts = $this->setPostData($posts);
-    foreach($taxonomies ?? $this->taxonomies as $type => $_) {
-      if (is_array($_)) {
-        foreach ($_ as $taxonomy) {
-          $this->setPostTaxonomy($taxonomy, $type);
+    if (!is_null($posts)) {
+      self::$posts = $this->setPostData($posts);
+      foreach($taxonomies ?? $this->taxonomies as $type => $_) {
+        if (is_array($_)) {
+          foreach ($_ as $taxonomy) {
+            $this->setPostTaxonomy($taxonomy, $type);
+          }
+        } else {
+          $this->setPostTaxonomy($_, $_);
         }
-      } else {
-        $this->setPostTaxonomy($_, $_);
       }
     }
   }
@@ -31,10 +33,10 @@ class Hook {
   public function setPostData($posts)
   {
       return array_map(function ($post) {
-        $post->permalink = get_the_permalink($post->ID);
-        $post->thumbnail = get_the_post_thumbnail_url($post->ID);
-        $post->excerpt = get_the_excerpt($post->ID);
-        $post->date = get_the_date('Y/m/d', $post->ID);
+        $post->permalink = get_the_permalink($post);
+        $post->thumbnail = get_the_post_thumbnail_url($post);
+        $post->excerpt = get_the_excerpt($post);
+        $post->date = get_the_date('Y/m/d', $post);
         return $post;
       }, $posts);
   }
@@ -68,7 +70,7 @@ class Hook {
   public function setPostTaxonomy($taxonomy, $type)
   {
       return array_map(function ($post) use ($taxonomy, $type) {
-        $terms = get_the_terms($post->ID, $taxonomy);
+        $terms = get_the_terms($post, $taxonomy);
         $post->{$type} = !is_wp_error($terms) && !empty($terms) ? $this->setTaxonomyData($terms) : [];
       }, self::$posts);
   }
