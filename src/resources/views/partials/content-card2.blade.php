@@ -34,7 +34,7 @@
         {!! $excerpt !!}
       </p>
     </div>
-    <div class="hidden mt-[16px]">
+    <div class="content__card-readmore">
       <a href="{!! $permalink !!}" class="underline power" style="--uph: 1px">Read on</a>
     </div>
   </div>

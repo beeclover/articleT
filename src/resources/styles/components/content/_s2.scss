@@ -73,5 +73,13 @@
         }
       }
     }
+
+    &-readmore {
+      margin-top: 16px;
+
+      @media (min-width: theme('screens.sm')) {
+        margin-top: 37px;
+      }
+    }
   }
 }
