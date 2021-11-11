@@ -1,0 +1,51 @@
+&__collection {
+  @apply grid grid-rows-[1fr,60px,auto];
+
+  &-meta {
+    @apply text-blackOut;
+
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+  }
+
+  &-term {
+    @apply py-[7px] px-[12px] btn-seaSerpent transform translate-y-1/2;
+    @apply w-auto h-auto top-auto right-auto rounded-none #{!important};
+
+    font-size: 14px;
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &-thumbnail {
+    @apply aspect-w-16 aspect-h-9;
+
+    --tw-aspect-w: 63;
+    --tw-aspect-h: 44.2;
+
+    order: -1;
+    margin-bottom: 35px;
+
+    img {
+      object-fit: cover;
+    }
+  }
+
+  &-footer {
+    margin-top: 15px;
+  }
+
+  &-readmore {
+    margin-top: 16px;
+
+    @media (min-width: theme('screens.sm')) {
+      margin-top: 37px;
+    }
+  }
+}
