@@ -1,8 +1,8 @@
-.container {
-  @apply container;
-
-  @media (min-width: theme('screens.xxl')) {
-    @apply max-w-[1920px];
+@layer components {
+  .container {
+    @media (min-width: theme('screens.xxl')) {
+      @apply max-w-[1920px];
+    }
   }
 }
 
