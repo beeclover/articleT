@@ -1,7 +1,7 @@
 <div class="content__card">
   <div class="content__card-meta listDivider__cols2">
     <time datetime="{!! $post->date !!}">{!! $post->date !!}</time>
-    @if (count($post->collection) > 0)
+    @if ($post->collection && count($post->collection) > 0)
       @foreach ($post->collection as $term)
         <div class="content__card-meta-term">
           <a href="{!! $term->link !!}" class="btn-seaSerpent">{!! $term->name !!}</a>
@@ -12,7 +12,7 @@
           @endif
         </div>
       @endforeach
-    @elseif(count($post->category) > 0)
+    @elseif($post->category && count($post->category) > 0)
       @foreach ($post->category as $term)
         <div class="content__card-meta-term">
           <a href="{!! $term->link !!}">{!! $term->name !!}</a>
