@@ -6,7 +6,7 @@
     </a>
   </div>
   <div class="content__hero-meta listDivider__cols2">
-    <time datetime="{!! $post->date !!}">{!! $post->date !!}</time>
+    <time datetime="{!! $post->date !!}"></time>
     @if (count($post->category) > 0)
       @php($cat = $post->category[0])
       <a href="{!! $cat->link !!}" class="content__hero-meta-term">{!! $cat->name !!}</a>

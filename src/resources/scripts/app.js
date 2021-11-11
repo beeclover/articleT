@@ -16,6 +16,7 @@ SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay, Controller]);
 // componments
 import header from './components/header';
 import shrink from './components/shrink';
+import date from './components/date';
 // Routers
 import Router from './util/router';
 import home from './routes/home';
@@ -27,6 +28,7 @@ const routes = new Router({
     init() {
       header();
       shrink();
+      date();
     },
     finalize() {},
   },

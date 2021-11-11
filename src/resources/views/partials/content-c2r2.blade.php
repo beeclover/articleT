@@ -1,7 +1,7 @@
 <div class="content__c2r2">
   <div>
     <div class="content__c2r2-meta listDivider__cols2">
-      <time datetime="{!! $post->date !!}">{!! $post->date !!}</time>
+      <time datetime="{!! $post->date !!}"></time>
       @if (count($post->collection) > 0)
         @foreach ($post->collection as $term)
           <div class="content__c2r2-meta-term">

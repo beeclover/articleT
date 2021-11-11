@@ -1,6 +1,6 @@
 <div class="content__card">
   <div class="content__card-meta listDivider__cols2">
-    <time datetime="{!! $post->date !!}">{!! $post->date !!}</time>
+    <time datetime="{!! $post->date !!}"></time>
     @if ($post->collection && count($post->collection) > 0)
       @foreach ($post->collection as $term)
         <div class="content__card-meta-term">
