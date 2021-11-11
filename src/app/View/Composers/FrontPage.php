@@ -29,6 +29,7 @@ class FrontPage extends Composer
           'heroPost' => $this->heroPost(),
           'popularityPosts' => $this->popularityPosts(),
           'recentTagsPosts' => $this->recentTagsPosts(),
+          'collectionPosts' => $this->collectionPosts(),
         ];
     }
 
@@ -100,5 +101,33 @@ class FrontPage extends Composer
 
       // return ['tech' => $this->popularityPosts(), 'business' => $this->popularityPosts(), 'economy' => $this->popularityPosts()];
       return $tags;
+    }
+
+    public function collectionPosts()
+    {
+
+      $posts = [];
+      foreach(['insight','future-lab','tb-story'] as $postType) {
+        $posts = array_merge($posts, get_posts(array(
+          'post_type' => $postType,
+          'numberposts' => 5,
+          'tax_query' => array(
+            array(
+                'taxonomy' => 'collection',
+                'operator' => 'EXISTS'
+            )
+         )
+        )));
+      }
+      $posts = (new Hook($posts, ['collection']))::$posts;
+      $posts = array_map(function($post) {
+        $post->excerpt = (new Tool())->get_excerpt(100, $post->excerpt);
+        unset($post->post_content);
+        return $post;
+      }, $posts);
+      usort($posts, function($post_a, $post_b) {
+          return $post_b->post_date <=> $post_a->post_date;
+      });
+      return array_slice($posts, 0, 5);
     }
 }
