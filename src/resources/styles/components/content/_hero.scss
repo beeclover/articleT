@@ -54,6 +54,7 @@
     text-decoration: underline;
     word-break: keep-all;
     letter-spacing: -0.48px;
+    line-height: 1.6;
 
     @media (min-width: theme('screens.sm')) {
       font-size: 40px;
