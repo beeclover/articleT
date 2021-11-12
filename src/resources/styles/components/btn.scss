@@ -1,9 +1,14 @@
+%basebtn {
+  display: inline-block;
+}
 .btn {
+  @extend %basebtn;
   @apply focus:ring-0 outline-none focus:outline-none;
 }
 
 @layer components {
   .btn-black {
+    @extend %basebtn;
     @apply py-2 
       px-4
       bg-black
@@ -18,6 +23,7 @@
   }
 
   .btn-blackOut {
+    @extend %basebtn;
     @apply py-2 
       px-4
       bg-blackOut
@@ -32,6 +38,7 @@
   }
 
   .btn-carbon {
+    @extend %basebtn;
     @apply py-2 
       px-4
       bg-carbon
@@ -46,6 +53,7 @@
   }
 
   .btn-deepSpaceRodeo {
+    @extend %basebtn;
     @apply py-2 
       px-4
       bg-deepSpaceRodeo
@@ -59,6 +67,7 @@
   }
 
   .btn-seaSerpent {
+    @extend %basebtn;
     @apply py-2 
       px-4
       bg-seaSerpent

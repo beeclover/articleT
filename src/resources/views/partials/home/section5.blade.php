@@ -5,10 +5,10 @@
 <section>
   <div class="container mx-auto sm:pt-[60px] py-[50px] sm:pb-[150px]">
     <h2 class="text-center text-[24px] sm:text-[34px] font-bold mb-[28px] sm:mb-[49px]">뉴스룸 더보기</h2>
-    <div>
+    <div class="mb-[70px]">
       <div id="originalS5" class="hidden sm:grid grid-cols-5 gap-x-[27px]">
         @foreach ($collectionPosts as $post)
-          <div class="">
+          <div id="cardWrap">
             @include('partials.card.collection', 
             [
               'title' => $post->post_title,
@@ -25,6 +25,9 @@
       <div id="swipercontainerS5" class="block sm:hidden overflow-hidden">
         <div class="swiper-pagination s3 pagination__s1 static mt-7 pt-0.5"></div>
       </div>
+    </div>
+    <div class="text-center">
+      <a href="/collection" class="btn-black mx-auto py-[14px] px-[60px] font-semibold text-[17px]">BROWSE ALL POSTS</a>
     </div>
   </div>
 </section>
