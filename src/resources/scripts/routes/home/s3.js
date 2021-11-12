@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 
-function s3() {
+export default () => {
   const targetEl = document.querySelector('#swiper-recentPost');
   const recentPost = new Swiper(targetEl, {
     spaceBetween: 70,
@@ -28,11 +28,4 @@ function s3() {
   //     recentPost.slideTo(bullet.dataset.slideTo);
   //   });
   // });
-}
-
-export default {
-  init() {
-    s3();
-  },
-  finalize() {},
 };
