@@ -24,6 +24,7 @@
   "devDependencies": {
     "@alpinejs/intersect": "^3.5.0",
     "@tailwindcss/aspect-ratio": "^0.3.0",
+    "@tailwindcss/forms": "^0.3.4",
     "@tailwindcss/typography": "^0.4.1",
     "@tinypixelco/laravel-mix-wp-blocks": "^1.1.0",
     "@wordpress/babel-preset-default": "^6.1.0",

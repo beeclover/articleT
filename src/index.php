@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
     <!-- end:fonts.google.com -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <?php wp_head(); ?>
   </head>
 
@@ -23,5 +24,6 @@
 
     <?php do_action('get_footer'); ?>
     <?php wp_footer(); ?>
+    <script src="https://www.google.com/recaptcha/api.js" async="" defer=""></script><script type="text/javascript" src="https://s3.ap-northeast-2.amazonaws.com/resource.stibee.com/subscribe/stb_subscribe_form.js"></script>
   </body>
 </html>
