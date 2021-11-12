@@ -1,3 +1,5 @@
+
+
 <form action="https://stibee.com/api/v1.0/lists/ALcse7wI2-UWiS1VoXi-2Y8gnbPZMA==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form" novalidate="">
   <div id="stb_subscribe" class="grid grid-cols-1 md:grid-cols-[1fr,3fr] grid-rows-[auto,auto,auto] gap-[40px]">
     {{-- 관심사 --}}
@@ -37,11 +39,19 @@
       <div class="flex flex-wrap gap-[20px]">
         <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_name" class="text-[18px] flex after:content-['*']">성명</label>
-          <input type="text" name="name" id="stb_name" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" placeholder="you@example.com" required>
+          <input type="text" name="name" id="stb_name" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
         </div>
         <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_email" class="text-[18px] flex after:content-['*']">이메일</label>
-          <input type="email" name="email" id="stb_email" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
+          <input type="email" name="email" id="stb_email"
+          @if (!empty($_GET["email"]))
+            value="{!! htmlspecialchars($_GET["email"]) !!}"
+            x-init="$nextTick(() => {
+            setTimeout(() => {
+                document.querySelector('#stb_email').focus();
+            });
+          });"
+        @endif class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
         </div>
         <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_company" class="text-[18px] flex after:content-['*']">회사명</label>

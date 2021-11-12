@@ -1,5 +1,5 @@
 {{--
-  Section Name: 뉴스 레터 배너
+  Section Name: 뉴스레터 배너
 --}}
 
 <section class="bg-deepSpaceRodeo py-[28px] lg:py-[78px]">
@@ -12,8 +12,8 @@
         탤런트뱅크의 뉴스레터를 구독하시면<br class="block lg:hidden"/> 새로운 소식을 주기적으로 업데이트해 드립니다.
       </div>
     </div>
-    <form action="#" class="grid grid-cols-1 lg:grid-cols-[8fr,3fr] gap-x-[32px] gap-y-[16px] self-end justify-center sm:justify-self-end">
-      <input type="text" id="email" class="py-[10px] px-[24px] text-[14px] lg:text-[16px] btn" placeholder="Email Address">
+    <form action="{!! $newsletterLink !!}" method="get" class="grid grid-cols-1 lg:grid-cols-[8fr,3fr] gap-x-[32px] gap-y-[16px] self-end justify-center sm:justify-self-end">
+      <input type="text" id="email" name="email" class="py-[10px] px-[24px] text-[14px] lg:text-[16px] btn" placeholder="Email Address">
       <div class="justify-self-center">
         <button type="submit" class="btn-black py-[10px] px-[48px] font-medium text-[16px] lg:text-[16px]">구독하기</button>
       </div>

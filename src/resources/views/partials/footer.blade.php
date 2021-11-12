@@ -35,7 +35,7 @@
           </div>
         </div>
         <div class="justify-self-end hidden lg:block self-end xl:self-start">
-          <button class="btn-darkSilver text-[14px] font-medium">뉴스레터 구독</button>
+          <a href="{!! $newsletterLink !!}" class="btn-darkSilver text-[14px] font-medium">뉴스레터 구독</a>
         </div>
       </div>
     </div>
@@ -72,7 +72,7 @@
             'menu_class' => 'flex gap-x-[20px]',
             ]) !!}
             <div class="w-full flex justify-end">
-              <button class="block sm:hidden btn-darkSilver text-[14px] font-medium">뉴스레터 구독</button>
+              <a href="{!! $newsletterLink !!}" class="block sm:hidden btn-darkSilver text-[14px] font-medium">뉴스레터 구독</a>
             </div>
         </div>
       </div>
