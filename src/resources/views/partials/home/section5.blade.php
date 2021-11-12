@@ -2,13 +2,13 @@
   Section Name: 뉴스룸
 --}}
 
-<section>
+<section class="overflow-hidden">
   <div class="container mx-auto sm:pt-[60px] py-[50px] sm:pb-[150px]">
     <h2 class="text-center text-[24px] sm:text-[34px] font-bold mb-[28px] sm:mb-[49px]">뉴스룸 더보기</h2>
-    <div class="mb-[70px]">
-      <div id="originalS5" class="hidden sm:grid grid-cols-5 gap-x-[27px]">
+    <div id="swipercontainerS5" class="swiper-container mb-[70px]">
+      <div class="swiper-wrapper">
         @foreach ($collectionPosts as $post)
-          <div id="cardWrap">
+          <div id="cardWrap" class="swiper-slide max-w-[260px] md:w-auto">
             @include('partials.card.collection', 
             [
               'title' => $post->post_title,
@@ -21,9 +21,6 @@
             )
           </div>
         @endforeach
-      </div>
-      <div id="swipercontainerS5" class="block sm:hidden overflow-hidden">
-        <div class="swiper-pagination s3 pagination__s1 static mt-7 pt-0.5"></div>
       </div>
     </div>
     <div class="text-center">
