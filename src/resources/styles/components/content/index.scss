@@ -5,8 +5,7 @@
     sm: theme('screens.sm') theme('screens.md'),
     md: theme('screens.md') theme('screens.lg'),
     lg: theme('screens.lg') theme('screens.xl'),
-    xl: theme('screens.xl') theme('screens.xxl'),
-    xxl: theme('screens.xl'),
+    xl: theme('screens.xl'),
   );
 
   .\!card__#{$class} {
@@ -19,7 +18,7 @@
         @include content__card;
       }
     }
-    @if $key != xxl {
+    @if $key != xl {
       @media (min-width: nth($value, 1)) and (max-width: nth($value, 2)) {
         .#{$key}\:card__#{$class} {
           @include content__card;

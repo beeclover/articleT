@@ -1,7 +1,4 @@
 <?php
-/**
- * Template Name: Custom RSS Template - Feedname
- */
 $postCount = 5; // The number of posts to show in the feed
 $posts = query_posts('showposts=' . $postCount);
 header('Content-Type: '.feed_content_type('rss-http').'; charset='.get_option('blog_charset'), true);

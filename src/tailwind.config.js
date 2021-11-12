@@ -33,11 +33,13 @@ module.exports = {
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
     extend: {
-      screens: {
-        xxl: '1600px',
-        desktop: '1919px',
-      },
       padding: {
         'container-x': 'var(--container_px)',
         'container-y': 'var(--container_py)',
@@ -49,6 +51,9 @@ module.exports = {
         padding: {
           DEFAULT: 'var(--container_px)',
         },
+      },
+      maxWidth: {
+        desktop: '1920px',
       },
       colors,
       borderColor: colors,

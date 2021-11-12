@@ -1,11 +1,3 @@
-@layer components {
-  .container {
-    @media (min-width: theme('screens.xxl')) {
-      @apply max-w-[1920px];
-    }
-  }
-}
-
 @variants {
   .ball {
     @apply bg-black
@@ -18,5 +10,9 @@
     text-[28px]
     text-white
     rounded-full;
+  }
+
+  .max-w-screen-desktop {
+    max-width: 1920px;
   }
 }
