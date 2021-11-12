@@ -1,5 +1,5 @@
 <form action="https://stibee.com/api/v1.0/lists/ALcse7wI2-UWiS1VoXi-2Y8gnbPZMA==/public/subscribers" method="POST" target="_blank" accept-charset="utf-8" class="stb_form" name="stb_subscribe_form" id="stb_subscribe_form" novalidate="">
-  <div id="stb_subscribe" class="grid grid-cols-[1fr,3fr] grid-rows-[auto,auto,auto] gap-[40px]">
+  <div id="stb_subscribe" class="grid grid-cols-1 md:grid-cols-[1fr,3fr] grid-rows-[auto,auto,auto] gap-[40px]">
     {{-- 관심사 --}}
     <div>
       <div class="text-[24px]">
@@ -13,19 +13,19 @@
       @php($interests = [
         '경영/비즈니스', '인사/총무/법무', '재무/투자/세무', 'IT', '마케팅/PR', '영업', '고객관리(CRM/CS)', '유통/물류', '제조/엔지니어링', '정부지원사업'
       ])
-      <div class="flex flex-wrap flex-1 gap-[32px]">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-[32px]">
         @foreach ($interests as $key => $interest)
             <div class="relative flex items-center" x-data="{value: ''}">
               <input name="interest_0{!! $key !!}" id="interest_0{!! $key !!}" type="text" :value="value ? 'O' : ''" class="hidden" />
               <input id="input_{!! $key !!}" value="O" x-model="value" aria-describedby="interest_0{!! $key !!}-description" type="checkbox" class="focus:ring-deepSpaceRodeo w-[22px] h-[22px] text-deepSpaceRodeo border-gray-300 rounded">
               <label for="input_{!! $key !!}" class="ml-3 text-sm">
-                <div class="text-[18px] leading-none text-gray-700">{!! $interest !!}</div>
+                <div class="text-[18px] leading-snug text-gray-700">{!! $interest !!}</div>
               </label>
             </div>
         @endforeach
       </div>
     </div>
-    <div class="col-span-2 h-px bg-steam"></div>
+    <div class="col-span-1 md:col-span-2 h-px bg-steam"></div>
   
     {{-- 개인정보입력 --}}
     <div>
@@ -34,32 +34,32 @@
       </div>
     </div>
     <div>
-      <div class="flex flex-wrap gap-[32px]">
-        <div class="flex gap-x-[20px] items-center">
+      <div class="flex flex-wrap gap-[20px]">
+        <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_name" class="text-[18px] flex after:content-['*']">성명</label>
           <input type="text" name="name" id="stb_name" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" placeholder="you@example.com" required>
         </div>
-        <div class="flex gap-x-[20px] items-center">
+        <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_email" class="text-[18px] flex after:content-['*']">이메일</label>
           <input type="email" name="email" id="stb_email" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
         </div>
-        <div class="flex gap-x-[20px] items-center">
+        <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_company" class="text-[18px] flex after:content-['*']">회사명</label>
           <input type="text" name="company" id="stb_company" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
         </div>
       </div>
     </div>
-    <div class="col-span-2 h-px bg-steam"></div>
+    <div class="col-span-1 md:col-span-2 h-px bg-steam"></div>
   
     {{-- 개인정보입력 --}}
     <div>
       <div class="text-[24px]">
-        개인정보 수집 • 이용 및<br/>
+        개인정보 수집 • 이용 및<br class="hidden md:block" />
         취급위탁 동의
       </div>
     </div>
     <div>
-      <div class="shadow-sm sm:text-sm border-cerebralGrey rounded-[4px] bg-cultured prose p-[40px] text-davyGrey h-[340px] overflow-y-scroll mb-[34px]">
+      <div class="shadow-sm sm:text-sm border border-cerebralGrey rounded-[4px] bg-cultured prose p-[20px] lg:p-[40px] text-davyGrey h-[340px] overflow-y-scroll mb-[34px]">
           <p>
             <b>
               뉴스레터 발송을 위한 최소한의 개인정보를 수집하고 이용합니다.<br/>
@@ -77,19 +77,19 @@
           </p>
       </div>
       <div class="relative flex items-center">
-        <div class="flex items-center text-[18px] leading-none text-gray-700">
+        <div class="flex items-center text-[18px] text-gray-700">
           <input id="stb_policy" name="stb_policy_true" type="checkbox" class="focus:ring-deepSpaceRodeo w-[22px] h-[22px] text-deepSpaceRodeo border-gray-300 rounded" required>
-          <label for="stb_policy" class="ml-3 text-[18px] leading-none text-gray-700">위와 같은 개인정보 수집 및 이용 및 취급위탁에 동의하십니까? (필수)</label>
+          <label for="stb_policy" class="ml-3 text-[18px] leading-snug text-gray-700">위와 같은 개인정보 수집 및 이용 및 취급위탁에 동의하십니까? (필수)</label>
         </div>
       </div>
     </div>
-    <div class="col-span-2 h-px bg-carbon"></div>
-    <div class="col-span-2 justify-self-center">
-      <button type="submit" class="w-[500px] text-[28px] btn-deepSpaceRodeo rounded-[12px] mb-[40px] py-[40px] font-medium">구독 신청 완료</button>
-      <div class="grid w-[500px] text-white rounded-[4px] bg-green-400 text-center">
+    <div class="cols-span-1 md:col-span-2 h-px bg-carbon"></div>
+    <div class="cols-span-1 md:col-span-2 justify-self-center">
+      <button type="submit" class="w-[360px] lg:w-[500px] text-[20px] lg:text-[28px] btn-deepSpaceRodeo rounded-[12px] mb-[40px] py-[20px] sm:py-[40px] font-medium">구독 신청 완료</button>
+      <div class="grid w-[360px] lg:w-[500px] text-white rounded-[4px] bg-green-400 text-center">
         <div class="stb_form_result px-[20px] py-[20px] hidden" id="stb_form_result"></div>
       </div>
-      <div class="grid w-[500px] text-white rounded-[4px] bg-red-400 text-center">
+      <div class="grid w-[360px] lg:w-[500px] text-white rounded-[4px] bg-red-400 text-center">
         <div class="stb_form_msg_error px-[20px] py-[20px] hidden" id="stb_email_error"></div>
         <div class="stb_form_msg_error px-[20px] py-[20px] hidden" id="stb_name_error"></div>
         <div class="stb_form_msg_error px-[20px] py-[20px] hidden" id="stb_company_error"></div>

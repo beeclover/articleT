@@ -1,9 +1,9 @@
 :root {
   --container_px: 16px;
   @media (min-width: theme('screens.md')) {
-    --container_px: 40px;
+    --container_px: 20px;
   }
-  @media (min-width: theme('screens.xl')) {
+  @media (min-width: theme('screens.lg')) {
     --container_px: 10px;
   }
 }
