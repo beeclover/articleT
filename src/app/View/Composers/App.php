@@ -26,7 +26,8 @@ class App extends Composer
             'siteName' => $this->siteName(),
             'siteLogo' => $this->siteLogo(),
             'id' => get_the_id(),
-            'newsletterLink' => $this->getNewsletter(),
+            'newsletterLink' => $this->getLink(719),
+            'collectionLink' => $this->getLink(717),
         ];
     }
 
@@ -45,9 +46,9 @@ class App extends Composer
       return get_theme_file_uri('resources/images/logo-01.svg');
     }
 
-    public function getNewsletter()
+    public function getLink($id)
     {
-      $post = get_post(719);
+      $post = get_post($id);
       return get_the_permalink($post);
     }
 }

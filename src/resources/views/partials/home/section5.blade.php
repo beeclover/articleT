@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="/collection" class="btn-black mx-auto py-[14px] px-[60px] font-semibold text-[17px]">BROWSE ALL POSTS</a>
+      <a href="{!! $collectionLink !!}" class="btn-black mx-auto py-[14px] px-[60px] font-semibold text-[17px]">BROWSE ALL POSTS</a>
     </div>
   </div>
 </section>
