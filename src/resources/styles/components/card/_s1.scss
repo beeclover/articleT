@@ -39,27 +39,6 @@
       }
     }
 
-    &-title {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    &-thumbnail {
-      @apply aspect-w-16 aspect-h-9;
-
-      img {
-        object-fit: cover;
-      }
-    }
-
-    &-main {
-      @apply text-davyGrey;
-
-      .prose {
-        font-size: 14px;
-      }
-    }
-
     &-readmore {
       display: none;
     }
