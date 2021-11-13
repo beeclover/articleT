@@ -1,7 +1,7 @@
 <header id="header__root" x-data="{selected: @if(!empty($id)) {!! $id !!} @else null @endif}">
   <div id="headroom">
     <header id="header__top" class="header__top">
-      <div class="header__top-inner container mx-auto">
+      <div class="header__top-inner">
         {!! $tnb !!}
         <div class="listDivider__cols1 header__top-menu">
           <a class="header__top-menu-item" href="https://www.talentbank.co.kr/client/project/projectRegStart" target="_blank" rel="noopener noreferrer">
@@ -15,7 +15,7 @@
       </div>
     </header>
     <header class="header__main" :class="{'menu-open': menuSelected === 'menu'}">
-      <div class="header__main-inner container mx-auto">
+      <div class="header__main-inner">
         <div class="flex items-center gap-x-[20px]">
           <a href="/" class="header__main-logo">
             <img src="{!! $siteLogo !!}" alt="homepage logo">

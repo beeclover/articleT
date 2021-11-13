@@ -17,7 +17,8 @@
     @apply h-[var(--h-gnb)]
       flex
       items-center
-      justify-between;
+      justify-between
+      container mx-auto xl:max-w-desktop xl:px-[80px];
 
     @apply border-b border-brightGray;
   }

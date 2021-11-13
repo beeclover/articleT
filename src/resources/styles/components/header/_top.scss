@@ -19,7 +19,8 @@
     bg-lighthouse;
 
   &-inner {
-    @apply h-[var(--h-tnb)] flex items-center justify-between;
+    @apply h-[var(--h-tnb)] flex items-center justify-between 
+    container mx-auto xl:max-w-desktop xl:px-[80px];
   }
 
   &-nav {
