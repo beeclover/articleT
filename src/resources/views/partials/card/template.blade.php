@@ -26,7 +26,7 @@
     </div>
   </div>
   <div class="card__template-thumbnail">
-    <img src="{!! $thumbnail !!}">
+    {!! $thumbnail !!}
   </div>
   <div class="card__template-main">
     <div class="prose">

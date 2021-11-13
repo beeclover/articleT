@@ -1,10 +1,6 @@
 <div class="card__collection">
   <div class="card__collection-thumbnail">
-    @if ($thumbnail)
-      <img src="{!! $thumbnail !!}">
-    @else
-      @include('partials.img', ['ex' => 'jpg', 'name' => 'no-image'])
-    @endif
+    {!! $thumbnail !!}
     <a href="{!! $term->link !!}" class="card__collection-term">{!! $term->name !!}</a>
   </div>
   <div class="card__collection-title">

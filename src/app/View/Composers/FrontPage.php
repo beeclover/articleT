@@ -33,6 +33,17 @@ class FrontPage extends Composer
         ];
     }
 
+    public function postsAsPostDataSet($posts)
+    {
+      return array_map(function($post) {
+        $WpTool = new Tool();
+        $post->excerpt = $WpTool::get_excerpt(100, $post->excerpt);
+        $post->thumbnail = $WpTool::objectThumbnail($post);
+        unset($post->post_content);
+        return $post;
+      }, $posts);
+    }
+
     public function heroPost()
     {
       $taxonomies = ['category' => ['insight_category', 'future_lab_category', 'tb_story_category']];
@@ -54,11 +65,7 @@ class FrontPage extends Composer
 
       $posts = get_field('main-popularity_post', 'option');
       $posts = (new Hook($posts, $taxonomies))::$posts;
-      return array_map(function($post) {
-        $post->excerpt = (new Tool())->get_excerpt(100, $post->excerpt);
-        unset($post->post_content);
-        return $post;
-      }, $posts);
+      return $this->postsAsPostDataSet($posts);
     }
 
     public function recentTagsPosts()
@@ -87,11 +94,7 @@ class FrontPage extends Composer
           )));
         }
         $posts = (new Hook($posts, $taxonomies))::$posts;
-        $posts = array_map(function($post) {
-          $post->excerpt = (new Tool())->get_excerpt(100, $post->excerpt);
-          unset($post->post_content);
-          return $post;
-        }, $posts);
+        $posts = $this->postsAsPostDataSet($posts);
   
         usort($posts, function($post_a, $post_b) {
             return $post_b->post_date <=> $post_a->post_date;
@@ -120,11 +123,7 @@ class FrontPage extends Composer
         )));
       }
       $posts = (new Hook($posts, ['collection']))::$posts;
-      $posts = array_map(function($post) {
-        $post->excerpt = (new Tool())->get_excerpt(100, $post->excerpt);
-        unset($post->post_content);
-        return $post;
-      }, $posts);
+      $posts = $this->postsAsPostDataSet($posts);
       usort($posts, function($post_a, $post_b) {
           return $post_b->post_date <=> $post_a->post_date;
       });
