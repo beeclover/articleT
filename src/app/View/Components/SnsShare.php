@@ -7,42 +7,12 @@ use Roots\Acorn\View\Component;
 class SnsShare extends Component
 {
     /**
-     * The alert type.
-     *
-     * @var string
-     */
-    public $type;
-
-    /**
-     * The alert message.
-     *
-     * @var string
-     */
-    public $message;
-
-    /**
-     * The alert types.
-     *
-     * @var array
-     */
-    public $types = [
-        'default' => 'text-indigo-50 bg-indigo-400',
-        'success' => 'text-green-50 bg-green-400',
-        'caution' => 'text-yellow-50 bg-yellow-400',
-        'warning' => 'text-red-50 bg-red-400',
-    ];
-
-    /**
      * Create the component instance.
      *
-     * @param  string  $type
-     * @param  string  $message
      * @return void
      */
-    public function __construct($type = 'default', $message = null)
+    public function __construct()
     {
-        $this->type = $this->types[$type] ?? $this->types['default'];
-        $this->message = $message;
     }
 
     /**
