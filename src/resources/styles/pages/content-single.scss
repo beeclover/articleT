@@ -5,22 +5,30 @@
       @apply grid grid-cols-2;
     }
     &-footer {
-      margin-bottom: 150px;
+      margin-bottom: 61px;
+      @media (min-width: theme('screens.lg')) {
+        margin-bottom: 150px;
+      }
     }
     &-category {
+      @apply flex gap-x-[16px];
     }
     &-snsShare {
       @apply justify-self-end;
     }
     &-thumbnail {
       @apply col-span-2;
+
+      @media (max-width: theme('screens.lg')) {
+        @apply mx-full;
+      }
     }
     &-title {
       @apply col-span-2;
       margin-bottom: 28px;
     }
     &-meta {
-      @apply col-span-2;
+      @apply col-span-2 justify-self-center;
       margin-top: 12px;
       margin-bottom: 27px;
     }
