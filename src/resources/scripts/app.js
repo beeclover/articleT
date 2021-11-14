@@ -20,6 +20,7 @@ import date from './components/date';
 // Routers
 import Router from './util/router';
 import home from './routes/home';
+import single from './routes/single';
 
 const routes = new Router({
   // All pages
@@ -33,6 +34,7 @@ const routes = new Router({
     finalize() {},
   },
   home,
+  single,
 });
 
 // Load Events

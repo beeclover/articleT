@@ -8,9 +8,11 @@
         <x-sns-share />
       </div>
 
-      <div class="entry-meta">
+      <div class="entry-meta listDivider__cols2">
         <time datetime="{!! get_the_date('Y/m/d') !!}"></time>
-        탤런트뱅크 소식
+        <span>
+          탤런트뱅크 소식
+        </span>
       </div>
       
       <h1 class="entry-title">
@@ -53,7 +55,9 @@
         <a href="" class="btn-black w-[240px] text-center font-normal">목록으로</a>
       </div>
     </div>
+    <div class="mt-[150px] pt-[106px] border-t border-carbon">
+      <div class="text-[48px] font-bold text-center mb-[50px]">뉴스룸 더보기</div>
+      <x-PostsRecent />
+    </div>
   </footer>
-
-  @php(comments_template())
 </article>
