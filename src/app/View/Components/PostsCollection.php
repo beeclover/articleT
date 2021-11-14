@@ -6,7 +6,7 @@ use Roots\Acorn\View\Component;
 use Wp\Post\Hook;
 use Wp\Post\Tool;
 
-class PostsRecent extends Component
+class PostsCollection extends Component
 {
     public $posts = [];
 

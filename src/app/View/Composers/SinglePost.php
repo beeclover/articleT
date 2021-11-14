@@ -26,6 +26,8 @@ class SinglePost extends Composer
         return [
             'thumbnail' => $this->thumbnail(),
             'attached' => $this->attached(),
+            'taxonomy' => $this->category(),
+            'collection' => $this->collection(),
         ];
     }
 
@@ -38,5 +40,27 @@ class SinglePost extends Composer
     {
       $attached = get_field('attachedGroup');
       return $attached;
+    }
+
+    public function category()
+    {
+      $post = get_post();
+      if (!empty($taxonomies = get_the_terms($post->ID, get_post_type().'_category'))) {
+        foreach($taxonomies as $term) {
+          $term->link = get_term_link($term);
+        }
+        return array_slice($taxonomies, 0, 1)[0];
+      }
+    }
+
+    public function collection()
+    {
+      $post = get_post();
+      if (!empty($taxonomies = get_the_terms($post->ID, 'collection'))) {
+        foreach($taxonomies as $term) {
+          $term->link = get_term_link($term);
+        }
+        return array_slice($taxonomies, 0, 1)[0];
+      }
     }
 }
