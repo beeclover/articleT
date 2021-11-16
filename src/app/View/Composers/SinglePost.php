@@ -45,7 +45,7 @@ class SinglePost extends Composer
     public function category()
     {
       $post = get_post();
-      if (!empty($taxonomies = get_the_terms($post->ID, get_post_type().'_category'))) {
+      if (!empty($taxonomies = get_the_terms($post->ID, str_replace('-','_',get_post_type()).'_category'))) {
         foreach($taxonomies as $term) {
           $term->link = get_term_link($term);
         }
