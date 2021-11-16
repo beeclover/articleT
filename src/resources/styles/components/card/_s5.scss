@@ -1,0 +1,35 @@
+@mixin card {
+  .card__template {
+    // layout
+    @apply grid grid-cols-[1fr,2fr] grid-rows-[auto,auto] gap-x-[20px] gap-y-[20px];
+    @apply items-start;
+    &-meta {
+      order: 3;
+    }
+    &-body {
+      order: 2;
+    }
+    &-thumbnail {
+      @apply row-span-2;
+
+      height: 100%;
+      order: 1;
+    }
+
+    &-readmore,
+    &-main {
+      display: none;
+    }
+
+    &-meta {
+      @apply text-davyGrey;
+
+      font-size: 16px;
+      font-weight: normal;
+    }
+    &-title {
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+}
