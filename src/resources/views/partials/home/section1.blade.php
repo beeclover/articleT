@@ -3,7 +3,7 @@
 --}}
 
 <section>
-  <div class="container mx-auto grid grid-cols-1 desktop:grid-cols-[1fr,1px,735px] lg:grid-cols-[1fr,1px,1fr] lg:gap-x-[26px] xl:gap-x-[52px]">
+  <div class="container mx-auto grid grid-cols-1 lg:grid-cols-[1fr,1px,1fr] xl:grid-cols-[5fr,1px,4fr] lg:gap-x-[26px] xl:gap-x-[52px]">
     <div class="sm:py-[100px] mb-[54px] sm:mb-0 flex flex-col justify-between">
       @include('partials.content-hero', ['post' => $heroPost])
       <div>
@@ -18,7 +18,7 @@
       <div class="text-[24px] sm:text-[28px] font-bold mb-[45px] sm:mb-[50px]">인기 포스트</div>
       <ul class="sm:listDivider__rows1 grid gap-y-[54px] sm:gap-y-[67px]" style="--gap-y: 67px">
         @foreach ($popularityPosts as $post)
-          <li class="!card__s1">
+          <li class="lg:-card__s2 lg:!card__s1">
             @include('partials.card.template', [
               'title' => $post->post_title,
               'permalink' => $post->permalink,
