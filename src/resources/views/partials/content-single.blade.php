@@ -95,3 +95,4 @@
     </div>
   </footer>
 </article>
+<x-SidebarWidget />

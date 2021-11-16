@@ -29,4 +29,5 @@
   <div class="container mx-auto pb-[120px]">
     {!! $pagination !!}
   </div>
+  <x-SidebarWidget />
 @endsection
