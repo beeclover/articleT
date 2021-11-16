@@ -15,7 +15,7 @@
 
   <body <?php body_class(); ?>
     x-data="{menuSelected: null, widget: false}"
-    :class="{'overflow-hidden': menuSelected === 'menu'}"
+    :class="{'overflow-hidden': menuSelected === 'menu', 'lg:overflow-hidden': widget}"
   >
     <?php wp_body_open(); ?>
     <?php do_action('get_header'); ?>

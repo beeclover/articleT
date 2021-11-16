@@ -15,6 +15,12 @@ body {
     touch-action: none;
     overflow: hidden;
   }
+  &.lg\:overflow-hidden {
+    @media (min-width: theme('screens.lg')) {
+      touch-action: none;
+      overflow: hidden;
+    }
+  }
 }
 
 * {
