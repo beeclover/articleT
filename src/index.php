@@ -14,7 +14,7 @@
   </head>
 
   <body <?php body_class(); ?>
-    x-data="{menuSelected: null}"
+    x-data="{menuSelected: null, widget: false}"
     :class="{'overflow-hidden': menuSelected === 'menu'}"
   >
     <?php wp_body_open(); ?>
