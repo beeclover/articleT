@@ -1,6 +1,6 @@
 
 <section class="overflow-hidden">
-  <div id="swipercontainerS5" class="swiper-container mb-[70px]">
+  <div id="swipercontainerS5" class="swiper-container">
     <div class="swiper-wrapper">
       @foreach ($posts as $post)
         <div id="cardWrap" class="swiper-slide max-w-[260px] xl:max-w-none md:w-auto">
