@@ -57,6 +57,6 @@ class PostsCollection extends Component
      */
     public function render()
     {
-        return $this->view('components.posts-recent');
+        return $this->view('components.posts-collection');
     }
 }
