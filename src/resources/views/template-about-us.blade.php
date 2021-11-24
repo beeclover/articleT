@@ -338,7 +338,7 @@ EOD,
               무료 의뢰
             </div>
           </div>
-          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
           <div class="block lg:hidden underline text-[16px] font-bold">
             Project 무료 의뢰
           </div>
@@ -351,7 +351,7 @@ EOD,
               사전 미팅
             </div>
           </div>
-          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
           <div class="block lg:hidden underline text-[16px] font-bold">
             BD 배정 및 사전 미팅
           </div>
@@ -363,7 +363,7 @@ EOD,
               전문가 선정
             </div>
           </div>
-          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
           <div class="block lg:hidden underline text-[16px] font-bold">
             전문가 선정
           </div>
@@ -376,7 +376,7 @@ EOD,
               계약
             </div>
           </div>
-          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
           <div class="block lg:hidden underline text-[16px] font-bold">
             3자 미팅 및 계약
           </div>
@@ -634,51 +634,51 @@ EOD,
     'class' => 'absolute w-full h-full object-cover top-0 left-0 right-0 bottom-0'])
   </section>
   <section>
-    <div class="container mx-auto pt-[109px] pb-[120px]">
-      <div class="text-center mb-[56px]">
+    <div class="container mx-auto py-[52px] lg:pt-[109px] lg:pb-[120px]">
+      <div class="text-center mb-[28px] lg:mb-[56px]">
         <h3 class="text-[26px] lg:text-[34px] text-black mb-[8px] font-semibold">전문가 혜택</h3>
       </div>
-      <div class="grid grid-cols-3 gap-x-[53px]">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[53px] gap-y-[36px]">
         <div>
-          <div class="aspect-w-16 aspect-h-9 mb-[35px]">
+          <div class="aspect-w-16 aspect-h-9 mb-[20px] lg:mb-[35px]">
             @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-15'])
           </div>
           <div class="text-center">
-            <div class="text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
+            <div class="text-[18px] lg:text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
               전문가 매니저의 <br/>
               밀착 관리
             </div>
-            <div class="text-davyGrey text-[14px]">
+            <div class="text-davyGrey text-[13px] lg:text-[14px]">
               TalentBank 전문가 매니저가 매니저 메시지, <br/>
               정기 레터 등을 통해 끊임없이 전문가님과 소통합니다.
             </div>
           </div>
         </div>
         <div>
-          <div class="aspect-w-16 aspect-h-9 mb-[35px]">
+          <div class="aspect-w-16 aspect-h-9 mb-[20px] lg:mb-[35px]">
             @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-16'])
           </div>
           <div class="text-center">
-            <div class="text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
+            <div class="text-[18px] lg:text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
               6,000만원 상당의 <br/>
               온라인 교육과정 무료 수강
             </div>
-            <div class="text-davyGrey text-[14px]">
+            <div class="text-davyGrey text-[13px] lg:text-[14px]">
               전문가 전용 연수원에서 651개 이상의 교육과정을 <br/>
               무료로 만나보실 수 있습니다.
             </div>
           </div>
         </div>
         <div>
-          <div class="aspect-w-16 aspect-h-9 mb-[35px]">
+          <div class="aspect-w-16 aspect-h-9 mb-[20px] lg:mb-[35px]">
             @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-17'])
           </div>
           <div class="text-center">
-            <div class="text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
+            <div class="text-[18px] lg:text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
               최신 지식 콘텐츠 <br/>
               휴넷 CEO 이용권 증정
             </div>
-            <div class="text-davyGrey text-[14px]">
+            <div class="text-davyGrey text-[13px] lg:text-[14px]">
               대면 인터뷰 참여시 25만원 상당의<br/> 
               경영/리더십/트렌드 콘텐츠 이용권을 무료로 드립니다.
             </div>
@@ -687,7 +687,7 @@ EOD,
       </div>
     </div>
     <div class="container mx-auto w-full h-px bg-[#aaaaaa]"></div>
-    <div class="container mx-auto pt-[90px] pb-[120px]">
+    <div class="container mx-auto py-[52px] lg:pt-[90px] lg:pb-[120px]">
       <div class="text-center mb-[56px]">
         <h3 class="text-[26px] lg:text-[34px] text-black mb-[8px] font-semibold">전문가 인증 절차</h3>
         <div class="text-[16px] text-davyGrey">
@@ -696,39 +696,39 @@ EOD,
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-4 gap-x-[34px] mb-[80px]">
-        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px]">
-          <div class="flex place-content-center mb-[31px]">
-            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-18', 'class' => 'max-w-[90px]'])
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-[34px] mb-[40px] lg:mb-[80px] gap-y-[32px]">
+        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
+          <div class="flex place-content-center lg:mb-[31px]">
+            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-18', 'class' => 'max-w-[60px] lg:max-w-[90px]'])
           </div>
-          <div class="text-[19px] font-bold tracking-[-0.56px] text-center">
+          <div class="text-[19px] font-bold tracking-[-0.56px] lg:text-center">
             회원가입 후 Profile 작성
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2 icon-label-circleArrowNext"></div>
+          <div class="text-[40px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 z-10"></div>
         </div>
-        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px]">
-          <div class="flex place-content-center mb-[31px]">
-            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-19', 'class' => 'max-w-[90px]'])
+        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
+          <div class="flex place-content-center lg:mb-[31px]">
+            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-19', 'class' => 'max-w-[60px] lg:max-w-[90px]'])
           </div>
-          <div class="text-[19px] font-bold tracking-[-0.56px] text-center">
+          <div class="text-[19px] font-bold tracking-[-0.56px] lg:text-center">
             서류 심사
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2 icon-label-circleArrowNext"></div>
+          <div class="text-[40px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 z-10"></div>
         </div>
-        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px]">
-          <div class="flex place-content-center mb-[31px]">
-            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-20', 'class' => 'max-w-[90px]'])
+        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
+          <div class="flex place-content-center lg:mb-[31px]">
+            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-20', 'class' => 'max-w-[60px] lg:max-w-[90px]'])
           </div>
-          <div class="text-[19px] font-bold tracking-[-0.56px] text-center">
+          <div class="text-[19px] font-bold tracking-[-0.56px] lg:text-center">
             인터뷰
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2 icon-label-circleArrowNext"></div>
+          <div class="text-[40px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 z-10"></div>
         </div>
-        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px]">
-          <div class="flex place-content-center mb-[31px]">
-            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-21', 'class' => 'max-w-[90px]'])
+        <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
+          <div class="flex place-content-center lg:mb-[31px]">
+            @include('partials.img', ['ex' => 'png', 'name' => 'about-us-21', 'class' => 'max-w-[60px] lg:max-w-[90px]'])
           </div>
-          <div class="text-[19px] font-bold tracking-[-0.56px] text-center">
+          <div class="text-[19px] font-bold tracking-[-0.56px] lg:text-center">
             전문가인증 완료
           </div>
         </div>
