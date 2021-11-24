@@ -1,8 +1,8 @@
 @variants {
   .ball {
     @apply bg-black
-    w-[60px]
-    h-[60px]
+    w-[36px]
+    h-[36px]
     flex
     items-center
     justify-center
@@ -10,5 +10,10 @@
     text-[28px]
     text-white
     rounded-full;
+
+    @media (min-width: theme('screens.sm')) {
+      @apply w-[60px]
+      h-[60px];
+    }
   }
 }

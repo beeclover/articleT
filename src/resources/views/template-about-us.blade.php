@@ -15,19 +15,22 @@
       전문가의 경험, 전문지식, 네트워크를 제공하는 전문가 매칭 플랫폼입니다.
 EOD,
   ])
-  <section class="pt-[86px] pb-[120px]">
+  <section class="pt-[40px] sm:pt-[86px] pb-[52px] sm:pb-[120px]">
     <div class="container mx-auto">
       <div class="text-center">
-        <h2 class="text-[34px] font-bold mb-[20px]">
+        <h2 class="text-[26px] font-bold mb-[20px]">
           “Paper Work로 끝나지 않습니다.<br/>
           <span class="text-deepSpaceRodeo">탤런트뱅크 전문가는 함께 문제를 해결</span>해 나갑니다.”
         </h2>
         <div class="prose">
           <p>
-            탤런트뱅크 전문가는 컨설턴트와 다릅니다. <br/>
-            컨설팅 회사가 제시하는 전략 방향과 프로세스 수립 자체보다 경험을 통한 실제 사업 및 프로젝트 이행 노하우와 <br/>
-            구체적 이슈 해결 능력을 갖춘 인재가 현장에서 직접 문제를 해결합니다. <br/>
-            뿐만 아니라 프로젝트를 통해 기업에 확장된 사고와 전문지식을 직접 전수할 수 있습니다.
+            탤런트뱅크 전문가는 컨설턴트와 다릅니다.
+            <br/>
+            컨설팅 회사가 제시하는 전략 방향과 프로세스 수립 자체보다 경험을 통한 실제 사업 및 프로젝트 이행 노하우와 
+            <br/>
+            구체적 이슈 해결 능력을 갖춘 인재가 현장에서 직접 문제를 해결합니다. 
+            <br/>
+            뿐만 아니라 프로젝트를 통해 기업에 확장된 사고와 전문지식을 직접 전수할 수 있습니다.
           </p>
         </div>
       </div>
@@ -36,24 +39,24 @@ EOD,
 
       <div class="mb-[90px]">
         <div class="text-center">
-          <h3 class="text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크만의 차별점</h3>
+          <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크만의 차별점</h3>
           <div class="text-[16px] text-davyGrey mb-[56px]">
             <p>
               탤런트뱅크의 차별화된 서비스를 직접 경험해보세요.
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-3 gap-x-[52px] listDivider__middle">
-          <div class="p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
-            <div class="grid gap-y-[24px] justify-center">
-              <div class="flex items-center gap-x-[12px] justify-self-center">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-[12px] gap-x-[52px] listDivider__middle">
+          <div class="p-[20px] sm:p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
+            <div class="grid grid-cols-[1fr,60px] sm:grid-cols-1 gap-y-[24px] justify-center">
+              <div class="flex items-center gap-x-[12px] sm:justify-self-center">
                 <div class="ball">1</div>
-                <span class="text-[22px] font-bold">합리적인 비용</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">합리적인 비용</span>
               </div>
-              <div class="justify-self-center mb-[31px]">
+              <div class="justify-self-center sm:mb-[31px]">
                 @include('partials.img', ['ex' => 'png', 'name' => 'about-us-0'])
               </div>
-              <div class="text-center leading-normal text-[14px] tracking-[-0.28px] text-carbon">
+              <div class="col-span-2 sm:col-span-1 sm:text-center leading-normal text-[14px] tracking-[-0.28px] text-davyGrey sm:text-carbon">
                 <p class="mb-[14px]">
                   대기업 팀장/중소기업 임원 이상 경력의 전문가를 일(단기자문, 프로젝트 외) 단위로 계약할 수 있습니다.
                 </p>
@@ -63,16 +66,16 @@ EOD,
               </div>
             </div>
           </div>
-          <div class="p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
-            <div class="grid gap-y-[24px] justify-center">
-              <div class="flex items-center gap-x-[12px] justify-self-center">
+          <div class="p-[20px] sm:p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
+            <div class="grid grid-cols-[1fr,60px] sm:grid-cols-1 gap-y-[24px] justify-center">
+              <div class="flex items-center gap-x-[12px] sm:justify-self-center">
                 <div class="ball">2</div>
-                <span class="text-[22px] font-bold">기업 맞춤형 서비스</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">기업 맞춤형 서비스</span>
               </div>
-              <div class="justify-self-center mb-[31px]">
+              <div class="justify-self-center sm:mb-[31px]">
                 @include('partials.img', ['ex' => 'png', 'name' => 'about-us-1'])
               </div>
-              <div class="text-center leading-normal text-[14px] tracking-[-0.28px] text-carbon">
+              <div class="col-span-2 sm:col-span-1 sm:text-center leading-normal text-[14px] tracking-[-0.28px] text-davyGrey sm:text-carbon">
                 <p class="mb-[14px]">
                   프로젝트를 의뢰하면, 전문가 출신 BD가 배정되어 사전 면담을 통해 기업의 상황을 체크하고 꼭 필요한 전문가를 매칭해 드립니다. 
                 </p>
@@ -82,18 +85,18 @@ EOD,
               </div>
             </div>
           </div>
-          <div class="p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
-            <div class="grid gap-y-[24px] justify-center">
-              <div class="flex items-center gap-x-[12px] justify-self-center">
+          <div class="p-[20px] sm:p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
+            <div class="grid grid-cols-[1fr,60px] sm:grid-cols-1 gap-y-[24px] justify-center">
+              <div class="flex items-center gap-x-[12px] sm:justify-self-center">
                 <div class="ball">3</div>
-                <span class="text-[22px] font-bold">세부단계를 통해 검증된 전문가</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">세부단계를 통해 검증된 전문가</span>
               </div>
-              <div class="justify-self-center mb-[31px]">
+              <div class="justify-self-center sm:mb-[31px]">
                 @include('partials.img', ['ex' => 'png', 'name' => 'about-us-2'])
               </div>
-              <div class="text-center leading-normal text-[14px] tracking-[-0.28px] text-carbon">
+              <div class="col-span-2 sm:col-span-1 sm:text-center leading-normal text-[14px] tracking-[-0.28px] text-davyGrey sm:text-carbon">
                 <p>
-                  탤런트뱅크는 서류 심사 및 심층 인터뷰를 통해 선별된 산업별 Top-Class 전문가 그룹과 함께 하고 있습니다.
+                  탤런트뱅크는 서류 심사 및 심층 인터뷰를 통해 선별된 산업별 Top-Class 전문가 그룹과 함께 하고 있습니다.
                 </p>
               </div>
             </div>
@@ -173,7 +176,7 @@ EOD,
   <section>
     <div class="container mx-auto mt-[80px] mb-[100px]">
       <div class="text-center mb-[56px]">
-        <h3 class="text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크의 문제해결</h3>
+        <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크의 문제해결</h3>
         <div class="text-[16px] text-davyGrey">
           <p>
             비즈니스 문제 해결과 동시에 외부 전문가의 전문성을 우리 기업에 내재화 할 수 있습니다.
@@ -270,7 +273,7 @@ EOD,
     <div class="bg-lighthouse">
       <div class="container mx-auto pt-[109px] pb-[120px]">
         <div class="text-center mb-[56px]">
-          <h3 class="text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크 서비스 이용 후기</h3>
+          <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크 서비스 이용 후기</h3>
           <div class="text-[16px] text-davyGrey">
             <p>
               많은 기업들이 탤런트뱅크를 통해 성장하고 있습니다.
@@ -318,7 +321,7 @@ EOD,
     </div>
     <div class="container mx-auto mt-[90px] mb-[120px]">
       <div class="text-center mb-[56px]">
-        <h3 class="text-[34px] text-black mb-[8px] font-semibold">Project 진행 프로세스</h3>
+        <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">Project 진행 프로세스</h3>
         <div class="text-[16px] text-davyGrey">
           <p>
             TalentBank 전문가 매칭은 기존 채용 방식보다 빠릅니다.<br/>
@@ -387,7 +390,7 @@ EOD,
   <section>
     <div class="container mx-auto mt-[90px] mb-[100px]">
       <div class="text-center mb-[56px]">
-        <h3 class="text-[34px] text-black mb-[8px] font-semibold">이런 전문가를 찾습니다</h3>
+        <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">이런 전문가를 찾습니다</h3>
         <div class="text-[16px] text-davyGrey">
           <p>
             딱 필요한 시간만큼, 자유롭게 일할 수 있는 산업별 고경력 전문가를 모집합니다.
@@ -448,7 +451,7 @@ EOD,
     <div class="bg-lighthouse">
       <div class="container mx-auto pt-[110px] pb-[120px]">
         <div class="text-center mb-[56px]">
-          <h3 class="text-[34px] text-black mb-[8px] font-semibold">전문가가 일하는 방식</h3>
+          <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">전문가가 일하는 방식</h3>
         </div>
         <div class="grid grid-cols-2 gap-x-[30px]">
           <div class="border border-cerebralGrey bg-white px-[45px] pb-[65px] pt-[84px] relative">
@@ -604,7 +607,7 @@ EOD,
   <section>
     <div class="container mx-auto pt-[109px] pb-[120px]">
       <div class="text-center mb-[56px]">
-        <h3 class="text-[34px] text-black mb-[8px] font-semibold">전문가 혜택</h3>
+        <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">전문가 혜택</h3>
       </div>
       <div class="grid grid-cols-3 gap-x-[53px]">
         <div>
@@ -657,7 +660,7 @@ EOD,
     <div class="container mx-auto w-full h-px bg-[#aaaaaa]"></div>
     <div class="container mx-auto pt-[90px] pb-[120px]">
       <div class="text-center mb-[56px]">
-        <h3 class="text-[34px] text-black mb-[8px] font-semibold">전문가 인증 절차</h3>
+        <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">전문가 인증 절차</h3>
         <div class="text-[16px] text-davyGrey">
           <p>
             전문가 인증이 완료된 후에는 Project를 지원하거나, Project를 직접 의뢰받을 수 있습니다.
