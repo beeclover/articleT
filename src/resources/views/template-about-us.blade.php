@@ -174,8 +174,8 @@ EOD,
 EOD,
   ])
   <section>
-    <div class="container mx-auto mt-[80px] mb-[100px]">
-      <div class="text-center mb-[56px]">
+    <div class="container mx-auto lg:mt-[80px] my-[52px] lg:mb-[100px]">
+      <div class="text-center mb-[28px] lg:mb-[56px]">
         <h3 class="text-[26px] lg:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크의 문제해결</h3>
         <div class="text-[16px] text-davyGrey">
           <p>
@@ -183,24 +183,24 @@ EOD,
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-[40px]">
-        <div class="border border-cerebralGrey grid grid-rows-[2fr,1fr]">
-          <div class="grid grid-cols-[auto,1fr] py-[48px] px-[60px] gap-x-[48px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[12px] lg:gap-[40px]">
+        <div class="border border-cerebralGrey grid grid-rows-[auto,auto] lg:grid-rows-[2fr,1fr]">
+          <div class="grid grid-cols-[auto,1fr] py-[28px] lg:py-[48px] px-[12px] lg:px-[60px] gap-x-[16px] lg:gap-x-[48px]">
             <div class="self-center">
-              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-6'])
+              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-6', 'class' => 'w-[100px] lg:w-auto'])
             </div>
-            <div class="text-center self-center">
-              <div class="text-[14px] font-bold mb-[23px]">[A여행사]</div>
-              <div class="text-[19px] font-extrabold font-mj">
-                “코로나로 인해 여행 사업이<br/>
-                큰 피해를 입어<br/>
-                <span class="text-[#483aa4]">신사업을 추진</span>하고 있습니다.”
+            <div class="lg:text-center self-center">
+              <div class="text-[12px] lg:text-[14px] font-bold mb-[12px] lg:mb-[23px]">[A여행사]</div>
+              <div class="text-[16px] lg:text-[19px] font-extrabold font-mj">
+                “코로나로 인해 여행 사업이<br class="hidden lg:block" />
+                큰 피해를 입어<br class="hidden lg:block" />
+                <span class="break-all text-[#483aa4]">신사업을 추진</span>하고 있습니다.”
               </div>
             </div>
           </div>
-          <div class="bg-lighthouse py-[33px] flex flex-col items-center border-t border-cerebralGrey">
-            <div class="text-[19px] font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">20년 경력의 COO출신 신사업 전문가 매칭</div>
-            <div class="prose text-[14px]">
+          <div class="bg-lighthouse px-[12px] py-[28px] lg:py-[33px] flex flex-col items-center border-t border-cerebralGrey">
+            <div class="text-[16px] lg:text-[19px] font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">20년 경력의 COO출신 신사업 전문가 매칭</div>
+            <div class="prose text-[12px] lg:text-[14px]">
               <ul>
                 <li>비즈니스 모델 분석을 보강을 통해 성공적인 신사업 추진</li>
                 <li>효과적인 시장 진입을 위한 홍보, 마케팅 전략 수립</li>
@@ -208,23 +208,23 @@ EOD,
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey grid grid-rows-[2fr,1fr]">
-          <div class="grid grid-cols-[auto,1fr] py-[48px] px-[60px] gap-x-[48px]">
+        <div class="border border-cerebralGrey grid grid-rows-[auto,auto] lg:grid-rows-[2fr,1fr]">
+          <div class="grid grid-cols-[auto,1fr] py-[28px] lg:py-[48px] px-[12px] lg:px-[60px] gap-x-[16px] lg:gap-x-[48px]">
             <div class="self-center">
-              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-7'])
+              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-7', 'class' => 'w-[100px] lg:w-auto'])
             </div>
-            <div class="text-center self-center">
-              <div class="text-[14px] font-bold mb-[23px]">[J메디컬사]</div>
-              <div class="text-[19px] font-extrabold font-mj">
-                “신제품 개발 자금 마련을 위해 <br/>
-                <span class="text-[#4586b8]">국가과제를 꼭 획득해야 하는 <br/>
+            <div class="lg:text-center self-center">
+              <div class="text-[12px] lg:text-[14px] font-bold mb-[12px] lg:mb-[23px]">[J메디컬사]</div>
+              <div class="text-[16px] lg:text-[19px] font-extrabold font-mj">
+                “신제품 개발 자금 마련을 위해<br class="hidden lg:block" />
+                <span class="break-all text-[#4586b8]">국가과제를 꼭 획득해야 하는<br class="hidden lg:block" />
                 상황</span>입니다.”
               </div>
             </div>
           </div>
-          <div class="bg-lighthouse py-[33px] flex flex-col items-center border-t border-cerebralGrey">
-            <div class="text-[19px] font-semibold pointUnderLine ring-aero ring-opacity-20" style="--h: 50%">국가과제 심사 담당관 출신의 R&D 전문가 매칭</div>
-            <div class="prose text-[14px]">
+          <div class="bg-lighthouse px-[12px] py-[28px] lg:py-[33px] flex flex-col items-center border-t border-cerebralGrey">
+            <div class="text-[16px] lg:text-[19px] font-semibold pointUnderLine ring-aero ring-opacity-20" style="--h: 50%">국가과제 심사 담당관 출신의 R&D 전문가 매칭</div>
+            <div class="prose text-[12px] lg:text-[14px]">
               <ul>
                 <li>국가과제 전반을 담당하며 개발 방향 검토 및 신청 자료 작성 </li>
                 <li>신제품 개발을 위한 자금 획득 성공</li>
@@ -232,23 +232,23 @@ EOD,
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey grid grid-rows-[2fr,1fr]">
-          <div class="grid grid-cols-[auto,1fr] py-[48px] px-[60px] gap-x-[48px]">
+        <div class="border border-cerebralGrey grid grid-rows-[auto,auto] lg:grid-rows-[2fr,1fr]">
+          <div class="grid grid-cols-[auto,1fr] py-[28px] lg:py-[48px] px-[12px] lg:px-[60px] gap-x-[16px] lg:gap-x-[48px]">
             <div class="self-center">
-              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-8'])
+              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-8', 'class' => 'w-[100px] lg:w-auto'])
             </div>
-            <div class="text-center self-center">
-              <div class="text-[14px] font-bold mb-[23px]">[G 자동차 부품 제조사]</div>
-              <div class="text-[19px] font-extrabold font-mj">
-                “확실한 기술력이 있음에도 <br/>
-                번번히 <span class="text-[#bf745a]">해외 판로 개척에<br/>
+            <div class="lg:text-center self-center">
+              <div class="text-[12px] lg:text-[14px] font-bold mb-[12px] lg:mb-[23px]">[G 자동차 부품 제조사]</div>
+              <div class="text-[16px] lg:text-[19px] font-extrabold font-mj">
+                “확실한 기술력이 있음에도<br class="hidden lg:block" />
+                번번히 <span class="break-all text-[#bf745a]">해외 판로 개척에<br class="hidden lg:block" />
                 실패</span>하고 있습니다.”
               </div>
             </div>
           </div>
-          <div class="bg-lighthouse py-[33px] flex flex-col items-center border-t border-cerebralGrey">
-            <div class="text-[19px] font-semibold pointUnderLine ring-[#cc8b74] ring-opacity-20" style="--h: 50%">현대차 그룹 30년 경력의 해외 영업 전문가 매칭</div>
-            <div class="prose text-[14px]">
+          <div class="bg-lighthouse px-[12px] py-[28px] lg:py-[33px] flex flex-col items-center border-t border-cerebralGrey">
+            <div class="text-[16px] lg:text-[19px] font-semibold pointUnderLine ring-[#cc8b74] ring-opacity-20" style="--h: 50%">현대차 그룹 30년 경력의 해외 영업 전문가 매칭</div>
+            <div class="prose text-[12px] lg:text-[14px] tracking-[-1px]">
               <ul>
                 <li>해외 영업 노하우 및 개인 네트워크 공유를 통해 수출 판로 개척</li>
                 <li>해외 영업 및 고객사 관리 프로세스 내재화를 위한 매뉴얼 정립</li>
@@ -256,15 +256,15 @@ EOD,
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey bg-lighthouse flex flex-col items-center justify-center">
+        <div class="border border-cerebralGrey bg-lighthouse flex flex-col items-center justify-center px-[12px] py-[28px]">
           <div class="prose text-davyGrey">
-            <div class="text-[19px] font-mj font-bold text-black">그 외</div>
-            <ul class="text-[14px]">
-              <li class="underline">신규 브랜드 이커머스 진출 및 온라인 마케팅 전략</li>
-              <li class="underline">콜센터 운영 체계화를 통한 업무 효율 개선</li>
-              <li class="underline">스타트업 JV설립을 위한 투자 및 협력 방안 수립</li>
-              <li class="underline">BSC설계를 통한 기업 맞춤형 인사평가 및 인센티브 제도 수립</li>
-              <li class="underline">3PL Warehouse 효율화 및 매장 inventory 관리</li>
+            <div class="text-[14px] lg:text-[19px] font-mj font-bold text-black">그 외</div>
+            <ul class="text-[12px] lg:text-[14px]">
+              <li class="lg:underline">신규 브랜드 이커머스 진출 및 온라인 마케팅 전략</li>
+              <li class="lg:underline">콜센터 운영 체계화를 통한 업무 효율 개선</li>
+              <li class="lg:underline">스타트업 JV설립을 위한 투자 및 협력 방안 수립</li>
+              <li class="lg:underline">BSC설계를 통한 기업 맞춤형 인사평가 및 인센티브 제도 수립</li>
+              <li class="lg:underline">3PL Warehouse 효율화 및 매장 inventory 관리</li>
             </ul>
           </div>
         </div>
