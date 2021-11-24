@@ -8,11 +8,11 @@
   @include('partials.banner.header', [
     'label' => 'TalentBank',
     'labelBg' => 'bg-deepSpaceRodeo',
-    'title' => '기업과 전문가를 연결하여 더 큰 가치를 만들어 내는 곳', 
+    'title' => '기업과 전문가를 연결하여 더 큰 가치를 만들어 내는 곳', 
     'bgUrl' => get_theme_file_uri('resources/images/header-01@3x.jpg'),
     'content' => <<<EOD
-      탤런트뱅크는 기업이 필요로 하는 비즈니스 전문가를 일 단위(자문, 프로젝트 단위)로 연결하여 실제 업무수행과 함께 <br/>
-      전문가의 경험, 전문지식, 네트워크를 제공하는 전문가 매칭 플랫폼입니다.
+      탤런트뱅크는 기업이 필요로 하는 비즈니스 전문가를 일 단위(자문, 프로젝트 단위)로 연결하여 실제 업무수행과 함께 <br/>
+      전문가의 경험, 전문지식, 네트워크를 제공하는 전문가 매칭 플랫폼입니다.
 EOD,
   ])
   <section class="pt-[40px] sm:pt-[86px] pb-[52px] sm:pb-[120px]">
@@ -39,10 +39,10 @@ EOD,
 
       <div class="mb-[90px]">
         <div class="text-center">
-          <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크만의 차별점</h3>
+          <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크만의 차별점</h3>
           <div class="text-[16px] text-davyGrey mb-[56px]">
             <p>
-              탤런트뱅크의 차별화된 서비스를 직접 경험해보세요.
+              탤런트뱅크의 차별화된 서비스를 직접 경험해보세요.
             </p>
           </div>
         </div>
@@ -51,17 +51,17 @@ EOD,
             <div class="grid grid-cols-[1fr,60px] sm:grid-cols-1 gap-y-[24px] justify-center">
               <div class="flex items-center gap-x-[12px] sm:justify-self-center">
                 <div class="ball">1</div>
-                <span class="text-[18px] sm:text-[22px] font-bold">합리적인 비용</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">합리적인 비용</span>
               </div>
               <div class="justify-self-center sm:mb-[31px]">
                 @include('partials.img', ['ex' => 'png', 'name' => 'about-us-0'])
               </div>
               <div class="col-span-2 sm:col-span-1 sm:text-center leading-normal text-[14px] tracking-[-0.28px] text-davyGrey sm:text-carbon">
                 <p class="mb-[14px]">
-                  대기업 팀장/중소기업 임원 이상 경력의 전문가를 일(단기자문, 프로젝트 외) 단위로 계약할 수 있습니다.
+                  대기업 팀장/중소기업 임원 이상 경력의 전문가를 일(단기자문, 프로젝트 외) 단위로 계약할 수 있습니다.
                 </p>
                 <p>
-                  탤런트뱅크에서 전문가 대금을 사전에 확인한 후 프로젝트를 의뢰할 수 있습니다.
+                  탤런트뱅크에서 전문가 대금을 사전에 확인한 후 프로젝트를 의뢰할 수 있습니다.
                 </p>
               </div>
             </div>
@@ -70,17 +70,17 @@ EOD,
             <div class="grid grid-cols-[1fr,60px] sm:grid-cols-1 gap-y-[24px] justify-center">
               <div class="flex items-center gap-x-[12px] sm:justify-self-center">
                 <div class="ball">2</div>
-                <span class="text-[18px] sm:text-[22px] font-bold">기업 맞춤형 서비스</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">기업 맞춤형 서비스</span>
               </div>
               <div class="justify-self-center sm:mb-[31px]">
                 @include('partials.img', ['ex' => 'png', 'name' => 'about-us-1'])
               </div>
               <div class="col-span-2 sm:col-span-1 sm:text-center leading-normal text-[14px] tracking-[-0.28px] text-davyGrey sm:text-carbon">
                 <p class="mb-[14px]">
-                  프로젝트를 의뢰하면, 전문가 출신 BD가 배정되어 사전 면담을 통해 기업의 상황을 체크하고 꼭 필요한 전문가를 매칭해 드립니다. 
+                  프로젝트를 의뢰하면, 전문가 출신 BD가 배정되어 사전 면담을 통해 기업의 상황을 체크하고 꼭 필요한 전문가를 매칭해 드립니다. 
                 </p>
                 <p>
-                  단기 자문, 프로젝트, 헤드헌팅, Functional Work 등 기업이 원하는 기간과 조건으로 확실하게 비즈니스 문제 해결을 지원합니다.
+                  단기 자문, 프로젝트, 헤드헌팅, Functional Work 등 기업이 원하는 기간과 조건으로 확실하게 비즈니스 문제 해결을 지원합니다.
                 </p>
               </div>
             </div>
@@ -106,16 +106,16 @@ EOD,
       
       <div>
         <div class="text-center mb-[56px]">
-          <h3 class="text-[34px] text-black font-semibold">탤런트뱅크 성과</h3>
+          <h3 class="text-[34px] text-black font-semibold">탤런트뱅크 성과</h3>
         </div>
-        <div class="grid grid-cols-3 gap-x-[52px] listDivider__middle">
-          <div class="py-[60px] px-[20px] border border-cerebralGrey rounded-[4px] bg-white relative">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-y-[12px] gap-x-[52px] listDivider__middle">
+          <div class="py-[20px] sm:py-[60px] px-[20px] border border-cerebralGrey rounded-[4px] bg-white relative">
             <div class="grid justify-center">
               <div class="justify-self-center mb-[25px]">
-                @include('partials.img', ['ex' => 'png', 'name' => 'about-us-3'])
+                @include('partials.img', ['ex' => 'png', 'name' => 'about-us-3', 'class' => 'w-[80px] sm:w-auto'])
               </div>
               <div class="justify-self-center mb-[17px]">
-                <span class="text-[22px] font-bold">4천명 이상의 고급 인재풀</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">4천명 이상의 고급 인재풀</span>
               </div>
               <div class="text-center leading-normal text-[14px] text-carbon tracking-[-0.28px]">
                 <p>
@@ -125,13 +125,13 @@ EOD,
               </div>
             </div>
           </div>
-          <div class="py-[60px] px-[20px] border border-cerebralGrey rounded-[4px] bg-white relative">
+          <div class="py-[20px] sm:py-[60px] px-[20px] border border-cerebralGrey rounded-[4px] bg-white relative">
             <div class="grid justify-center">
               <div class="justify-self-center mb-[25px]">
-                @include('partials.img', ['ex' => 'png', 'name' => 'about-us-4'])
+                @include('partials.img', ['ex' => 'png', 'name' => 'about-us-4', 'class' => 'w-[80px] sm:w-auto'])
               </div>
               <div class="justify-self-center mb-[17px]">
-                <span class="text-[22px] font-bold">높은 Project 재의뢰율</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">높은 Project 재의뢰율</span>
               </div>
               <div class="text-center leading-normal text-[14px] text-carbon tracking-[-0.28px]">
                   <p>
@@ -141,17 +141,17 @@ EOD,
               </div>
             </div>
           </div>
-          <div class="py-[60px] px-[20px] border border-cerebralGrey rounded-[4px] bg-white relative">
+          <div class="py-[20px] sm:py-[60px] px-[20px] border border-cerebralGrey rounded-[4px] bg-white relative">
             <div class="grid justify-center">
               <div class="justify-self-center mb-[25px]">
-                @include('partials.img', ['ex' => 'png', 'name' => 'about-us-5'])
+                @include('partials.img', ['ex' => 'png', 'name' => 'about-us-5', 'class' => 'w-[80px] sm:w-auto'])
               </div>
               <div class="justify-self-center mb-[17px]">
-                <span class="text-[22px] font-bold">비즈니스 전문가 매칭 선두</span>
+                <span class="text-[18px] sm:text-[22px] font-bold">비즈니스 전문가 매칭 선두</span>
               </div>
               <div class="text-center leading-normal text-[14px] text-carbon tracking-[-0.28px]">
                 <p>
-                  TalentBank는 <span class="font-semibold pointUnderLine ring-aero ring-opacity-20" style="--h: 50%">비즈니스 이슈 해결에 특화된 플랫폼</span>으로<br/>
+                  TalentBank는 <span class="font-semibold pointUnderLine ring-aero ring-opacity-20" style="--h: 50%">비즈니스 이슈 해결에 특화된 플랫폼</span>으로<br class="hidden sm:block"/>
                   각 산업 군 전문가들을 언제든 쉽게 만나볼 수 있습니다.
                 </p>
               </div>
@@ -176,10 +176,10 @@ EOD,
   <section>
     <div class="container mx-auto mt-[80px] mb-[100px]">
       <div class="text-center mb-[56px]">
-        <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크의 문제해결</h3>
+        <h3 class="text-[26px] sm:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크의 문제해결</h3>
         <div class="text-[16px] text-davyGrey">
           <p>
-            비즈니스 문제 해결과 동시에 외부 전문가의 전문성을 우리 기업에 내재화 할 수 있습니다.
+            비즈니스 문제 해결과 동시에 외부 전문가의 전문성을 우리 기업에 내재화 할 수 있습니다.
           </p>
         </div>
       </div>
@@ -192,18 +192,18 @@ EOD,
             <div class="text-center self-center">
               <div class="text-[14px] font-bold mb-[23px]">[A여행사]</div>
               <div class="text-[19px] font-extrabold font-mj">
-                “코로나로 인해 여행 사업이<br/>
-                큰 피해를 입어<br/>
-                <span class="text-[#483aa4]">신사업을 추진</span>하고 있습니다.”
+                “코로나로 인해 여행 사업이<br/>
+                큰 피해를 입어<br/>
+                <span class="text-[#483aa4]">신사업을 추진</span>하고 있습니다.”
               </div>
             </div>
           </div>
           <div class="bg-lighthouse py-[33px] flex flex-col items-center border-t border-cerebralGrey">
-            <div class="text-[19px] font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">20년 경력의 COO출신 신사업 전문가 매칭</div>
+            <div class="text-[19px] font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">20년 경력의 COO출신 신사업 전문가 매칭</div>
             <div class="prose text-[14px]">
               <ul>
-                <li>비즈니스 모델 분석을 보강을 통해 성공적인 신사업 추진</li>
-                <li>효과적인 시장 진입을 위한 홍보, 마케팅 전략 수립</li>
+                <li>비즈니스 모델 분석을 보강을 통해 성공적인 신사업 추진</li>
+                <li>효과적인 시장 진입을 위한 홍보, 마케팅 전략 수립</li>
               </ul>
             </div>
           </div>
@@ -216,18 +216,18 @@ EOD,
             <div class="text-center self-center">
               <div class="text-[14px] font-bold mb-[23px]">[J메디컬사]</div>
               <div class="text-[19px] font-extrabold font-mj">
-                “신제품 개발 자금 마련을 위해 <br/>
-                <span class="text-[#4586b8]">국가과제를 꼭 획득해야 하는 <br/>
+                “신제품 개발 자금 마련을 위해 <br/>
+                <span class="text-[#4586b8]">국가과제를 꼭 획득해야 하는 <br/>
                 상황</span>입니다.”
               </div>
             </div>
           </div>
           <div class="bg-lighthouse py-[33px] flex flex-col items-center border-t border-cerebralGrey">
-            <div class="text-[19px] font-semibold pointUnderLine ring-aero ring-opacity-20" style="--h: 50%">국가과제 심사 담당관 출신의 R&D 전문가 매칭</div>
+            <div class="text-[19px] font-semibold pointUnderLine ring-aero ring-opacity-20" style="--h: 50%">국가과제 심사 담당관 출신의 R&D 전문가 매칭</div>
             <div class="prose text-[14px]">
               <ul>
-                <li>국가과제 전반을 담당하며 개발 방향 검토 및 신청 자료 작성 </li>
-                <li>신제품 개발을 위한 자금 획득 성공</li>
+                <li>국가과제 전반을 담당하며 개발 방향 검토 및 신청 자료 작성 </li>
+                <li>신제품 개발을 위한 자금 획득 성공</li>
               </ul>
             </div>
           </div>
@@ -238,20 +238,20 @@ EOD,
               @include('partials.img', ['ex' => 'png', 'name' => 'about-us-8'])
             </div>
             <div class="text-center self-center">
-              <div class="text-[14px] font-bold mb-[23px]">[G 자동차 부품 제조사]</div>
+              <div class="text-[14px] font-bold mb-[23px]">[G 자동차 부품 제조사]</div>
               <div class="text-[19px] font-extrabold font-mj">
-                “확실한 기술력이 있음에도 <br/>
-                번번히 <span class="text-[#bf745a]">해외 판로 개척에<br/>
-                실패</span>하고 있습니다.”
+                “확실한 기술력이 있음에도 <br/>
+                번번히 <span class="text-[#bf745a]">해외 판로 개척에<br/>
+                실패</span>하고 있습니다.”
               </div>
             </div>
           </div>
           <div class="bg-lighthouse py-[33px] flex flex-col items-center border-t border-cerebralGrey">
-            <div class="text-[19px] font-semibold pointUnderLine ring-[#cc8b74] ring-opacity-20" style="--h: 50%">현대차 그룹 30년 경력의 해외 영업 전문가 매칭</div>
+            <div class="text-[19px] font-semibold pointUnderLine ring-[#cc8b74] ring-opacity-20" style="--h: 50%">현대차 그룹 30년 경력의 해외 영업 전문가 매칭</div>
             <div class="prose text-[14px]">
               <ul>
-                <li>해외 영업 노하우 및 개인 네트워크 공유를 통해 수출 판로 개척</li>
-                <li>해외 영업 및 고객사 관리 프로세스 내재화를 위한 매뉴얼 정립</li>
+                <li>해외 영업 노하우 및 개인 네트워크 공유를 통해 수출 판로 개척</li>
+                <li>해외 영업 및 고객사 관리 프로세스 내재화를 위한 매뉴얼 정립</li>
               </ul>
             </div>
           </div>
@@ -260,11 +260,11 @@ EOD,
           <div class="prose text-davyGrey">
             <div class="text-[19px] font-mj font-bold text-black">그 외</div>
             <ul class="text-[14px]">
-              <li class="underline">신규 브랜드 이커머스 진출 및 온라인 마케팅 전략</li>
-              <li class="underline">콜센터 운영 체계화를 통한 업무 효율 개선</li>
-              <li class="underline">스타트업 JV설립을 위한 투자 및 협력 방안 수립</li>
-              <li class="underline">BSC설계를 통한 기업 맞춤형 인사평가 및 인센티브 제도 수립</li>
-              <li class="underline">3PL Warehouse 효율화 및 매장 inventory 관리</li>
+              <li class="underline">신규 브랜드 이커머스 진출 및 온라인 마케팅 전략</li>
+              <li class="underline">콜센터 운영 체계화를 통한 업무 효율 개선</li>
+              <li class="underline">스타트업 JV설립을 위한 투자 및 협력 방안 수립</li>
+              <li class="underline">BSC설계를 통한 기업 맞춤형 인사평가 및 인센티브 제도 수립</li>
+              <li class="underline">3PL Warehouse 효율화 및 매장 inventory 관리</li>
             </ul>
           </div>
         </div>
@@ -555,8 +555,8 @@ EOD,
                 <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%"><b>김경희</b> 전문가</span>
               </div>
               <div class="tracking-[-0.32px] text-[13px]">
-                現 이화창의 경영센터 대표<br/>
-                前 삼성SDS 엔터프라이즈 솔루션 사업팀 부장
+                現 이화창의 경영센터 대표<br/>
+                前 삼성SDS 엔터프라이즈 솔루션 사업팀 부장
               </div>
             </div>
             <div class="row-span-2 pt-[10px]">
@@ -582,7 +582,7 @@ EOD,
                 <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%"><b>김지석</b> 전문가</span>
               </div>
               <div class="tracking-[-0.32px] text-[13px]">
-                現 탤런트뱅크 전문가
+                現 탤런트뱅크 전문가
               </div>
             </div>
             <div class="row-span-2 pt-[10px]">
@@ -616,12 +616,12 @@ EOD,
           </div>
           <div class="text-center">
             <div class="text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
-              전문가 매니저의 <br/>
-              밀착 관리
+              전문가 매니저의 <br/>
+              밀착 관리
             </div>
             <div class="text-davyGrey text-[14px]">
-              TalentBank 전문가 매니저가 매니저 메시지, <br/>
-              정기 레터 등을 통해 끊임없이 전문가님과 소통합니다.
+              TalentBank 전문가 매니저가 매니저 메시지, <br/>
+              정기 레터 등을 통해 끊임없이 전문가님과 소통합니다.
             </div>
           </div>
         </div>
@@ -631,12 +631,12 @@ EOD,
           </div>
           <div class="text-center">
             <div class="text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
-              6,000만원 상당의 <br/>
-              온라인 교육과정 무료 수강
+              6,000만원 상당의 <br/>
+              온라인 교육과정 무료 수강
             </div>
             <div class="text-davyGrey text-[14px]">
-              전문가 전용 연수원에서 651개 이상의 교육과정을 <br/>
-              무료로 만나보실 수 있습니다.
+              전문가 전용 연수원에서 651개 이상의 교육과정을 <br/>
+              무료로 만나보실 수 있습니다.
             </div>
           </div>
         </div>
@@ -646,12 +646,12 @@ EOD,
           </div>
           <div class="text-center">
             <div class="text-[23px] font-bold mb-[13px] tracking-[-0.46px]">
-              최신 지식 콘텐츠 <br/>
-              휴넷 CEO 이용권 증정
+              최신 지식 콘텐츠 <br/>
+              휴넷 CEO 이용권 증정
             </div>
             <div class="text-davyGrey text-[14px]">
-              대면 인터뷰 참여시 25만원 상당의<br/> 
-              경영/리더십/트렌드 콘텐츠 이용권을 무료로 드립니다.
+              대면 인터뷰 참여시 25만원 상당의<br/> 
+              경영/리더십/트렌드 콘텐츠 이용권을 무료로 드립니다.
             </div>
           </div>
         </div>
