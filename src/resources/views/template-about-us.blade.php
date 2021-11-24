@@ -336,7 +336,7 @@ EOD,
             Project<br/>
             무료 의뢰
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2" data-icon="arrow-next"></div>
+          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext"></div>
         </li>
         <li class="bg-[#9dc1db] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
           <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 2</div>
@@ -344,14 +344,14 @@ EOD,
             BD 배정 및<br/>
             사전 미팅
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2" data-icon="arrow-next"></div>
+          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext"></div>
         </li>
         <li class="bg-[#6b639d] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
           <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 3</div>
           <div class="underline text-[24px] font-bold">
             전문가 선정
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2" data-icon="arrow-next"></div>
+          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext"></div>
         </li>
         <li class="bg-[#9dc1db] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
           <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 4</div>
@@ -359,7 +359,7 @@ EOD,
             3자 미팅 및 <br/>
             계약
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2" data-icon="arrow-next"></div>
+          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext""></div>
         </li>
         <li class="bg-[#6b639d] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
           <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 5</div>
@@ -675,7 +675,7 @@ EOD,
           <div class="text-[19px] font-bold tracking-[-0.56px] text-center">
             회원가입 후 Profile 작성
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2" data-icon="circle-arrow-next"></div>
+          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2 icon-label-circleArrowNext"></div>
         </div>
         <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px]">
           <div class="flex place-content-center mb-[31px]">
@@ -684,7 +684,7 @@ EOD,
           <div class="text-[19px] font-bold tracking-[-0.56px] text-center">
             서류 심사
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2" data-icon="circle-arrow-next"></div>
+          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2 icon-label-circleArrowNext"></div>
         </div>
         <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px]">
           <div class="flex place-content-center mb-[31px]">
@@ -693,7 +693,7 @@ EOD,
           <div class="text-[19px] font-bold tracking-[-0.56px] text-center">
             인터뷰
           </div>
-          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2" data-icon="circle-arrow-next"></div>
+          <div class="icon-label text-[60px] absolute right-0 top-1/2 transfrom translate-x-1/2 -translate-y-1/2 icon-label-circleArrowNext"></div>
         </div>
         <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px]">
           <div class="flex place-content-center mb-[31px]">

@@ -46,11 +46,11 @@
   <footer class="container mx-auto xl:max-w-desktop xl:px-[80px] entry-footer">
     @if ($attached)
       <div class="grid lg:grid-cols-[200px,1fr] gap-y-[21px] gap-x-[20px] py-[28px] lg:py-[80px] border-t border-b border-cerebralGrey mb-[28px] lg:mb-[60px]">
-        <div class="icon-label text-[20px] font-bold" data-icon="file">첨부파일</div>
+        <div class="icon-label text-[20px] font-bold icon-label-file">첨부파일</div>
         <div class="flex gap-x-[50px] gap-y-[16px] flex-wrap">
           @foreach ($attached as $item)
             @php($attached = $item['attached'])
-            <a href="{!! $attached['url'] !!}" class="icon-label underline power" style="--uph: 1px" data-icon="attached" download>{!! $attached['filename'] !!}</a>
+            <a href="{!! $attached['url'] !!}" class="icon-label underline power icon-label-attached" style="--uph: 1px" download>{!! $attached['filename'] !!}</a>
           @endforeach
         </div>
       </div>
@@ -58,7 +58,7 @@
     <div class="flex items-center justify-center">
       <div class="grid grid-cols-2 gap-x-[17px] items-center">
         <a href="" class="btn-black lg:w-[240px] text-center font-normal">
-          <div class="icon-label" data-icon="share">공유하기</div>
+          <div class="icon-label-share">공유하기</div>
         </a>
         <a href="" class="btn-black lg:w-[240px] text-center font-normal">목록으로</a>
       </div>
