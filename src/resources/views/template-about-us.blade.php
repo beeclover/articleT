@@ -329,47 +329,72 @@ EOD,
           </p>
         </div>
       </div>
-      <ul class="text-white flex flex-wrap gap-x-[60px] justify-center mb-[80px]">
-        <li class="bg-[#6b639d] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
-          <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 1</div>
-          <div class="underline text-[24px] font-bold">
-            Project<br/>
-            무료 의뢰
+      <ul class="grid lg:flex flex-wrap gap-x-[60px] justify-center mb-[80px]">
+        <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
+          <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+            <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 1</div>
+            <div class="hidden lg:block underline text-[24px] font-bold">
+              Project<br/>
+              무료 의뢰
+            </div>
           </div>
-          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext"></div>
-        </li>
-        <li class="bg-[#9dc1db] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
-          <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 2</div>
-          <div class="underline text-[24px] font-bold">
-            BD 배정 및<br/>
-            사전 미팅
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="block lg:hidden underline text-[16px] font-bold">
+            Project 무료 의뢰
           </div>
-          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext"></div>
         </li>
-        <li class="bg-[#6b639d] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
-          <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 3</div>
-          <div class="underline text-[24px] font-bold">
+        <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
+          <div class="text-white bg-[#9dc1db] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+            <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 2</div>
+            <div class="hidden lg:block underline text-[24px] font-bold">
+              BD 배정 및<br/>
+              사전 미팅
+            </div>
+          </div>
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="block lg:hidden underline text-[16px] font-bold">
+            BD 배정 및 사전 미팅
+          </div>
+        </li>
+        <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
+          <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+            <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 3</div>
+            <div class="hidden lg:block underline text-[24px] font-bold">
+              전문가 선정
+            </div>
+          </div>
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="block lg:hidden underline text-[16px] font-bold">
             전문가 선정
           </div>
-          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext"></div>
         </li>
-        <li class="bg-[#9dc1db] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
-          <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 4</div>
-          <div class="underline text-[24px] font-bold">
-            3자 미팅 및 <br/>
-            계약
+        <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
+          <div class="text-white bg-[#9dc1db] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+            <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 4</div>
+            <div class="hidden lg:block underline text-[24px] font-bold">
+              3자 미팅 및 <br/>
+              계약
+            </div>
           </div>
-          <div class="text-[60px] absolute right-0 top-1/2 transfrom translate-x-[40px] -translate-y-1/2 icon-label-arrowNext""></div>
+          <div class="text-[16px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-arrowNext rotate-90"></div>
+          <div class="block lg:hidden underline text-[16px] font-bold">
+            3자 미팅 및 계약
+          </div>
         </li>
-        <li class="bg-[#6b639d] w-[200px] h-[200px] flex rounded-full items-center justify-center text-center relative">
-          <div class="absolute left-1/2 top-[36px] transfrom -translate-x-1/2 opacity-75 text-[16px]">STEP 5</div>
-          <div class="underline text-[24px] font-bold">
+        <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
+          <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+            <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 5</div>
+            <div class="hidden lg:block underline text-[24px] font-bold">
+              Project 시작
+            </div>
+          </div>
+          <div class="block lg:hidden underline text-[16px] font-bold">
             Project 시작
           </div>
         </li>
       </ul>
       <div class="text-center">
-        <a class="inline-block btn-carbon py-[28px] rounded-[12px] font-normal text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           프로젝트 무료 의뢰하기
         </a>
       </div>
@@ -705,7 +730,7 @@ EOD,
         </div>
       </div>
       <div class="text-center">
-        <a class="inline-block btn-carbon py-[28px] rounded-[12px] font-normal text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           전문가 등록하기
         </a>
       </div>
