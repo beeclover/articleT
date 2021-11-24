@@ -413,7 +413,7 @@ EOD,
 EOD,
   ])
   <section>
-    <div class="container mx-auto mt-[90px] mb-[100px]">
+    <div class="container mx-auto my-[52px] lg:mt-[90px] lg:mb-[100px]">
       <div class="text-center mb-[56px]">
         <h3 class="text-[26px] lg:text-[34px] text-black mb-[8px] font-semibold">이런 전문가를 찾습니다</h3>
         <div class="text-[16px] text-davyGrey">
@@ -422,51 +422,51 @@ EOD,
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-4 gap-x-[30px]">
-        <div class="border border-cerebralGrey rounded-[4px] p-[24px] grid grid-row-[320px,1fr] gap-y-[33px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-y-[12px] gap-x-[30px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-9'])
-          <div class="text-center">
-            <div class="underline text-[24px] mb-[13px] font-bold">01</div>
-            <div class="text-carbon">
+          <div class="lg:text-center">
+            <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">01</div>
+            <div class="text-carbon text-[13px] lg:text-[16px] mb-[8px] lg:mb-0">
               ‘퇴직’ 개념 없이 내 전문성으로 
             </div>
-            <div class="text-[22px] text-black font-bold tracking-[-1.4px]">
+            <div class="text-[18px] lg:text-[22px] text-black font-bold lg:tracking-[-1.4px]">
               평생 일하고 싶은 분
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey rounded-[4px] p-[24px] grid grid-row-[320px,1fr] gap-y-[33px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-10'])
-          <div class="text-center">
-            <div class="underline text-[24px] mb-[13px] font-bold">02</div>
-            <div class="text-carbon">
+          <div class="lg:text-center">
+            <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">02</div>
+            <div class="text-carbon text-[13px] lg:text-[16px] mb-[8px] lg:mb-0">
               대기업 팀장, 중소기업 임원 이상의 
             </div>
-            <div class="text-[22px] text-black font-bold tracking-[-1.4px]">
+            <div class="text-[18px] lg:text-[22px] text-black font-bold lg:tracking-[-1.4px]">
               비즈니스 베테랑
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey rounded-[4px] p-[24px] grid grid-row-[320px,1fr] gap-y-[33px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-11'])
-          <div class="text-center">
-            <div class="underline text-[24px] mb-[13px] font-bold">03</div>
-            <div class="text-carbon">
+          <div class="lg:text-center">
+            <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">03</div>
+            <div class="text-carbon text-[13px] lg:text-[16px] mb-[8px] lg:mb-0">
               현재 비즈니스 베테랑으로서
             </div>
-            <div class="text-[22px] text-black font-bold tracking-[-1.4px]">
+            <div class="text-[18px] lg:text-[22px] text-black font-bold lg:tracking-[-1.4px]">
               이미 활동하고 계신 분
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey rounded-[4px] p-[24px] grid grid-row-[320px,1fr] gap-y-[33px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-12'])
-          <div class="text-center">
-            <div class="underline text-[24px] mb-[13px] font-bold">04</div>
-            <div class="text-carbon">
+          <div class="lg:text-center">
+            <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">04</div>
+            <div class="text-carbon text-[13px] lg:text-[16px] mb-[8px] lg:mb-0">
               내 경험과 노하우로
             </div>
-            <div class="text-[22px] text-black font-bold tracking-[-1.4px]">
+            <div class="text-[18px] lg:text-[22px] text-black font-bold lg:tracking-[-1.4px]">
               기업성장에 기여하고 싶은 분
             </div>
           </div>
