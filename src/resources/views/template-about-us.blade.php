@@ -271,26 +271,26 @@ EOD,
       </div>
     </div>
     <div class="bg-lighthouse">
-      <div class="container mx-auto pt-[109px] pb-[120px]">
+      <div class="container mx-auto py-[52px] lg:pt-[109px] lg:pb-[120px]">
         <div class="text-center mb-[56px]">
           <h3 class="text-[26px] lg:text-[34px] text-black mb-[8px] font-semibold">탤런트뱅크 서비스 이용 후기</h3>
-          <div class="text-[16px] text-davyGrey">
+          <div class="text-[14px] lg:text-[16px] text-davyGrey">
             <p>
               많은 기업들이 탤런트뱅크를 통해 성장하고 있습니다.
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-2 gap-x-[40px] mb-[88px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[40px] gap-x-[40px] mb-[40px] lg:mb-[88px]">
           <div>
             <div class="aspect-w-16 aspect-h-9 mb-[44px]">
               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/njX2bu-_Vw4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="flex flex-col items-center text-center">
-              <div class="text-[23px] font-mj font-extrabold mb-[28px]">
+              <div class="text-[16px] lg:text-[23px] font-mj font-extrabold mb-[28px]">
                 “고퀄리티의 인재들을 큰 비용 안들이고 활용하여<br/>
                 사업에 도움이 될 수 있습니다.”
               </div>
-              <div class="listDivider__cols2 text-basaltGrey text-[17px] after:bg-lighthouse leading-none">
+              <div class="listDivider__cols2 text-basaltGrey text-[14px] lg:text-[17px] after:bg-lighthouse leading-none">
                 <span class="text-carbon font-bold">김윤현</span>
                 <span class="after:bg-steam">HS하이테크 부사장</span>
               </div>
@@ -301,11 +301,11 @@ EOD,
               <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/njX2bu-_Vw4?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="flex flex-col items-center text-center">
-              <div class="text-[23px] font-mj font-extrabold mb-[28px]">
+              <div class="text-[16px] lg:text-[23px] font-mj font-extrabold mb-[28px]">
                 “실제 그 업무를 했던 분이 직접<br/>
                 프로젝트를 수행해 주시니 너무 좋았습니다.”
               </div>
-              <div class="listDivider__cols2 text-basaltGrey text-[17px] after:bg-lighthouse leading-none">
+              <div class="listDivider__cols2 text-basaltGrey text-[14px] lg:text-[17px] after:bg-lighthouse leading-none">
                 <span class="text-carbon font-bold">최준혁</span>
                 <span class="after:bg-steam">캐스팅엔 대표</span>
               </div>
@@ -313,7 +313,7 @@ EOD,
           </div>
         </div>
         <div class="text-center">
-          <a class="inline-block btn-carbon py-[28px] rounded-[12px] font-normal text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+          <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
             성공사례 더 알아보기
           </a>
         </div>
