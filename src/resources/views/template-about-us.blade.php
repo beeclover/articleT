@@ -474,21 +474,21 @@ EOD,
       </div>
     </div>
     <div class="bg-lighthouse">
-      <div class="container mx-auto pt-[110px] pb-[120px]">
-        <div class="text-center mb-[56px]">
+      <div class="container mx-auto py-[52px] lg:pt-[110px] lg:pb-[120px]">
+        <div class="text-center mb-[28px] lg:mb-[56px]">
           <h3 class="text-[26px] lg:text-[34px] text-black mb-[8px] font-semibold">전문가가 일하는 방식</h3>
         </div>
-        <div class="grid grid-cols-2 gap-x-[30px]">
-          <div class="border border-cerebralGrey bg-white px-[45px] pb-[65px] pt-[84px] relative">
-            <div class="bg-deepSpaceRodeo text-white text-[17px] px-[45px] py-[30px] grid place-content-center top-0 right-[38px] absolute">사례 A</div>
-            <div class="grid grid-cols-2 gap-x-[34px]">
-              <div class="col-span-2 text-[25px] font-bold mb-[36px]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[12px] gap-x-[30px]">
+          <div class="border border-cerebralGrey bg-white px-[24px] lg:px-[45px] py-[36px] pt-[52px] lg:pb-[65px] lg:pt-[84px] relative">
+            <div class="bg-deepSpaceRodeo text-white text-[13px] lg:text-[17px] px-[19px] lg:px-[45px] py-[13px] lg:py-[30px] grid place-content-center top-0 right-[24px] lg:right-[38px] absolute">사례 A</div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[20px] gap-x-[34px]">
+              <div class="lg:col-span-2 text-[18px] lg:text-[25px] font-bold mb-[8px] lg:mb-[36px]">
                 <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">식자재 HMR</span><br/>
                 국내외 영업 전문가가 필요합니다.
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px]">기업고객의 니즈</div>
-                <div class="text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
+                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">기업고객의 니즈</div>
+                <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   서울 소재 외식업체이며, 그동안 해왔던 캡티브 마켓 
                   중심의 식자재 사업에서 외부 식자재 사업으로 적극 
                   전개하려고 함. 시장분석 및 유통 거래선 발굴, 
@@ -496,8 +496,8 @@ EOD,
                 </div>
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px]">프로젝트 성과</div>
-                <div class="text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
+                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
+                <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   <span class="text-aero">
                     대상(주)에서 B2B식자재 유통사업전략 수립 및
                     실행 경험의 전문가 매칭
@@ -506,25 +506,25 @@ EOD,
                   더해 HMR년도별 판매채널 구축 및 마케팅 전략 수집
                 </div>
               </div>
-              <div class="col-span-2 mt-[30px] mb-[25px] h-px bg-cerebralGrey"></div>
-              <div class="col-span-2">
+              <div class="lg:col-span-2 mt-[8px] lg:mt-[30px] mb-[4px] lg:mb-[25px] h-px bg-cerebralGrey"></div>
+              <div class="lg:col-span-2">
                 <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px]">근무형태</div>
-                <div class="text-[19px] tracking-[-0.56px]">
+                <div class="lg:text-[19px] tracking-[-0.56px]">
                   <b>주 1일</b> / 6시간 상근(3개월)
                 </div>
               </div>
             </div>
           </div>
-          <div class="border border-cerebralGrey bg-white px-[60px] pb-[65px] pt-[84px] relative">
-            <div class="bg-deepSpaceRodeo text-white text-[17px] px-[45px] py-[30px] grid place-content-center top-0 right-[38px] absolute">사례 B</div>
-            <div class="grid grid-cols-2 gap-x-[50px]">
-              <div class="col-span-2 text-[25px] font-bold mb-[36px]">
+          <div class="border border-cerebralGrey bg-white px-[24px] lg:px-[45px] py-[36px] pt-[52px] lg:pb-[65px] lg:pt-[84px] relative">
+            <div class="bg-deepSpaceRodeo text-white text-[13px] lg:text-[17px] px-[19px] lg:px-[45px] py-[13px] lg:py-[30px] grid place-content-center top-0 right-[24px] lg:right-[38px] absolute">사례 B</div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[20px] gap-x-[34px]">
+              <div class="lg:col-span-2 text-[18px] lg:text-[25px] font-bold mb-[8px] lg:mb-[36px]">
                 <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">신사업 시장조사 및 사업 타당성</span>을<br/>
                 검토해줄 전문가를 모십니다.
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px]">기업고객의 니즈</div>
-                <div class="text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
+                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">기업고객의 니즈</div>
+                <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   글로벌 기업으로부터 한국 내 H/W 제품 사업 관련하여 
                   제휴를 제안 받은 상황으로 사업에 필요한 시장 및 
                   경쟁사 조사, SWOT분석, 사업 타당성 검토가 가능한 
@@ -532,8 +532,8 @@ EOD,
                 </div>
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px]">프로젝트 성과</div>
-                <div class="text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
+                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
+                <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   <span class="text-aero">
                     넷마블, 한빛소프트 출신 20년 경력<br/>
                     게임 사업 전문가 매칭
@@ -542,10 +542,10 @@ EOD,
                   향후 전망 자문 및 사업화 전략 보고서 제공
                 </div>
               </div>
-              <div class="col-span-2 mt-[30px] mb-[25px] h-px bg-cerebralGrey"></div>
-              <div class="col-span-2">
+              <div class="lg:col-span-2 mt-[8px] lg:mt-[30px] mb-[4px] lg:mb-[25px] h-px bg-cerebralGrey"></div>
+              <div class="lg:col-span-2">
                 <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px]">근무형태</div>
-                <div class="text-[19px] tracking-[-0.56px]">
+                <div class="lg:text-[19px] tracking-[-0.56px]">
                   <b>주 1~2회</b> / 비상근(3개월)
                 </div>
               </div>
