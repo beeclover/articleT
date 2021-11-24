@@ -16,6 +16,10 @@
     @apply border-b-[1px] border-[#eee];
   }
 
+  a:hover {
+    @apply text-deepSpaceRodeo;
+  }
+
   &-inner {
     @apply h-[var(--h-gnb)]
       flex

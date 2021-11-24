@@ -23,7 +23,7 @@
     @apply text-[18px] relative;
 
     @media (min-width: theme('screens.sm')) {
-      @apply text-[36px];
+      @apply text-[26px];
     }
 
     margin-bottom: 0.2em;
@@ -53,10 +53,10 @@
     }
   }
   &-title {
-    @apply text-[22px] mb-[26px] font-medium;
+    @apply text-[22px] mb-[17px] font-medium;
 
     @media (min-width: theme('screens.sm')) {
-      @apply text-[28px];
+      @apply text-[26px];
     }
 
     @media (max-width: theme('screens.sm')) {
