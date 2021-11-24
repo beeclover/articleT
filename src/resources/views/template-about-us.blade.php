@@ -556,36 +556,38 @@ EOD,
     </div>
   </section>
   <section class="relative">
-    <div class="container mx-auto pt-[109px] pb-[105px] relative z-10">
+    <div class="container mx-auto py-[52px] lg:pt-[109px] lg:pb-[105px] relative z-10">
       <div class="text-center mb-[56px]">
-        <h3 class="text-[34px] text-white mb-[8px] font-semibold">
+        <h3 class="text-[24px] lg:text-[34px] text-white mb-[8px] font-semibold">
           <b>탤런트뱅크를택한</b><br/>
           전문가들의 리얼 인터뷰
         </h3>
-        <div class="text-[20px] text-white">
+        <div class="text-[14px] lg:text-[20px] text-white">
           <p>
             당신은 탤런트뱅크에서 더 많은 영향력을 발휘할 수 있습니다.
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-x-[30px] mb-[60px]">
-        <div class="p-[40px] bg-white rounded-[20px]">
-          <div class="grid grid-cols-[163px,230px,1fr] grid-row-2 mb-[41px]">
-            <div class="row-span-2 self-center">
-              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-13'])
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[56px] gap-x-[30px] mb-[60px]">
+        <div class="px-[21px] pb-[52px] lg:p-[40px] bg-white rounded-[20px]">
+          <div class="grid grid-cols-[2fr,1fr] lg:grid-cols-[163px,1fr] grid-row-2 mb-[32px] lg:mb-[41px] gap-x-[30px] gap-y-[18px] lg:gap-y-[21px]">
+            <div class="row-span-2 col-span-2 lg:col-span-1 self-center pt-[76px] lg:pt-0 relative">
+              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-13', 'class' => 'absolute lg:static w-[100px] lg:w-auto left-1/2 -translate-x-1/2 lg:translate-x-0 bottom-0'])
             </div>
-            <div class="row-span-2 pl-[30px] pt-[35px]">
-              <div class="text-deepSpaceRodeo mb-[21px] text-[13px]">Expert interview</div>
-              <div class="text-[26px] mb-[19px]">
+            <div class="col-span-2 lg:col-span-1 pt-[10px] grid grid-cols-2 items-center">
+              <div class="text-deepSpaceRodeo text-[13px]">Expert interview</div>
+              <div class="justify-self-end">
+                <a href="#" class="btn-black inline-block w-full font-normal text-center text-[14px]">인터뷰 보기</a>
+              </div>
+            </div>
+            <div class="col-span-2 lg:col-span-1">
+              <div class="text-[22px] lg:text-[26px] mb-[16px] lg:mb-[19px]">
                 <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%"><b>김경희</b> 전문가</span>
               </div>
               <div class="tracking-[-0.32px] text-[13px]">
                 現 이화창의 경영센터 대표<br/>
                 前 삼성SDS 엔터프라이즈 솔루션 사업팀 부장
               </div>
-            </div>
-            <div class="row-span-2 pt-[10px]">
-              <a href="#" class="btn-black inline-block w-full font-normal text-center text-[14px]">인터뷰 보기</a>
             </div>
           </div>
           <div class="text-[13px] tracking-[-0.36px] text-davyGrey">
@@ -596,22 +598,24 @@ EOD,
             계약도 온라인을 통해 쉽게 할 수 있어서 좋았습니다.
           </div>
         </div>
-        <div class="p-[40px] bg-white rounded-[20px]">
-          <div class="grid grid-cols-[163px,230px,1fr] grid-row-2 mb-[41px]">
-            <div class="row-span-2 self-center">
-              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-14'])
+        <div class="px-[21px] pb-[52px] lg:p-[40px] bg-white rounded-[20px]">
+          <div class="grid grid-cols-[2fr,1fr] lg:grid-cols-[163px,1fr] grid-row-2 mb-[32px] lg:mb-[41px] gap-x-[30px] gap-y-[18px] lg:gap-y-[21px]">
+            <div class="row-span-2 col-span-2 lg:col-span-1 self-center pt-[76px] lg:pt-0 relative">
+              @include('partials.img', ['ex' => 'png', 'name' => 'about-us-14', 'class' => 'absolute lg:static w-[100px] lg:w-auto left-1/2 -translate-x-1/2 lg:translate-x-0 bottom-0'])
             </div>
-            <div class="row-span-2 pl-[30px] pt-[35px]">
-              <div class="text-deepSpaceRodeo mb-[21px] text-[13px]">Expert interview</div>
-              <div class="text-[26px] mb-[19px]">
+            <div class="col-span-2 lg:col-span-1 pt-[10px] grid grid-cols-2 items-center">
+              <div class="text-deepSpaceRodeo text-[13px]">Expert interview</div>
+              <div class="justify-self-end">
+                <a href="#" class="btn-black inline-block w-full font-normal text-center text-[14px]">인터뷰 보기</a>
+              </div>
+            </div>
+            <div class="col-span-2 lg:col-span-1">
+              <div class="text-[22px] lg:text-[26px] mb-[16px] lg:mb-[19px]">
                 <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%"><b>김지석</b> 전문가</span>
               </div>
               <div class="tracking-[-0.32px] text-[13px]">
                 現 탤런트뱅크 전문가
               </div>
-            </div>
-            <div class="row-span-2 pt-[10px]">
-              <a href="#" class="btn-black inline-block w-full font-normal text-center text-[14px]">인터뷰 보기</a>
             </div>
           </div>
           <div class="text-[13px] tracking-[-0.36px] text-davyGrey">
@@ -621,7 +625,7 @@ EOD,
         </div>
       </div>
       <div class="text-center">
-        <a class="inline-block btn-carbon bg-transparent border-[2px] border-white py-[28px] rounded-[12px] font-normal text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="inline-block btn-carbon bg-transparent border-[2px] border-white py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           전문가 등록 바로가기
         </a>
       </div>
