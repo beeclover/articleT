@@ -100,9 +100,10 @@
 
       a {
         @include pointUnderLine;
+        @apply text-[#1968ff] ring-[#1968ff] ring-opacity-40;
 
         &:hover {
-          --h: 98%;
+          --h: 50%;
         }
       }
     }

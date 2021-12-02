@@ -6,7 +6,8 @@
   background-position-y: -0%;
   background-image: linear-gradient(transparent 50%, var(--tw-ring-color) 50%);
   background-size: auto calc(200% - (var(--h, 15%) * 2));
-  transition: background 500ms ease;
+  transition: background 500ms;
+  background-repeat: no-repeat;
   display: inline;
 }
 
