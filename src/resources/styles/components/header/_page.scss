@@ -51,6 +51,10 @@
     @media (min-width: theme('screens.sm')) {
       @apply pt-0;
     }
+
+    @media (min-width: theme('screens.lg')) {
+      max-width: 50%;
+    }
   }
   &-title {
     @apply text-[22px] mb-[17px] font-medium;

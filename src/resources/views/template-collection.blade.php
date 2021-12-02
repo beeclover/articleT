@@ -9,7 +9,7 @@
     'labelBg' => null,
     'title' => $description, 
     'content' => <<<EOD
-    #탤런트뱅크서비스소개  #100%활용방법  #뉴스룸 #웨비나
+    #탤런트뱅크 #신고용플랫폼 #긱-이코노미
 EOD,
   ])
   <div class="container mx-auto pt-[100px] pb-[100px]">
