@@ -4,7 +4,7 @@
   @if (! have_posts())
     <div class="container mx-auto py-[120px] flex flex-col justify-center items-center text-center">
       <div class="mb-[28px]">
-        @include('partials.img', ['ex' => 'png', 'name' => 'img-404', 'p-[40px] max-w-full'])
+        @include('partials.img', ['ex' => 'png', 'name' => 'img-404', 'p-[40px] max-w-[90%]'])
       </div>
       <div class="text-[44px] mb-[48px]">
         자세히 살펴보았지만,<br/>

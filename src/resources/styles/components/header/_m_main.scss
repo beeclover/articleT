@@ -64,9 +64,14 @@
     > li {
       @apply h-[var(--h-m_gnb-nav)] flex items-center text-white text-opacity-50;
 
+      a:hover {
+        @apply text-white;
+      }
+
       &:hover,
       &.current-menu-item {
         @apply text-opacity-100;
+
         position: relative;
 
         &::after {

@@ -5,7 +5,7 @@
 @if (!have_posts())
   <div class="container mx-auto py-[120px] flex flex-col justify-center items-center text-center">
   <div class="mb-[28px]">
-    <img src="{!! get_theme_file_uri('resources/images/not-found.jpg') !!}" alt="" class="max-w-[600px]">
+    <img src="{!! get_theme_file_uri('resources/images/not-found.jpg') !!}" alt="" class="max-w-[90%] sm:max-w-[600px] mx-auto">
   </div>
   <div class="text-davyGrey text-[24px] mb-[60px]">
     이용에 불편을 드려 죄송합니다.<br/>
