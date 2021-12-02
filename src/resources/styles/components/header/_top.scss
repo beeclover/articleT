@@ -27,8 +27,9 @@
     @apply flex h-full;
 
     &-item {
-      @apply px-[28px] text-basaltGrey;
+      @apply px-[28px] text-[#9e9e9e];
 
+      font-size: 14px;
       display: flex;
       align-items: center;
       position: relative;
@@ -43,8 +44,7 @@
         border-r-[1px]
         border-l-[1px]
         border-steam
-        text-basaltGrey
-        font-bold;
+        text-[#212121];
 
         & #{$p}-nav-icon {
           background-color: var(--bgColor);
@@ -72,10 +72,10 @@
   }
 
   &-menu {
-    @apply flex text-squant;
+    @apply flex text-[#858585] text-[13px];
 
     &-item {
-      @apply flex items-center gap-x-[4px] text-[14px] px-[20px];
+      @apply flex items-center gap-x-[4px] px-[20px];
     }
   }
 }
