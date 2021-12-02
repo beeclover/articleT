@@ -215,8 +215,8 @@ if (function_exists('acf_add_options_sub_page')) {
   acf_add_options_sub_page(array(
   'page_title'  => 'main',
   'menu_title'  => 'main',
-  'menu_slug' 	=> 'main',
-  'capability'	=> 'edit_posts',
+  'menu_slug'   => 'main',
+  'capability'  => 'edit_posts',
 ));
 }
 
@@ -227,23 +227,24 @@ add_action('init', function () {
 });
 
 add_action( 'pre_get_posts' , function ($query) {
-  if ( ! is_admin() && $query->is_main_query() )
-  {
-      $query->set( 'posts_per_page', 15 ); //set query arg ( key, value )
-
-      return $query;
+  // 우리는 의도하지 않은 결과를 원하지 않습니다.
+  if ( is_admin() || ! $query->is_main_query() ) {
+    return;
   }
+
+  $query->set( 'posts_per_page', 15 );
+
+  if ( is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
+    $cptui_post_types = cptui_get_post_type_slugs();
+
+    $query->set(
+      'post_type',
+      array_merge(
+        array( 'post' ),
+        $cptui_post_types
+      )
+    );
+  }
+
+  return $query;
 } );
-
-// function archive_videos_template( $template )
-// {  
-//     remove_filter( 'template_include', 'archive_videos_template', 99 );
-
-//     $target_tpl = 'archive-videos_cpt.php';
-//     $new_template = locate_template( array( $target_tpl ) );
-//     if ( ! empty( $new_template ) )
-//         $template = $new_template;
-//     }
-
-//     return $template;
-// }
