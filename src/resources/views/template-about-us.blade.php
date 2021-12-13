@@ -337,7 +337,7 @@ EOD,
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
           <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 1</div>
-            <div class="hidden lg:block underline text-[24px] font-bold">
+            <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project<br/>
               무료 의뢰
             </div>
@@ -350,7 +350,7 @@ EOD,
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
           <div class="text-white bg-[#9dc1db] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 2</div>
-            <div class="hidden lg:block underline text-[24px] font-bold">
+            <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               BD 배정 및<br/>
               사전 미팅
             </div>
@@ -363,7 +363,7 @@ EOD,
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
           <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 3</div>
-            <div class="hidden lg:block underline text-[24px] font-bold">
+            <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               전문가 선정
             </div>
           </div>
@@ -375,7 +375,7 @@ EOD,
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
           <div class="text-white bg-[#9dc1db] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 4</div>
-            <div class="hidden lg:block underline text-[24px] font-bold">
+            <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               3자 미팅 및 <br/>
               계약
             </div>
@@ -388,7 +388,7 @@ EOD,
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
           <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 5</div>
-            <div class="hidden lg:block underline text-[24px] font-bold">
+            <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project 시작
             </div>
           </div>
