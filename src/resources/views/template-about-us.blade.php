@@ -317,13 +317,13 @@ EOD,
           </div>
         </div>
         <div class="text-center">
-          <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+          <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
             성공사례 더 알아보기
           </a>
         </div>
       </div>
     </div>
-    <div class="container mx-auto mt-[90px] mb-[120px]">
+    <div class="container mx-auto mt-[90px] mb-[52px] lg:mb-[120px]">
       <div class="text-center mb-[56px]">
         <h3 class="text-[26px] lg:text-[34px] text-black mb-[8px] font-semibold">Project 진행 프로세스</h3>
         <div class="text-[16px] text-davyGrey">
@@ -333,7 +333,7 @@ EOD,
           </p>
         </div>
       </div>
-      <ul class="grid lg:flex flex-wrap gap-x-[60px] justify-center mb-[80px]">
+      <ul class="grid lg:flex flex-wrap gap-x-[60px] justify-center mb-[40px] lg:mb-[80px]">
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
           <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 1</div>
@@ -398,7 +398,7 @@ EOD,
         </li>
       </ul>
       <div class="text-center">
-        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           프로젝트 무료 의뢰하기
         </a>
       </div>
@@ -631,7 +631,7 @@ EOD,
         </div>
       </div>
       <div class="text-center">
-        <a class="inline-block btn-carbon bg-transparent border-[2px] border-white py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="inline-block btn-carbon bg-transparent border-[1px] lg:border-[2px] border-white py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           전문가 등록 바로가기
         </a>
       </div>
@@ -740,7 +740,7 @@ EOD,
         </div>
       </div>
       <div class="text-center">
-        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[12px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           전문가 등록하기
         </a>
       </div>
