@@ -11,7 +11,7 @@
       </div>
 
       <div class="entry-meta">
-        <div class="listDivider__cols2">
+        <div class="listDivider__cols2 font-bold">
           <time datetime="{!! get_the_date('Y/m/d') !!}"></time>
           @isset($collection)
             <a href="{!! $collection->link !!}">{!! $collection->name !!}</a>
@@ -23,7 +23,7 @@
         {!! $title !!}
       </h1>
 
-      <div class="entry-tags">
+      <div class="entry-tags text-deepSpaceRodeo">
         @if(has_tag())
           @foreach(get_the_tags() as $tag)
           <a href="{!! get_term_link($tag) !!}">#{!! $tag->name !!}</a>
