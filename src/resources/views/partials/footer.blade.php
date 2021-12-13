@@ -10,7 +10,7 @@
           'menu_class' => 'footer__main-1-nav',
           ]) !!}
       </div>
-      <div class="grid grid-cols-1 sm:grid-cols-[auto,auto] order-1 sm:order-2 items-center">
+      <div class="grid grid-cols-1 sm:grid-cols-[auto,auto] order-1 sm:order-2">
         <div>
           <h2 class="h2">Help & Support</h2>
           <div class="grid grid-cols-3 sm:grid-cols-[123px,1fr] gap-[20px]">
