@@ -33,7 +33,7 @@ EOD;
       $attributes .= ! empty( $item->target )     ? ' target="' . esc_attr( $item->target     ) .'"' : '';
       $attributes .= ! empty( $item->xfn )        ? ' rel="'    . esc_attr( $item->xfn        ) .'"' : '';
       $attributes .= ! empty( $item->url )        ? ' href="'   . esc_attr( $item->url        ) .'"' : '';
-      $attributes .= ' class="menu-link flex gap-x-[4px] items-center ' . ( $depth > 0 ? 'sub-menu-link' : 'main-menu-link' ) . '"';
+      $attributes .= ' class="menu-link flex gap-x-[4px] whitespace-nowrap items-center ' . ( $depth > 0 ? 'sub-menu-link' : 'main-menu-link' ) . '"';
 
       // Build HTML output and pass through the proper filter.
       $item_output = sprintf( '%1$s<a%2$s>%3$s%4$s%5$s</a>%6$s',

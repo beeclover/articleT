@@ -73,6 +73,7 @@
       --h: 0px;
       @apply px-[4px];
       transition: none;
+      white-space: nowrap;
 
       &:hover {
         --h: 12px;
