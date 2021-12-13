@@ -14,13 +14,13 @@
         <div>
           <h2 class="h2">Help & Support</h2>
           <div class="grid grid-cols-3 sm:grid-cols-[123px,1fr] gap-[20px]">
-            <a href="http://talentbank.co.kr/common/faq" target="_blank" rel="noopener noreferrer" class="icon-label gap-y-[12px] before:text-[40px] sm:before:text-[20px] sm:text-seaSerpent icon-label-fap">
+            <a href="http://talentbank.co.kr/common/faq" target="_blank" rel="noopener noreferrer" class="text-[14px] lg:text-[16px] icon-label gap-y-[12px] before:text-[28px] sm:before:text-[20px] text-seaSerpent icon-label-fap">
               FAQ
             </a>
             <div class="hidden sm:block">
               가장 많이 문의 주셨던 사항을 정리했습니다.
             </div>
-            <div class="icon-label gap-y-[12px] before:text-[40px] sm:before:text-[20px] sm:text-seaSerpent icon-label-call">
+            <div class="text-[14px] lg:text-[16px] icon-label gap-y-[12px] before:text-[28px] sm:before:text-[20px] text-seaSerpent icon-label-call">
               1833-4730
             </div>
             <div class="hidden sm:block">
