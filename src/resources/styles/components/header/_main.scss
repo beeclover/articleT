@@ -104,7 +104,7 @@
   }
 
   &-subnav {
-    @apply text-[18px] flex;
+    @apply text-[18px] flex gap-x-[60px];
 
     position: absolute;
     top: calc(100% + 1px);
@@ -124,7 +124,7 @@
     }
 
     > li {
-      @apply h-[58px] flex items-center px-[16px] text-black font-medium text-[18px];
+      @apply h-[58px] flex items-center text-black font-medium text-[18px];
 
       .menu-link {
         white-space: nowrap;
