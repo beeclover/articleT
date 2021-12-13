@@ -72,8 +72,6 @@
     &-item {
       --h: 0px;
       @apply px-[4px];
-      @include pointUnderLine;
-      @apply ring-deepSpaceRodeo ring-opacity-20;
       transition: none;
 
       &:hover {
@@ -86,8 +84,10 @@
         height: 100%;
         position: relative;
 
-        &.hover,
         &.current-menu-item {
+          @apply text-deepSpaceRodeo;
+        }
+        &.hover {
           @apply text-deepSpaceRodeo;
           &:after {
             @apply bg-deepSpaceRodeo;
