@@ -429,7 +429,7 @@ EOD,
         </div>
       </div>
       <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-y-[12px] gap-x-[30px]">
-        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] lg:pt-[30px] lg:pb-[41px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[24px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-9'])
           <div class="lg:text-center">
             <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">01</div>
@@ -441,7 +441,7 @@ EOD,
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] lg:pt-[30px] lg:pb-[41px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[24px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-10'])
           <div class="lg:text-center">
             <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">02</div>
@@ -453,7 +453,7 @@ EOD,
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] lg:pt-[30px] lg:pb-[41px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[24px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-11'])
           <div class="lg:text-center">
             <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">03</div>
@@ -465,7 +465,7 @@ EOD,
             </div>
           </div>
         </div>
-        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[33px] gap-x-[12px]">
+        <div class="border border-cerebralGrey rounded-[4px] p-[16px] lg:p-[24px] lg:pt-[30px] lg:pb-[41px] grid lg:grid-row-[320px,1fr] grid-cols-2 lg:grid-cols-1 gap-y-[24px] gap-x-[12px]">
           @include('partials.img', ['ex' => 'jpg', 'name' => 'about-us-12'])
           <div class="lg:text-center">
             <div class="underline text-[16px] lg:text-[24px] mb-[13px] font-bold">04</div>
