@@ -9,6 +9,17 @@
 
     &-title {
       order: -1;
+      > a {
+        @media (max-width: theme('screens.lg')) {
+          @apply line-clamp-2;
+        }
+      }
+    }
+
+    &-body {
+      @media (max-width: theme('screens.lg')) {
+        @apply self-center;
+      }
     }
 
     &-main {

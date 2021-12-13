@@ -26,6 +26,13 @@ class Search extends Composer
     {
         return [
             'pagination' => (new Pagination())->render(),
+            'count' => $this->allSearchCount(),
         ];
+    }
+
+    public function allSearchCount()
+    {
+        global $wp_query;
+        return $wp_query->found_posts;
     }
 }
