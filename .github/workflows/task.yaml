@@ -7,7 +7,7 @@ on:
 jobs:
   Auto-Cerate-PR:
     runs-on: ubuntu-latest
-    if: ${{ github.event.repository.owner.name == 'beeclover' }}
+    if: ${{ github.repository == 'beeclover/articleT' }}
     steps:
       - name: Extract branch name
         shell: bash
