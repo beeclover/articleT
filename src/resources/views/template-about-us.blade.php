@@ -702,7 +702,7 @@ EOD,
           </p>
         </div>
       </div>
-      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-[34px] mb-[40px] lg:mb-[80px] gap-y-[32px]">
+      <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-[35px] mb-[40px] lg:mb-[80px] gap-y-[32px]">
         <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
           <div class="flex place-content-center lg:mb-[31px]">
             @include('partials.img', ['ex' => 'png', 'name' => 'about-us-18', 'class' => 'max-w-[60px] lg:max-w-[90px]'])
@@ -710,7 +710,7 @@ EOD,
           <div class="text-[19px] font-bold tracking-[-0.56px] lg:text-center">
             회원가입 후 Profile 작성
           </div>
-          <div class="text-[40px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 lg:rotate-0 z-10"></div>
+          <div class="text-[40px] lg:text-[44px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-1/2 lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 lg:rotate-0 z-10"></div>
         </div>
         <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
           <div class="flex place-content-center lg:mb-[31px]">
@@ -719,7 +719,7 @@ EOD,
           <div class="text-[19px] font-bold tracking-[-0.56px] lg:text-center">
             서류 심사
           </div>
-          <div class="text-[40px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 lg:rotate-0 z-10"></div>
+          <div class="text-[40px] lg:text-[44px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-1/2 lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 lg:rotate-0 z-10"></div>
         </div>
         <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
           <div class="flex place-content-center lg:mb-[31px]">
@@ -728,7 +728,7 @@ EOD,
           <div class="text-[19px] font-bold tracking-[-0.56px] lg:text-center">
             인터뷰
           </div>
-          <div class="text-[40px] lg:text-[60px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-[40px] lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 lg:rotate-0 z-10"></div>
+          <div class="text-[40px] lg:text-[44px] absolute lg:right-0 top-full left-1/2 lg:left-auto lg:top-1/2 transfrom -translate-y-1/2 -translate-x-1/2 lg:translate-x-1/2 lg:-translate-y-1/2 icon-label-circleArrowNext rotate-90 lg:rotate-0 z-10"></div>
         </div>
         <div class="border border-cerebralGrey py-[44px] px-[20px] relative rounded-[4px] grid grid-cols-[auto,1fr] lg:grid-cols-1 items-center gap-x-[16px]">
           <div class="flex place-content-center lg:mb-[31px]">
