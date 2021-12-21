@@ -1,5 +1,5 @@
 <header id="header__root" x-data="{selected: @if(!empty($id)) {!! $id !!} @else null @endif}">
-  <div id="headroom">
+  <div id="globla" :class="{'transform-none': menuSelected === 'menu'}">
     <header id="header__top" class="header__top">
       <div class="header__top-inner">
         {!! $tnb !!}

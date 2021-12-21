@@ -2806,6 +2806,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"body-scroll-lock@npm:^4.0.0-beta.0":
+  version: 4.0.0-beta.0
+  resolution: "body-scroll-lock@npm:4.0.0-beta.0"
+  checksum: 61d40007fddf64ecc69e9e02ed9d96bb895f88d7da65cea7651081110225de48efa44ffc4acd376ed004788e242a9af12059fec728c096774b49365524ea6f46
+  languageName: node
+  linkType: hard
+
 "bonjour@npm:^3.5.0":
   version: 3.5.0
   resolution: "bonjour@npm:3.5.0"
@@ -10294,6 +10301,7 @@ __metadata:
     alpinejs: ^3.5.0
     autoprefixer: ^10.4.0
     babel-eslint: ^10.1.0
+    body-scroll-lock: ^4.0.0-beta.0
     browser-sync: ^2.26.14
     browser-sync-webpack-plugin: ^2.3.0
     dayjs: ^1.10.7
