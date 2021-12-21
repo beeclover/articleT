@@ -3,7 +3,7 @@
 --}}
 
 <section class="bg-lighthouse overflow-hidden">
-  <div class="container mx-auto lg:pt-[100px] py-[50px] lg:pb-[120px]">
+  <div class="container mx-auto lg:py-[80px] py-[50px]">
     <h2 class="text-center text-[24px] sm:text-[34px] font-bold mb-[28px] lg:mb-[32px]">탤런트뱅크 소개</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2">
       <div class="mx-full lg:mx-0">
