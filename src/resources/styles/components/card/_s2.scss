@@ -1,9 +1,6 @@
 @mixin card {
   .card__template {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    justify-content: space-between;
+    @apply grid grid-rows-[auto,auto,60px,auto,auto] gap-y-[20px];
 
     &-thumbnail {
       order: -1;
