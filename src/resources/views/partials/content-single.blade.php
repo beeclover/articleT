@@ -32,7 +32,7 @@
       </div>
   
     </header>
-    <div class="entry-thumbnail">
+    <div class="entry-thumbnail max-w-[1456px] mx-auto">
       {!! $thumbnail !!}
     </div>
   </div>

@@ -1,7 +1,10 @@
 import Swiper from 'swiper';
+import share from '../components/share';
 
 export default {
   init() {
+    share();
+
     new Swiper('#swipercontainerS5', {
       spaceBetween: 20,
       slidesPerView: 'auto',
