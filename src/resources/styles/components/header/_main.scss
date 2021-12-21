@@ -25,7 +25,7 @@
       flex
       items-center
       justify-between
-      container mx-auto xl:max-w-desktop xl:px-[80px];
+      container mx-auto;
 
     @media (max-width: theme('screens.lg')) {
       position: relative;
