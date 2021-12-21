@@ -1,6 +1,10 @@
 @mixin card {
   .card__template {
-    @apply grid grid-cols-[1fr,150px] justify-between gap-x-[12px] gap-y-[20px];
+    @apply grid grid-cols-[1fr,150px] justify-between gap-x-[12px] gap-y-[12px];
+
+    @media (min-width: theme('screens.lg')) {
+      @apply gap-y-[20px];
+    }
 
     &-meta {
       @apply col-span-2;
@@ -13,12 +17,6 @@
         @media (max-width: theme('screens.lg')) {
           @apply line-clamp-2;
         }
-      }
-    }
-
-    &-body {
-      @media (max-width: theme('screens.lg')) {
-        @apply self-center;
       }
     }
 

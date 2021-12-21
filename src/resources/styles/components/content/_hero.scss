@@ -1,6 +1,8 @@
 &__hero {
   &-thumbnail {
-    @apply aspect-w-14 aspect-h-16 mx-full;
+    @apply aspect-w-1 aspect-h-1 mx-full;
+    --tw-aspect-w: 25;
+    --tw-aspect-h: 24;
     margin-bottom: 20px;
 
     @media (min-width: theme('screens.sm')) {
