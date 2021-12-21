@@ -18,7 +18,7 @@
       <div class="text-[24px] sm:text-[28px] font-bold mb-[29px pb-[14px] sm:mb-[36px] border-b border-brightGray">인기 포스트</div>
       <ul class="sm:listDivider__rows1 grid gap-y-[54px] sm:gap-y-[67px]" style="--gap-y: 67px">
         @foreach ($popularityPosts as $post)
-          <li class="lg:-card__s2 lg:!card__s1">
+          <li class="lg:-card__s2 lg:!card__s6">
             @include('partials.card.template', [
               'title' => $post->post_title,
               'permalink' => $post->permalink,
