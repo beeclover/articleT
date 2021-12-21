@@ -20,6 +20,7 @@
   }
 
   &-title {
+    height: 3.33333em;
     a {
       @apply line-clamp-2;
     }
@@ -48,9 +49,10 @@
 
   &-readmore {
     margin-top: 16px;
+    display: flex;
 
     @media (min-width: theme('screens.sm')) {
-      margin-top: 37px;
+      margin-top: 24px;
     }
   }
 }

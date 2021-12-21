@@ -1,11 +1,11 @@
 &__hero {
   &-thumbnail {
     @apply aspect-w-14 aspect-h-16 mx-full;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 
     @media (min-width: theme('screens.sm')) {
       @apply aspect-w-16 aspect-h-9 mx-0;
-      margin-bottom: 49px;
+      margin-bottom: 34px;
     }
 
     img {
@@ -35,8 +35,8 @@
     font-weight: bold;
     line-height: 1;
 
-    @media (min-width: theme('screens.sm')) {
-      time {
+    time {
+      @media (min-width: theme('screens.sm')) {
         font-size: 20px;
       }
     }

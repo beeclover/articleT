@@ -7,6 +7,6 @@ export default () => {
   targets.forEach((target) => {
     const date = target.getAttribute('datetime');
     const { format } = target.dataset;
-    target.innerHTML = dayjs(date).format(format || 'YYYY/MM/DD');
+    target.innerHTML = dayjs(date).format(format || 'YY/MM/DD');
   });
 };

@@ -1,7 +1,7 @@
 @mixin card {
   .card__template {
     // layout
-    @apply grid grid-cols-[1fr,200px] grid-rows-[40px,60px,auto] gap-x-[40px];
+    @apply grid grid-cols-[1fr,200px] grid-rows-[36px,60px,auto] gap-x-[40px];
     &-meta {
       order: 1;
     }
@@ -10,7 +10,7 @@
     }
     &-main {
       order: 4;
-      padding-top: 26px;
+      padding-top: 16px;
     }
     &-thumbnail {
       @apply row-span-3;
@@ -38,6 +38,7 @@
 
       time {
         @apply py-[6px];
+        @apply text-[color:#707070];
       }
 
       &-term {
@@ -46,7 +47,7 @@
     }
 
     &-main .prose {
-      @apply line-clamp-2;
+      @apply line-clamp-3;
     }
 
     &-readmore {

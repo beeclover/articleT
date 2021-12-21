@@ -1,14 +1,22 @@
 @mixin card {
   .card__template {
-    @apply grid grid-rows-[auto,auto,60px,auto,auto] gap-y-[20px];
+    // layout
+    @apply grid grid-rows-[auto,auto,60px,auto,auto];
+    &-meta {
+      margin-bottom: 8px;
+    }
+    &-main {
+      padding-top: 16px;
+    }
 
     &-thumbnail {
       order: -1;
+      margin-bottom: 20px;
     }
 
     &-readmore {
       font-size: 15px;
-      margin-top: 30px;
+      margin-top: 24px;
     }
   }
 }
