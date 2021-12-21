@@ -15,11 +15,12 @@
       text-white
       font-semibold
       rounded-full
-      hover:bg-gray-900
       focus:outline-none
-      focus:ring-2
-      focus:ring-gray-800
-      focus:ring-opacity-75;
+      focus:ring-2;
+
+    &:hover {
+      color: #fff !important;
+    }
   }
 
   .btn-blackOut {
@@ -30,11 +31,14 @@
       text-white
       font-semibold
       rounded-full
-      hover:bg-gray-600
+      hover:bg-gray-900
       focus:outline-none
       focus:ring-2
-      focus:ring-gray-300
       focus:ring-opacity-75;
+
+    &:hover {
+      color: #fff !important;
+    }
   }
 
   .btn-carbon {

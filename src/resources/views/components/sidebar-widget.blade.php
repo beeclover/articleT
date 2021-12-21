@@ -2,6 +2,7 @@
   <img src="{!! get_theme_file_uri('resources/images/btn-80.svg') !!}" alt="">
 </button>
 <nav 
+    id="sidebar-widget"
     x-show="widget"
     x-cloak
     @click.away="widget = false"

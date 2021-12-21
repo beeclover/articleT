@@ -1,6 +1,6 @@
 <header id="header__root" x-data="{selected: @if(!empty($id)) {!! $id !!} @else null @endif}">
-  <div id="globla" :class="{'transform-none': menuSelected === 'menu'}">
-    <header id="header__top" class="header__top">
+  <div id="headroom" :class="{'transform-none': menuSelected === 'menu'}">
+    <header id="header__top" class="header__top" :class="{'pr-[15px]': menuSelected === 'menu' || widget}">
       <div class="header__top-inner">
         {!! $tnb !!}
         <div class="listDivider__cols1 header__top-menu">
@@ -14,7 +14,7 @@
         </div>
       </div>
     </header>
-    <header class="header__main" :class="{'menu-open': menuSelected === 'menu'}">
+    <header class="header__main" :class="{'menu-open pr-[15px]': menuSelected === 'menu' || widget}">
       <div class="header__main-inner">
         <div class="flex items-center gap-x-[20px] h-full">
           <a href="/" class="header__main-logo">
@@ -70,7 +70,7 @@
     </header>
   </div>
   <div
-    class="menu__cover"
+    class="menu__cover max-w-[calc(100%-15px)]"
     x-show="menuSelected === 'menu'"
     x-cloak
   >
