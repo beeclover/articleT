@@ -4,7 +4,7 @@ services:
   wordpress:
     env_file:
       - ./.env
-    image: ghcr.io/hansanghyeon/wordpress-redis:php8.0-apache-redis
+    image: ghcr.io/hansanghyeon/wordpress-redis:5.8.2-php8.0-apache-redis
     environment:
       WORDPRESS_DB_HOST: DB_workdb:3306
       WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
@@ -45,5 +45,5 @@ networks:
     external:
       name: DB_work
 volumes:
-  wordpress:
-  redis:
+  wordpress: null
+  redis: null
