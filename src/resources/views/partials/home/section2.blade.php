@@ -4,7 +4,7 @@
 
 <section class="bg-lighthouse overflow-hidden">
   <div class="container mx-auto lg:py-[80px] py-[50px]">
-    <h2 class="text-center text-[24px] sm:text-[34px] font-bold mb-[28px] lg:mb-[32px]">탤런트뱅크 소개</h2>
+    <h2 class="text-center text-[24px] sm:text-[34px] font-bold mb-[28px] lg:mb-[32px] leading-none">탤런트뱅크 소개</h2>
     <div class="grid grid-cols-1 lg:grid-cols-2">
       <div class="mx-full lg:mx-0">
         <div class="lg:h-[480px] lg:w-full lg:relative">
@@ -18,7 +18,7 @@
           가진 전문가와 함께 기업의 고민을 해결해보세요.
         </p>
         <div class="order-first lg:absolute left-1/2 lg:left-0 bottom-0 xl:bottom-[60px] transform -translate-y-1/3 lg:translate-y-1/2 xl:translate-y-0 lg:translate-x-[-77px] lg:gap-x-[52px] gap-x-[8px] mx-auto flex">
-          @foreach ([['Talentbank', 'bg-[#212121]'], ['For Client', 'bg-[#332878]'], ['For Expert', 'bg-[#58bbd5]']] as $key => $item)
+          @foreach ([['TalentBank', 'bg-[#212121]'], ['For Client', 'bg-[#332878]'], ['For Expert', 'bg-[#58bbd5]']] as $key => $item)
             <a href="/about-us#{!! str_replace(' ', '_', $item[0]) !!}" class="w-[104px] sm:w-[150px] xl:w-[200px] h-[104px] sm:h-[150px] xl:h-[200px] text-white {!! $item[1] !!} rounded-full flex items-center justify-center flex-col">
               <img class="w-[48px] h-[48px] sm:w-[74px] sm:h-[74px] xl:w-[100px] xl:h-[100px]" src="{!! get_theme_file_uri('resources/images/main-icon-'.$key.'.svg') !!}" alt="">
               <div class="text-[12px] sm:text-[18px] xl:text-[26px] mb-[10px] xl:mb-[30px] whitespace-nowrap">{!! $item[0] !!}</div>
