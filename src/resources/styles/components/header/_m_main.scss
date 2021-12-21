@@ -52,7 +52,11 @@
   }
 
   &-subnav {
-    @apply w-full text-[14px] flex bg-deepSpaceRodeo gap-[40px] justify-center;
+    @apply w-full text-[14px] flex bg-white gap-[40px] justify-center;
+    @apply border-deepSpaceRodeo
+    border-b
+    border-t
+    border-opacity-30;
 
     overflow-x: scroll;
     @include no-scrollbar;
@@ -62,10 +66,10 @@
     left: 0;
 
     > li {
-      @apply h-[var(--h-m_gnb-nav)] flex items-center text-white text-opacity-50;
+      @apply h-[var(--h-m_gnb-nav)] flex items-center text-opacity-50;
 
       a:hover {
-        @apply text-white;
+        @apply text-deepSpaceRodeo;
       }
 
       &:hover,
