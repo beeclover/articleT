@@ -13,29 +13,10 @@ import 'swiper/css/bundle';
 Alpine.plugin(intersect);
 SwiperCore.use([Navigation, Pagination, EffectFade, Autoplay, Controller]);
 
-// componments
-import header from './components/header';
-import shrink from './components/shrink';
-import date from './components/date';
-// Routers
 import Router from './util/router';
-import home from './routes/home';
-import single from './routes/single';
+import Routes from './routes';
 
-const routes = new Router({
-  // All pages
-  common: {
-    containerInit() {},
-    init() {
-      header();
-      shrink();
-      date();
-    },
-    finalize() {},
-  },
-  home,
-  single,
-});
+const routes = new Router(Routes);
 
 // Load Events
 jQuery(document).ready(() => {
