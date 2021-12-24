@@ -25,9 +25,9 @@
       <a href="{!! $permalink !!}">{!! $title !!}</a>
     </div>
   </div>
-  <div class="card__template-thumbnail">
+  <a href="{!! $permalink !!}" class="card__template-thumbnail">
     {!! $thumbnail !!}
-  </div>
+  </a>
   <div class="card__template-main">
     <div class="prose">
       {!! $excerpt !!}
