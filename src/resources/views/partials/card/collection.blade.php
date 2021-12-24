@@ -12,7 +12,7 @@
   </div>
   <div class="card__collection-footer">
     <div class="card__collection-meta">
-      <time datetime="{!! $date !!}" data-format="YYYY.MM.DD"></time>
+      <time datetime="{!! $date !!}"></time>
     </div>
     <div class="card__collection-readmore">
       <a href="{!! $permalink !!}">
