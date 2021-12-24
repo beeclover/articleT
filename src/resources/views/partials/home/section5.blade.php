@@ -8,7 +8,7 @@
     <div class="mb-[32px]">
       <x-PostsCollection />
     </div>
-    <div class="text-center mb-[30px] lg:mb-[50px]">
+    <div class="text-center">
       <a href="{!! $collectionLink !!}" class="btn-black mx-auto py-[14px] px-[60px] font-semibold text-[17px] whitespace-nowrap">컬렉션 더보기</a>
     </div>
   </div>
