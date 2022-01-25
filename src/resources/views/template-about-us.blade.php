@@ -51,7 +51,7 @@ EOD,
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-y-[12px] gap-x-[52px] listDivider__middle">
           <div class="p-[20px] lg:p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
             <div class="grid grid-cols-[1fr,60px] lg:grid-cols-1 gap-y-[24px] justify-center">
-              <div class="flex items-center gap-x-[12px] lg:justify-self-center">
+              <div class="grid grid-cols-[36px,auto] sm:grid-cols-[60px,auto] items-center gap-x-[12px] lg:justify-self-center">
                 <div class="ball">1</div>
                 <span class="text-[18px] lg:text-[22px] font-bold">합리적인 비용</span>
               </div>
@@ -70,7 +70,7 @@ EOD,
           </div>
           <div class="p-[20px] lg:p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
             <div class="grid grid-cols-[1fr,60px] lg:grid-cols-1 gap-y-[24px] justify-center">
-              <div class="flex items-center gap-x-[12px] lg:justify-self-center">
+              <div class="grid grid-cols-[36px,auto] sm:grid-cols-[60px,auto] items-center gap-x-[12px] lg:justify-self-center">
                 <div class="ball">2</div>
                 <span class="text-[18px] lg:text-[22px] font-bold">기업 맞춤형 서비스</span>
               </div>
@@ -89,7 +89,7 @@ EOD,
           </div>
           <div class="p-[20px] lg:p-[48px] border border-cerebralGrey rounded-[4px] bg-white relative">
             <div class="grid grid-cols-[1fr,60px] lg:grid-cols-1 gap-y-[24px] justify-center">
-              <div class="flex items-center gap-x-[12px] lg:justify-self-center">
+              <div class="grid grid-cols-[36px,auto] sm:grid-cols-[60px,auto] items-center gap-x-[12px] lg:justify-self-center">
                 <div class="ball">3</div>
                 <span class="text-[18px] lg:text-[22px] font-bold">세부단계를 통해 검증된 전문가</span>
               </div>
@@ -317,7 +317,7 @@ EOD,
           </div>
         </div>
         <div class="text-center">
-          <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.talentbank.co.kr/menu/projectCaseInfo?caseTypeCode=ALL" target="_blank" rel="noopener noreferrer" class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
             성공사례 더 알아보기
           </a>
         </div>
@@ -335,7 +335,7 @@ EOD,
       </div>
       <ul class="grid lg:flex flex-wrap gap-x-[60px] justify-center mb-[40px] lg:mb-[80px]">
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 1</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project<br/>
@@ -348,7 +348,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#9dc1db] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 2</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               BD 배정 및<br/>
@@ -361,7 +361,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 3</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               전문가 선정
@@ -373,7 +373,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#9dc1db] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 4</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               3자 미팅 및 <br/>
@@ -386,7 +386,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#6b639d] w-[80px] h-[80px] lg:w-[200px] lg:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 5</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project 시작
@@ -398,7 +398,7 @@ EOD,
         </li>
       </ul>
       <div class="text-center">
-        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.talentbank.co.kr/client/project/projectRegStart" target="_blank" rel="noopener noreferrer" class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           프로젝트 무료 의뢰하기
         </a>
       </div>
@@ -582,9 +582,6 @@ EOD,
             </div>
             <div class="col-span-2 lg:col-span-1 pt-[10px] grid grid-cols-2 items-center">
               <div class="text-deepSpaceRodeo text-[13px]">Expert interview</div>
-              <div class="justify-self-end">
-                <a href="#" class="btn-black inline-block w-full font-normal text-center text-[14px]">인터뷰 보기</a>
-              </div>
             </div>
             <div class="col-span-2 lg:col-span-1">
               <div class="text-[22px] lg:text-[26px] mb-[16px] lg:mb-[19px]">
@@ -611,9 +608,6 @@ EOD,
             </div>
             <div class="col-span-2 lg:col-span-1 pt-[10px] grid grid-cols-2 items-center">
               <div class="text-deepSpaceRodeo text-[13px]">Expert interview</div>
-              <div class="justify-self-end">
-                <a href="#" class="btn-black inline-block w-full font-normal text-center text-[14px]">인터뷰 보기</a>
-              </div>
             </div>
             <div class="col-span-2 lg:col-span-1">
               <div class="text-[22px] lg:text-[26px] mb-[16px] lg:mb-[19px]">
@@ -631,7 +625,7 @@ EOD,
         </div>
       </div>
       <div class="text-center">
-        <a class="inline-block btn-carbon bg-transparent border-[1px] lg:border-[2px] border-white py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://article.talentbank.co.kr/collection/archive/expert-interview/" target="_blank" rel="noopener noreferrer" class="inline-block btn-carbon bg-transparent border-[1px] lg:border-[2px] border-white py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           전문가 등록 바로가기
         </a>
       </div>
@@ -740,7 +734,7 @@ EOD,
         </div>
       </div>
       <div class="text-center">
-        <a class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.talentbank.co.kr/login/joinForm1?serviceTypeCode=SVC_TY003" target="_blank" rel="noopener noreferrer" class="inline-block btn-carbon py-[23px] lg:py-[28px] rounded-[4px] font-normal text-[18px] lg:text-[20px] mx-auto max-w-[400px] w-full" href="#" target="_blank" rel="noopener noreferrer">
           전문가 등록하기
         </a>
       </div>
