@@ -1,19 +1,19 @@
 // GNB
 @at-root {
   :root {
-    --h-m_search: 60px;
-    --h-m_gnb-nav: 0px;
+    --h-m-search: 60px;
+    --h-m-gnb-nav: 0px;
   }
   @media (max-width: theme('screens.lg')) {
     :root {
-      --h-m_gnb-nav: 44px;
+      --h-m-gnb-nav: 44px;
     }
   }
 }
 
 &__m_main {
   &-nav {
-    @apply h-[var(--h-m_gnb-nav)]
+    @apply h-[var(--h-m-gnb-nav)]
       flex
       gap-x-[40px]
       text-[16px]
@@ -63,7 +63,7 @@
     left: 0;
 
     > li {
-      @apply h-[var(--h-m_gnb-nav)] flex items-center text-opacity-50;
+      @apply h-[var(--h-m-gnb-nav)] flex items-center text-opacity-50;
 
       a:hover {
         @apply text-deepSpaceRodeo;
@@ -91,7 +91,7 @@
   }
 
   &-search {
-    @apply h-[var(--h-m_search)] 
+    @apply h-[var(--h-m-search)] 
       px-[16px]
       flex
       gap-x-[4px]

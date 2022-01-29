@@ -13,7 +13,7 @@
       </div>
     </div>
     <div class="lg:container mx-auto">
-      <div class="relative px-[var(--container_px)] py-[40px] lg:py-[86px] text-white text-center mb-[52px] md:mb-[104px]">
+      <div class="relative px-[var(--container-px)] py-[40px] lg:py-[86px] text-white text-center mb-[52px] md:mb-[104px]">
         @include('partials.img', ['ex' => 'jpg', 'name' => 'img-1760-news', 'class' => 'absolute w-full h-full object-cover left-0 right-0 top-0 bottom-0'])
         <div class="relative">
           <div class="text-[22px] lg:text-[28px] leading-normal mb-[20px] lg:mb-[40px]">

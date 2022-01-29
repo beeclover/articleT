@@ -1,5 +1,5 @@
 .scrollmargintop[id] {
   scroll-margin-top: calc(
-    var(--h-gnb, 0) + var(--h-tnb, 0) + var(--h-m_gnb-nav, 0)
+    var(--h-gnb, 0) + var(--h-tnb, 0) + var(--h-m-gnb-nav, 0)
   );
 }

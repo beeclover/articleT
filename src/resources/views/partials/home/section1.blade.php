@@ -8,7 +8,7 @@
       @include('partials.content-hero', ['post' => $heroPost])
       <div class="mt-[52px] lg:mt-0">
         <div class="hidden sm:block sm:h-px bg-steam w-full lg:w-[calc(100%+26px)] xl:w-[calc(100%+52px)] mt-[60px] sm:my-[34px]"></div>
-        <div class="py-[20px] sm:py-0 bg-[#f7f7f7] sm:bg-transparent px-[var(--container_px)] sm:px-0 mx-full sm:mx-0">
+        <div class="py-[20px] sm:py-0 bg-[#f7f7f7] sm:bg-transparent px-[var(--container-px)] sm:px-0 mx-full sm:mx-0">
           @include('partials.banner.client_announcement')
         </div>
       </div>

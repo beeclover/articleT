@@ -38,15 +38,15 @@ module.exports = {
     },
     extend: {
       padding: {
-        'container-x': 'var(--container_px)',
-        'container-y': 'var(--container_py)',
+        'container-x': 'var(--container-px)',
+        'container-y': 'var(--container-py)',
       },
       margin: {
-        full: 'calc(-1 * var(--container_px))',
+        full: 'calc(-1 * var(--container-px))',
       },
       container: {
         padding: {
-          DEFAULT: 'var(--container_px)',
+          DEFAULT: 'var(--container-px)',
         },
       },
       maxWidth: {
