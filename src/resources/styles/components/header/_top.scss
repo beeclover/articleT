@@ -74,12 +74,4 @@
       transition: background-color 0.2s ease-in-out;
     }
   }
-
-  &-menu {
-    @apply flex text-[#858585] text-[13px];
-
-    &-item {
-      @apply flex items-center gap-x-[4px] px-[19px];
-    }
-  }
 }
