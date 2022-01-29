@@ -1,11 +1,11 @@
 <header id="header__root" x-data="{selected: @if(!empty($id)) {!! $id !!} @else null @endif}">
   <div id="headroom" :class="{'transform-none': menuSelected === 'menu'}">
-    <header id="header__top" class="header__top" :class="{'pr-[15px]': menuSelected === 'menu' || widget}">
+    <header id="header__top" class="header__top" :class="{'sm:pr-[15px]': menuSelected === 'menu' || widget}">
       <div class="header__top-inner">
         {!! $tnb !!}
       </div>
     </header>
-    <header class="header__main" :class="{'menu-open pr-[15px]': menuSelected === 'menu' || widget}">
+    <header class="header__main" :class="{'menu-open sm:pr-[15px]': menuSelected === 'menu' || widget}">
       <div class="header__main-inner">
         <div class="flex items-center gap-x-[20px] h-full">
           <a href="/" class="header__main-logo">
@@ -15,7 +15,7 @@
             {!! $gnb !!}
           </div>
         </div>
-        <div class="flex gap-x-[17px] lg:gap-x-[25px] items-center">
+        <div class="flex gap-x-[17px] lg:gap-x-[32px] items-center">
           <div class="relative flex items-center">
             <div class="hidden xl:block">
               @include('forms.header_search')
@@ -23,7 +23,7 @@
             {{-- 중간 사이즈 검색 최소화 --}}
             <div class="block xl:hidden">
               <button 
-                class="icon-search"
+                class="btn-search"
                 @click.prevent="
                   menuSelected === 'search' ? menuSelected = null : menuSelected = 'search';
                   $nextTick(() => $refs.searchInput.focus());
@@ -35,7 +35,7 @@
                 @click.away="menuSelected = null"
                 @keydown.escape.window="menuSelected = null"
               >
-                {!! get_search_form(false) !!}
+                @include('forms.header_search')
               </div>
             </div>
           </div>
@@ -60,13 +60,13 @@
           @click.away="menuSelected = null"
           @keydown.escape.window="menuSelected = null"
         >
-          {!! get_search_form(false) !!}
+          @include('forms.header_search')
         </div>
       </div>
     </header>
   </div>
   <div
-    class="menu__cover max-w-[calc(100%-15px)]"
+    class="menu__cover"
     x-show="menuSelected === 'menu'"
     x-cloak
   >
