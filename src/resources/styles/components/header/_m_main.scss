@@ -1,15 +1,12 @@
 // GNB
 @at-root {
   :root {
-    --h-gnb: 60px;
     --h-m_search: 60px;
     --h-m_gnb-nav: 0px;
-
-    @media (max-width: theme('screens.lg')) {
+  }
+  @media (max-width: theme('screens.lg')) {
+    :root {
       --h-m_gnb-nav: 44px;
-    }
-    @media (min-width: theme('screens.lg')) {
-      --h-gnb: 96px;
     }
   }
 }
