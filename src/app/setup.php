@@ -20,6 +20,8 @@ add_action('wp_enqueue_scripts', function () {
 
     wp_add_inline_script('sage/vendor.js', asset('scripts/manifest.js')->contents(), 'before');
 
+    wp_enqueue_style('fontello', asset('fonts/fontello/css/fontello.css')->uri(), false, null);
+
     if (is_single() && comments_open() && get_option('thread_comments')) {
         wp_enqueue_script('comment-reply');
     }
@@ -212,39 +214,39 @@ add_action('widgets_init', function () {
  **/
 
 if (function_exists('acf_add_options_sub_page')) {
-  acf_add_options_sub_page(array(
-  'page_title'  => 'main',
-  'menu_title'  => 'main',
-  'menu_slug'   => 'main',
-  'capability'  => 'edit_posts',
-));
+    acf_add_options_sub_page(array(
+        'page_title'  => 'main',
+        'menu_title'  => 'main',
+        'menu_slug'   => 'main',
+        'capability'  => 'edit_posts',
+    ));
 }
 
 add_action('init', function () {
-  add_feed('popularity_post', function () {
-    get_template_part('rss', 'popularity_post');
-  });
+    add_feed('popularity_post', function () {
+        get_template_part('rss', 'popularity_post');
+    });
 });
 
-add_action( 'pre_get_posts' , function ($query) {
-  // 우리는 의도하지 않은 결과를 원하지 않습니다.
-  if ( is_admin() || ! $query->is_main_query() ) {
-    return;
-  }
+add_action('pre_get_posts', function ($query) {
+    // 우리는 의도하지 않은 결과를 원하지 않습니다.
+    if (is_admin() || !$query->is_main_query()) {
+        return;
+    }
 
-  $query->set( 'posts_per_page', 15 );
+    $query->set('posts_per_page', 15);
 
-  if ( is_tag() && empty( $query->query_vars['suppress_filters'] ) ) {
-    $cptui_post_types = cptui_get_post_type_slugs();
+    if (is_tag() && empty($query->query_vars['suppress_filters'])) {
+        $cptui_post_types = cptui_get_post_type_slugs();
 
-    $query->set(
-      'post_type',
-      array_merge(
-        array( 'post' ),
-        $cptui_post_types
-      )
-    );
-  }
+        $query->set(
+            'post_type',
+            array_merge(
+                array('post'),
+                $cptui_post_types
+            )
+        );
+    }
 
-  return $query;
-} );
+    return $query;
+});

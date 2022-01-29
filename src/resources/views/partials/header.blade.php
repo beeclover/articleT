@@ -16,27 +16,32 @@
           </div>
         </div>
         <div class="flex gap-x-[17px] lg:gap-x-[25px] items-center">
-          <a href="{!! $newsletterLink !!}" class="hidden lg:block py-[11px] px-[28px] btn-blackOut font-normal">
-            뉴스레터 구독
-          </a>
-          <div class="hidden lg:block w-[1px] h-[60px] bg-steam"></div>
-          <div class="relative flex items-center lg:pr-[12px]">
-            <button 
-              class="btn-search"
-              @click.prevent="
-                menuSelected === 'search' ? menuSelected = null : menuSelected = 'search';
-                $nextTick(() => $refs.searchInput.focus());
-                selected = null;
-            ">search</button>
-            <div class="hidden lg:block header__main-search absolute right-[-16px] top-1/2 transfrom -translate-y-1/2 w-[640px]"
-              x-show="menuSelected === 'search'"
-              x-cloak
-              @click.away="menuSelected = null"
-              @keydown.escape.window="menuSelected = null"
-            >
-              {!! get_search_form(false) !!}
+          <div class="relative flex items-center">
+            <div class="hidden xl:block">
+              @include('forms.header_search')
+            </div>
+            {{-- 중간 사이즈 검색 최소화 --}}
+            <div class="block xl:hidden">
+              <button 
+                class="icon-search"
+                @click.prevent="
+                  menuSelected === 'search' ? menuSelected = null : menuSelected = 'search';
+                  $nextTick(() => $refs.searchInput.focus());
+                  selected = null;
+              "><span class="hidden">search</span></button>
+              <div class="hidden lg:block header__main-search absolute right-[-16px] top-1/2 transfrom -translate-y-1/2 w-[640px]"
+                x-show="menuSelected === 'search'"
+                x-cloak
+                @click.away="menuSelected = null"
+                @keydown.escape.window="menuSelected = null"
+              >
+                {!! get_search_form(false) !!}
+              </div>
             </div>
           </div>
+          <a href="{!! $newsletterLink !!}" class="hidden lg:block py-[10px] px-[20px] btn-blackOut font-normal text-[14px]">
+            뉴스레터 구독
+          </a>
           <button 
             class="block lg:hidden btn-menu"
             @click.prevent="
