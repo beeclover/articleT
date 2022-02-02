@@ -1,9 +1,7 @@
 &__template {
   &-meta {
-    @apply text-carbon;
+    @apply text-carbon flex items-center gap-x-[8px];
 
-    display: flex;
-    align-items: center;
     font-size: 14px;
     font-weight: bold;
     line-height: 1;
@@ -13,10 +11,6 @@
 
       font-size: 12px;
       font-weight: normal;
-    }
-
-    &-term {
-      @apply flex items-center gap-x-[8px];
     }
 
     time {

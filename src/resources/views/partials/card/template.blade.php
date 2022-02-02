@@ -1,16 +1,14 @@
 <div class="card__template">
-  <div class="card__template-meta listDivider__cols2">
+  <div class="card__template-meta">
     <time datetime="{!! $date !!}"></time>
     @if (!empty($hashtag) && count($hashtag) > 0)
       @foreach ($hashtag as $term)
-        <div class="card__template-meta-term">
-          <a href="{!! $term->link !!}" class="btn-gray">{!! $term->name !!}</a>
-          @if (!empty($term->children) && count($term->children) > 0)
-              @foreach ($term->children as $child)
-                  <a href="{!! $child->link !!}" class="btn-gray">{!! $child->name !!}</a>
-              @endforeach
-          @endif
-        </div>
+        <a href="{!! $term->link !!}" class="btn-gray">{!! $term->name !!}</a>
+        @if (!empty($term->children) && count($term->children) > 0)
+            @foreach ($term->children as $child)
+              <a href="{!! $child->link !!}" class="btn-gray">{!! $child->name !!}</a>
+            @endforeach
+        @endif
       @endforeach
     @elseif(!empty($category) && count($category) > 0)
       @foreach ($category as $term)
