@@ -74,9 +74,17 @@
       </div>
     </div>
     <div class="mt-[52px] lg:mt-[150px] pt-[52px] lg:pt-[80px] border-t border-carbon">
-      <div class="text-[24px] lg:text-[48px] font-bold text-center mb-[28px] lg:mb-[50px] leading-none">컬렉션</div>
+      @isset($hashtag)
+        <a href="{!! $hashtag->link !!}" class="block text-[24px] lg:text-[48px] font-bold text-center mb-[28px] lg:mb-[50px] leading-none">{!! $hashtag->name !!}</a>
+      @else
+        <div class="block text-[24px] lg:text-[48px] font-bold text-center mb-[28px] lg:mb-[50px] leading-none">최신 포스트</div>
+      @endisset
       <div>
-        <x-PostsHashtag />
+        @isset($hashtag)
+          <x-PostsHashtag termid="{!! $hashtag->term_id !!}" />
+        @else
+          <x-PostsHashtag />
+        @endisset
       </div>
     </div>
   </footer>

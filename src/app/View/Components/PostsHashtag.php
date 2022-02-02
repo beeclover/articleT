@@ -26,26 +26,49 @@ class PostsHashtag extends Component
      * @param  string  $message
      * @return void
      */
-    public function __construct()
+    public function __construct($termid = null)
     {
         $posts = [];
-        foreach (['insight', 'life', 'tb-story'] as $postType) {
-            $posts = array_merge($posts, get_posts(array(
-                'post_type' => $postType,
-                'numberposts' => 5,
-                'tax_query' => array(
-                    array(
-                        'taxonomy' => 'hashtag',
-                        'operator' => 'EXISTS'
-                    )
-                )
-            )));
+        $taxQuery = [];
+
+        if ($termid) {
+            $taxQuery = array(
+                'taxonomy' => 'hashtag',
+                'field' => 'id',
+                'terms' => $termid,
+            );
+        } else {
+            $taxQuery = array(
+                'taxonomy' => 'hashtag',
+                'operator' => 'EXISTS'
+            );
         }
-        $posts = (new Hook($posts, ['hashtag']))::$posts;
-        $posts = $this->postsAsPostDataSet($posts);
+
+        $posts = array_merge($posts, get_posts(array(
+            'post_type' => ['insight', 'life', 'tb-story'],
+            'numberposts' => 5,
+            'tax_query' => array($taxQuery)
+        )));
+
         usort($posts, function ($post_a, $post_b) {
             return $post_b->post_date <=> $post_a->post_date;
         });
+
+        /**
+         * 해당 태그에 게시물이 5개 이하라면 다른 연관된 태그를 찾아서 게시물을 추가한다.
+         */
+        if (count($posts) < 5) {
+            $enoughPostCount = 5 - count($posts);
+            $taxQuery['operator'] = 'NOT IN';
+            $posts = array_merge($posts, get_posts(array(
+                'post_type' => ['insight', 'life', 'tb-story'],
+                'numberposts' => $enoughPostCount,
+                'tax_query' => array($taxQuery)
+            )));
+        }
+
+        $posts = (new Hook($posts, ['hashtag']))::$posts;
+        $posts = $this->postsAsPostDataSet($posts);
         $this->posts = array_slice($posts, 0, 5);
     }
 
