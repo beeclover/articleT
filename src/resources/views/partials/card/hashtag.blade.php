@@ -3,16 +3,34 @@
     <a href="{!! $permalink !!}">
       {!! $thumbnail !!}
     </a>
-    @if (!empty($term))
-      <a href="{!! $term->link !!}" class="card__hashtag-term" @if (!empty($term->color)) style="background-color: {!! $term->color !!}" @endif>{!! $term->name !!}</a>
-    @endif
   </div>
   <div class="card__hashtag-title">
     <a href="{!! $permalink !!}">{!! $title !!}</a>
   </div>
   <div class="card__hashtag-footer">
-    <div class="card__hashtag-meta">
-      <time datetime="{!! $date !!}"></time>
+    <div class="card__hashtag-meta card__hashtag-swiper swiper-container">
+      <div class="swiper-wrapper">
+        @if (!empty($hashtag) && count($hashtag) > 0)
+          @foreach ($hashtag as $term)
+            <div class="swiper-slide card__hashtag-meta-term">
+              <a href="{!! $term->link !!}" class="btn-gray">{!! $term->name !!}</a>
+            </div>
+            @if (!empty($term->children) && count($term->children) > 0)
+                @foreach ($term->children as $child)
+                  <div class="swiper-slide card__hashtag-meta-term">
+                    <a href="{!! $child->link !!}" class="btn-gray">{!! $child->name !!}</a>
+                  </div>
+                @endforeach
+            @endif
+          @endforeach
+        @elseif(!empty($category) && count($category) > 0)
+          @foreach ($category as $term)
+            <div class="swiper-slide card__hashtag-meta-term">
+              <a href="{!! $term->link !!}" class="btn-gray">{!! $term->name !!}</a>
+            </div>
+          @endforeach
+        @endif
+      </div>
     </div>
     <div class="card__hashtag-readmore">
       <a href="{!! $permalink !!}">

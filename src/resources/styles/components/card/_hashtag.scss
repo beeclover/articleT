@@ -1,18 +1,20 @@
 &__hashtag {
   $p: &;
-  @apply grid grid-rows-[1fr,60px,auto];
+  @apply grid grid-rows-[auto,60px,1fr] gap-y-[20px] h-full;
 
   &-meta {
     @apply text-blackOut;
 
-    display: flex;
-    align-items: center;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     line-height: 1;
 
-    time {
-      @apply text-[color:#707070] font-light;
+    &-term {
+      width: auto !important;
+
+      a {
+        white-space: nowrap;
+      }
     }
   }
 
@@ -25,8 +27,10 @@
 
   &-title {
     height: 3.33333em;
+
     a {
       @apply line-clamp-2;
+      line-height: 28px;
     }
 
     font-size: 18px;
@@ -34,13 +38,12 @@
   }
 
   &-thumbnail {
-    @apply aspect-w-16 aspect-h-9;
+    @apply aspect-w-16 aspect-h-9 h-0;
 
-    --tw-aspect-w: 24;
-    --tw-aspect-h: 17;
+    --tw-aspect-w: 243;
+    --tw-aspect-h: 172;
 
     order: -1;
-    margin-bottom: 35px;
 
     img {
       object-fit: cover;
@@ -51,7 +54,8 @@
   }
 
   &-footer {
-    margin-top: 15px;
+    width: 100%;
+    overflow: hidden;
   }
 
   &-readmore {
@@ -59,7 +63,7 @@
     display: flex;
 
     @media (min-width: theme('screens.sm')) {
-      margin-top: 24px;
+      margin-top: 36px;
     }
   }
 }

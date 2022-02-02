@@ -3,7 +3,7 @@
   <div id="swipercontainerS5" class="swiper-container">
     <div class="swiper-wrapper">
       @foreach ($posts as $post)
-        <div id="cardWrap" class="swiper-slide max-w-[260px] xl:max-w-none md:w-auto">
+        <div id="cardWrap" class="swiper-slide max-w-[260px] xl:max-w-none md:w-auto !h-auto">
           @include('partials.card.hashtag',
           [
             'title' => $post->post_title,
@@ -11,7 +11,8 @@
             'excerpt' => $post->excerpt,
             'thumbnail' => $post->thumbnail,
             'date' => $post->date,
-            'term' => $post?->hashtag[0]?->children[0] ?? $post?->hashtag[0] ?? null,
+            'hashtag' => $post->hashtag,
+            'catrgory' => $post->category,
           ]
           )
         </div>
