@@ -19,6 +19,7 @@ class Archive extends Composer
     protected static $views = [
         'archive',
         'archive-*',
+        'taxonomy-*'
     ];
 
     /**
