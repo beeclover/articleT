@@ -38,3 +38,4 @@
   </div>
   @endif
 @endsection
+<x-SidebarWidget />
