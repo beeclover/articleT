@@ -3,11 +3,11 @@
 --}}
 
 <section class="overflow-hidden">
-  <div class="container mx-auto sm:py-[80px] py-[50px] sm:mb-[30px] sm:mt-[16px]">
+  <div class="container mx-auto sm:py-[80px] pt-[44px] pb-[60px] lg:py-[50px] sm:mb-[30px] sm:mt-[16px]">
     <div class="flex justify-center">
-      <ul id="swiper-hashtagPost-pagination" class="hashtagPost__pagination">
+      <ul id="swiper-hashtagPost-navigation" class="hashtagPost__navigation">
         @php($index = 0)
-        @foreach ($hashtagPostPagination as $t)
+        @foreach ($hashtagPostNavigation as $t)
           <li>
             <button id="bullet" class="btn @if($index === 0) active @endif" data-slide-to="{!! $index !!}">{!! $t->name !!}</button>
           </li>
@@ -19,9 +19,29 @@
       <div class="swiper-wrapper">
         @foreach ($hashtagPosts as $tag => $posts)
           <div id="{!! $tag !!}" class="swiper-slide">
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[32px] gap-y-[71px]">
+            <div id="swiper-hashtagChildPost-{!! $tag !!}" class="block lg:hidden swiper-container">
+              <div class="swiper-wrapper mb-[38px]">
+                @foreach ($posts as $key => $post)
+                  <div class="swiper-slide">
+                    <div class="!card__s2 lg:after:hidden">
+                      @include('partials.card.template', [
+                        'title' => $post->post_title,
+                        'permalink' => $post->permalink,
+                        'thumbnail' => $post->thumbnail,
+                        'date' => $post->date,
+                        'excerpt' => $post->excerpt,
+                        'hashtag' => $post->hashtag,
+                        'category' => $post->category,
+                      ])
+                    </div>
+                  </div>
+                @endforeach
+              </div>
+              <div id="swiper-hashtagChildPost-pagination-{!! $tag !!}" class="hashtagPost__pagination swiper-pagination !relative !bottom-auto"></div>
+            </div>
+            <div class="hidden lg:grid grid-cols-1 lg:grid-cols-3 gap-x-[32px] gap-y-[71px]">
               @foreach ($posts as $key => $post)
-                <div class="lg:-card__s3 lg:!card__s2 lg:after:hidden">
+                <div class="!card__s2 lg:after:hidden">
                   @include('partials.card.template', [
                     'title' => $post->post_title,
                     'permalink' => $post->permalink,

@@ -31,7 +31,7 @@ class FrontPage extends Composer
             'snsList' => $this->snsList(),
             'bannerMain' => $this->bannerMain(),
             'hashtagPosts' => $this->hashtagPosts,
-            'hashtagPostPagination' => $this->hashtagPostPagination,
+            'hashtagPostNavigation' => $this->hashtagPostNavigation,
         ];
     }
 
@@ -114,7 +114,7 @@ class FrontPage extends Composer
         return $posts;
     }
 
-    public $hashtagPostPagination = array();
+    public $hashtagPostNavigation = array();
     public $hashtagPosts = array();
 
     public function getHashPosts()
@@ -135,7 +135,7 @@ class FrontPage extends Composer
 
             $posts = (new Hook($posts, ['hashtag']))::$posts;
             if (count($posts) > 5) {
-                $this->hashtagPostPagination[$hashtag->slug] = $hashtag;
+                $this->hashtagPostNavigation[$hashtag->slug] = $hashtag;
                 usort($posts, function ($post_a, $post_b) {
                     return $post_b->post_date <=> $post_a->post_date;
                 });

@@ -11,7 +11,11 @@
     }
     &-main {
       padding-top: 16px;
-      padding-bottom: 30px;
+      padding-bottom: 20px;
+
+      @media (min-width: theme('screens.lg')) {
+        padding-bottom: 30px;
+      }
     }
 
     &-thumbnail {

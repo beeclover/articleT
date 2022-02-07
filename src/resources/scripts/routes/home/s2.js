@@ -21,7 +21,7 @@ export default () => {
    * 유니크한 키를 가질 필요가 없이 보증된 slide number 입니다.
    */
   const paginationEl = document.querySelectorAll(
-    '#swiper-hashtagPost-pagination #bullet'
+    '#swiper-hashtagPost-navigation #bullet'
   );
   paginationEl.forEach((bullet) => {
     bullet.addEventListener('click', () => {
@@ -30,8 +30,23 @@ export default () => {
   });
 
   hashtagSwiper.on('slideChange', (e) => {
-    console.log(e.activeIndex);
     paginationEl.forEach((bullet) => bullet.dataset.slideTo == e.activeIndex ? bullet.classList.add('active') : bullet.classList.remove('active'));
   });
 
+  /**
+   * 해쉬태그 자식 슬라이더
+   */
+  // PHP 쿼리로 만들어지기 때문에 둘다 갯수 일정
+  const childTargets = document.querySelectorAll('[id*=swiper-hashtagChildPost]');
+  childTargets.forEach((childTargetEl) => {
+    new Swiper(childTargetEl, {
+      spaceBetween: 20,
+      touchEventsTarget: 'wrapper',
+      slidesPerView: 1,
+      pagination: {
+        el: childTargetEl.querySelector('[id*=swiper-hashtagChildPost-pagination]'),
+        clickable: true,
+      },
+    });
+  });
 };
