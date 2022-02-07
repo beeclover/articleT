@@ -19,7 +19,7 @@
       <div class="swiper-wrapper">
         @foreach ($hashtagPosts as $tag => $posts)
           <div id="{!! $tag !!}" class="swiper-slide">
-            <div class="listDivider__rows1 grid grid-cols-1 lg:grid-cols-3 gap-x-[70px] gap-y-[56px]" style="--gap-y: 56px">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-x-[32px] gap-y-[71px]">
               @foreach ($posts as $key => $post)
                 <div class="lg:-card__s3 lg:!card__s2 lg:after:hidden">
                   @include('partials.card.template', [
@@ -38,11 +38,11 @@
         @endforeach
       </div>
       <div class="btn-group">
-        <button id="prev" class="btn absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 xl:-translate-x-[calc(100%+20px)] z-10 filter disabled:brightness-95 disabled:cursor-default">
-          <img src="{!! get_theme_file_uri('resources/images/btn-80-prew.svg') !!}" alt="">
+        <button id="prev" class="btn absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 xl:-translate-x-[100%] z-10 filter disabled:brightness-95 disabled:cursor-default">
+          <img class="w-[60px] h-[60px]" src="{!! get_theme_file_uri('resources/images/btn-80-prew.svg') !!}" alt="">
         </button>
-        <button id="next" class="btn absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 xl:translate-x-[calc(100%+20px)] z-10 filter disabled:brightness-95 disabled:cursor-default">
-          <img src="{!! get_theme_file_uri('resources/images/btn-80-next.svg') !!}" alt="">
+        <button id="next" class="btn absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 xl:translate-x-[100%] z-10 filter disabled:brightness-95 disabled:cursor-default">
+          <img class="w-[60px] h-[60px]" src="{!! get_theme_file_uri('resources/images/btn-80-next.svg') !!}" alt="">
         </button>
       </div>
     </div>
