@@ -1,7 +1,7 @@
 @mixin card {
   .card__template {
     // layout
-    @apply grid grid-cols-[360px,1fr] grid-rows-[auto,1fr,36px] gap-x-[40px] gap-y-[15px];
+    @apply grid grid-cols-[340px,1fr] grid-rows-[auto,1fr,36px] gap-x-[40px] gap-y-[15px];
     &-meta {
       order: 4;
     }
