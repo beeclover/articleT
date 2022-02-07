@@ -5,8 +5,8 @@
     </div>
     <div class="flex flex-col gap-y-[16px]">
       <span class="text-[18px] text-blackOut">업무에 도움을 줄 전문가를 찾고 계신가요?</span>
-      <a href="/about-us/#For_Client" class="block xxl:hidden underline text-[#888] hover:text-blackOut">Client 이용 안내 보기</a>
+      <a href="/about-us/#For_Client" class="block xl:hidden underline text-[#888] hover:text-blackOut">Client 이용 안내 보기</a>
     </div>
   </div>
-  <a href="/about-us/#For_Client" class="hidden xxl:inline underline text-[#888] hover:text-blackOut">Client 이용 안내 보기</a>
+  <a href="/about-us/#For_Client" class="hidden xl:inline underline text-[#888] hover:text-blackOut">Client 이용 안내 보기</a>
 </div>

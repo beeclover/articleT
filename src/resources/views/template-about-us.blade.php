@@ -335,7 +335,7 @@ EOD,
       </div>
       <ul class="grid lg:flex flex-wrap gap-x-[60px] justify-center mb-[40px] lg:mb-[80px]">
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 1</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project<br/>
@@ -348,7 +348,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 2</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               BD 배정 및<br/>
@@ -361,7 +361,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 3</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               전문가 선정
@@ -373,7 +373,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 4</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               3자 미팅 및 <br/>
@@ -386,7 +386,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xxl:w-[200px] xxl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 5</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project 시작

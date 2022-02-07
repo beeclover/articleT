@@ -33,9 +33,3 @@
     left: -48px;
   }
 }
-
-.container {
-  @media (min-width: theme('screens.xxl')) {
-    max-width: 1300px;
-  }
-}

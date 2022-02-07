@@ -15,14 +15,14 @@
     @apply absolute top-0 left-0;
     @apply z-20 py-[44px] px-[20px] bg-blackOut flex items-center justify-center w-[180px];
 
-    @media (min-width: theme('screens.xxl')) {
+    @media (min-width: theme('screens.xl')) {
       @apply w-[360px] h-full py-0;
     }
   }
   &-label {
     @apply text-[18px] relative;
 
-    @media (min-width: theme('screens.xxl')) {
+    @media (min-width: theme('screens.xl')) {
       @apply text-[26px];
     }
 
@@ -38,7 +38,7 @@
       height: 2px;
       background-color: #fff;
 
-      @media (min-width: theme('screens.xxl')) {
+      @media (min-width: theme('screens.xl')) {
         width: calc(100% + 2 * 80px);
         height: 4px;
       }
