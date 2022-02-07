@@ -2,10 +2,10 @@
   Section Name: 인기포스트
 --}}
 
-<section class="py-[28px] lg:py-[80px]">
+<section class="py-[50px] lg:py-[80px]">
   <div class="container mx-auto">
     <div class="sm:py-[30px]">
-      <div class="text-center text-[24px] sm:text-[40px] font-bold mb-[29px pb-[14px] sm:mb-[45px]">인기 포스트</div>
+      <div class="text-center text-[24px] sm:text-[40px] font-bold mb-[40px] lg:mb-[57px]">인기 포스트</div>
       <ul class="grid gap-y-[54px] sm:gap-y-[62px]">
         @foreach ($popularityPosts as $post)
           <li class="lg:-card__s7 lg:!card__s6">

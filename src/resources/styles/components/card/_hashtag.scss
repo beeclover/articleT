@@ -38,7 +38,7 @@
   }
 
   &-thumbnail {
-    @apply aspect-w-16 aspect-h-9 h-0;
+    @apply aspect-w-16 aspect-h-9 h-0 rounded-[4px] overflow-hidden;
 
     --tw-aspect-w: 230;
     --tw-aspect-h: 163;
@@ -59,7 +59,7 @@
   }
 
   &-readmore {
-    margin-top: 16px;
+    margin-top: 30px;
     display: flex;
 
     @media (min-width: theme('screens.sm')) {
