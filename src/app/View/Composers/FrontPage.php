@@ -82,20 +82,11 @@ class FrontPage extends Composer
         foreach ($posts as $post) {
             $title = get_field('b_title', $post->ID);
             $content = get_field('b_content', $post->ID);
-            $buttonText = get_field('b_button_text', $post->ID);
-            $buttonLink = get_field('b_button_link', $post->ID);
-            $buttonLinkTarget = get_field('b_button_link_target', $post->ID);
+            $buttons = get_field('b_button_group', $post->ID);
 
             $post->banner_title = $title;
             $post->banner_content = $content;
-            $post->banner_button_text = $buttonText;
-            $post->banner_button_link = $buttonLink;
-
-            if ($buttonLinkTarget) {
-                $post->banner_button_link_target = '_blank';
-            } else {
-                $post->banner_button_link_target = '_self';
-            }
+            $post->buttons = $buttons;
 
             $post->isBlackText = false;
             $thumbnail_id = get_post_thumbnail_id($post);

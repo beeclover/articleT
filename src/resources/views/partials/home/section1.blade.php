@@ -14,7 +14,11 @@
             <p class="text-[16px] lg:text-[20px] @if($post->isBlackText) text-[color:#3b3b3b] @else text-white @endif mb-[16px] lg:mb-[33px]">
               {!! $post->banner_content !!}
             </p>
-            <button class="btn-deepSpaceRodeo rounded-full text-[16px] lg:text-[18px] font-normal px-[28px]" target="{!! $post->banner_button_link_target !!}">{!! $post->banner_button_text !!}</button>
+            <div class="flex gap-[8px] flex-wrap">
+              @foreach ($post->buttons as $button)
+                <a href="{!! $button['b_button_link'] !!}" class="btn-deepSpaceRodeo rounded-full text-[16px] lg:text-[18px] font-normal px-[28px]" @if($button['b_button_link_target'])target="_blank"@endif>{!! $button['b_button_text'] !!}</a>
+              @endforeach
+            </div>
           </div>
         </div>
         @if ($post->thumbnail_uri)
