@@ -113,6 +113,14 @@
       max-width: 100%;
     }
 
+    figure img {
+      margin-bottom: 0;
+    }
+
+    figure figcaption {
+      text-align: center;
+    }
+
     .aligncenter {
       @apply mx-auto;
     }
