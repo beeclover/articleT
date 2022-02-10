@@ -20,9 +20,8 @@
     }
 
     &-meta {
-      @apply text-carbon;
+      @apply text-carbon self-end;
 
-      align-self: flex-start;
       display: flex;
       font-size: 14px;
       font-weight: bold;
@@ -45,7 +44,7 @@
     }
 
     &-main .prose {
-      @apply line-clamp-3;
+      @apply line-clamp-2;
     }
 
     &-readmore {
