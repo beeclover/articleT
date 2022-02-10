@@ -3,7 +3,7 @@
 --}}
 
 <section class="overflow-hidden">
-  <div class="container mx-auto sm:py-[80px] pt-[44px] pb-[60px] lg:py-[50px] sm:mb-[30px] sm:mt-[16px]">
+  <div class="container mx-auto sm:py-[80px] pt-[44px] pb-[60px] lg:py-[50px] sm:mb-[30px] sm:mt-[16px] lg:mt-[46px]">
     <div class="flex justify-center">
       <ul id="swiper-hashtagPost-navigation" class="hashtagPost__navigation">
         @php($index = 0)
