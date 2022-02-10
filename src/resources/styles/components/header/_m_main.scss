@@ -15,45 +15,47 @@
   &-nav {
     @apply h-[var(--h-m-gnb-nav)]
       flex
-      gap-x-[40px]
+      gap-x-[22px]
       text-[16px]
       leading-snug
-      justify-center
       relative
-      border-black
+      border-steam
       border-b-[1px]
-      border-opacity-30;
+      border-opacity-30
+      px-[var(--container-px)];
 
     &-item {
-      @apply h-full flex items-center text-[16px];
+      @apply h-full flex items-center text-[16px] relative;
 
       white-space: nowrap;
 
+      &::after {
+        @apply bg-deepSpaceRodeo;
+
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 0;
+        width: 0;
+        transform: translateX(-50%);
+        transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+      }
       &-parent > .active {
         position: relative;
         &::after {
-          @apply border-deepSpaceRodeo border-b-[4px];
-
-          content: '';
-          position: absolute;
-          bottom: 0;
-          width: 0;
-          left: 50%;
-          height: 0;
-          border-left: 4px solid transparent;
-          border-right: 4px solid transparent;
-          transform: translateX(-50%);
+          width: calc(100% + 22px);
+          height: 2px;
         }
       }
     }
   }
 
   &-subnav {
-    @apply w-full text-[14px] flex bg-white gap-[40px] justify-center;
-    @apply border-deepSpaceRodeo
+    @apply w-full text-[14px] flex bg-white gap-[22px] px-[var(--container-px)];
+    @apply border-steam
     border-b
-    border-t
-    border-opacity-30;
+    border-t;
 
     overflow-x: scroll;
     @include no-scrollbar;
@@ -91,7 +93,7 @@
   }
 
   &-search {
-    @apply h-[var(--h-m-search)] 
+    @apply h-[var(--h-m-search)]
       px-[16px]
       flex
       gap-x-[4px]
