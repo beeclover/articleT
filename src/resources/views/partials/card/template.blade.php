@@ -3,10 +3,10 @@
     <time datetime="{!! $date !!}"></time>
     @if (!empty($hashtag) && count($hashtag) > 0)
       @foreach ($hashtag as $term)
-        <a href="{!! $term->link !!}" class="btn-gray">{!! $term->name !!}</a>
+        <a href="{!! $term->link !!}" class="btn-gray pt-[4px] pb-[5px] leading-[21px]">{!! $term->name !!}</a>
         @if (!empty($term->children) && count($term->children) > 0)
             @foreach ($term->children as $child)
-              <a href="{!! $child->link !!}" class="btn-gray">{!! $child->name !!}</a>
+              <a href="{!! $child->link !!}" class="btn-gray pt-[4px] pb-[5px] leading-[21px]">{!! $child->name !!}</a>
             @endforeach
         @endif
       @endforeach

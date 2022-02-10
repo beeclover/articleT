@@ -1,7 +1,7 @@
 @mixin card {
   .card__template {
     // layout
-    @apply grid grid-rows-[auto,60px,auto,auto,auto];
+    @apply grid grid-rows-[auto,auto,auto,1fr,auto];
     &-meta {
       @apply order-last;
 
@@ -10,11 +10,15 @@
       }
     }
     &-main {
-      padding-top: 16px;
+      padding-top: 8px;
       padding-bottom: 20px;
 
       @media (min-width: theme('screens.lg')) {
         padding-bottom: 30px;
+      }
+
+      .prose {
+        @apply line-clamp-2;
       }
     }
 
