@@ -7,6 +7,10 @@ export default () => {
     effect: 'fade',
     allowTouchMove: true,
     loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
     fadeEffect: {
       crossFade: true,
     },
