@@ -6,6 +6,7 @@ use Roots\Acorn\View\Composer;
 
 use Wp\Archive\UI\Pagination;
 use WP_Post_Type;
+use WP_Query;
 
 use function Roots\view;
 
@@ -40,6 +41,15 @@ class Archive extends Composer
         ];
     }
 
+    public function __construct()
+    {
+        $term = get_queried_object();
+        var_dump($term);
+        if ($term->taxonomy === 'hashtag') {
+            // wp_reset_postdata();
+            // $GLOBALS['wp_query'];
+        }
+    }
     /**
      * Returns the post title.
      *
@@ -67,7 +77,7 @@ class Archive extends Composer
         if (is_post_type_archive()) {
             return match (get_post_type()) {
                 'life' => 'bg-seaSerpent',
-                'insight' => 'bg-deepSpaceRodeo',
+                'insight' => 'bg-primary',
                 'tb-story' => 'bg-celticBlue',
                 default => 'bg-black'
             };
