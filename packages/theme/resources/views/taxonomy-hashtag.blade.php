@@ -18,7 +18,7 @@
 </div>
 @else
   <div class="container mx-auto pt-[40px] lg:pt-[80px]">
-    <h1 class="text-center text-[26px] lg:text-[52px] text-deepSpaceRodeo font-bold">
+    <h1 class="text-center text-[26px] lg:text-[52px] text-primary font-bold">
       {!! $title !!}
     </h1>
     <div class="w-full h-[2px] bg-squant mt-[40px] lg:mt-[80px]"></div>

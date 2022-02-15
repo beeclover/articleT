@@ -12,6 +12,7 @@
       order: 3;
     }
     &-thumbnail {
+      @apply aspect-w-[340] aspect-h-[180];
       @apply row-span-3;
       order: 1;
     }

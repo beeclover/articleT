@@ -57,6 +57,7 @@
   }
 
   &-nav {
+    --gap-x: 32px;
     @apply flex
       items-center
       gap-x-[22px]
@@ -65,7 +66,7 @@
     height: 100%;
 
     @media (min-width: theme('screens.xl')) {
-      @apply gap-x-[84px];
+      @apply gap-x-[var(--gap-x)];
     }
 
     &-item {
@@ -90,10 +91,12 @@
             @apply bg-current;
             content: '';
             display: block;
-            width: 100%;
+            width: calc(100% + var(--gap-x));
             height: 2px;
             position: absolute;
             bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
           }
         }
         &.current-menu-item {

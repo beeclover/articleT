@@ -19,7 +19,7 @@
         @foreach ($interests as $key => $interest)
             <div class="relative flex items-center" x-data="{value: ''}">
               <input name="interest_0{!! $key !!}" id="interest_0{!! $key !!}" type="text" :value="value ? 'O' : ''" class="hidden" />
-              <input id="input_{!! $key !!}" value="O" x-model="value" aria-describedby="interest_0{!! $key !!}-description" type="checkbox" class="focus:ring-deepSpaceRodeo w-[22px] h-[22px] text-deepSpaceRodeo border-gray-300 rounded">
+              <input id="input_{!! $key !!}" value="O" x-model="value" aria-describedby="interest_0{!! $key !!}-description" type="checkbox" class="focus:ring-primary w-[22px] h-[22px] text-primary border-gray-300 rounded">
               <label for="input_{!! $key !!}" class="ml-3 text-sm">
                 <div class="text-[18px] leading-snug text-gray-700">{!! $interest !!}</div>
               </label>
@@ -39,7 +39,7 @@
       <div class="flex flex-wrap gap-[20px]">
         <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_name" class="text-[18px] flex after:content-['*']">성명</label>
-          <input type="text" name="name" id="stb_name" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
+          <input type="text" name="name" id="stb_name" class="shadow-sm focus:ring-primary focus:border-primary block w-full border-gray-300 rounded-[4px]" required>
         </div>
         <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_email" class="text-[18px] flex after:content-['*']">이메일</label>
@@ -51,11 +51,11 @@
                 document.querySelector('#stb_email').focus();
             });
           });"
-        @endif class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
+        @endif class="shadow-sm focus:ring-primary focus:border-primary block w-full border-gray-300 rounded-[4px]" required>
         </div>
         <div class="grid grid-cols-[80px,1fr] gap-x-[8px] items-center">
           <label for="stb_company" class="text-[18px] flex after:content-['*']">회사명</label>
-          <input type="text" name="company" id="stb_company" class="shadow-sm focus:ring-deepSpaceRodeo focus:border-deepSpaceRodeo block w-full border-gray-300 rounded-[4px]" required>
+          <input type="text" name="company" id="stb_company" class="shadow-sm focus:ring-primary focus:border-primary block w-full border-gray-300 rounded-[4px]" required>
         </div>
       </div>
     </div>
@@ -114,14 +114,14 @@
       </div>
       <div class="relative flex items-center">
         <div class="flex items-center text-[18px] text-gray-700">
-          <input id="stb_policy" name="stb_policy_true" type="checkbox" class="focus:ring-deepSpaceRodeo w-[22px] h-[22px] text-deepSpaceRodeo border-gray-300 rounded" required>
+          <input id="stb_policy" name="stb_policy_true" type="checkbox" class="focus:ring-primary w-[22px] h-[22px] text-primary border-gray-300 rounded" required>
           <label for="stb_policy" class="ml-3 text-[18px] leading-snug text-gray-700">위와 같은 개인정보 수집 및 이용 및 취급위탁에 동의하십니까? (필수)</label>
         </div>
       </div>
     </div>
     <div class="cols-span-1 md:col-span-2 h-px bg-carbon"></div>
     <div class="cols-span-1 md:col-span-2 justify-self-center">
-      <button type="submit" class="w-[360px] lg:w-[500px] text-[20px] lg:text-[28px] btn-deepSpaceRodeo rounded-[12px] mb-[40px] py-[20px] sm:py-[40px] font-medium">구독 신청 완료</button>
+      <button type="submit" class="w-[360px] lg:w-[500px] text-[20px] lg:text-[28px] btn-primary rounded-[12px] mb-[40px] py-[20px] sm:py-[40px] font-medium">구독 신청 완료</button>
       <div class="grid w-[360px] lg:w-[500px] text-white rounded-[4px] bg-green-400 text-center">
         <div class="stb_form_result px-[20px] py-[20px] hidden" id="stb_form_result"></div>
       </div>

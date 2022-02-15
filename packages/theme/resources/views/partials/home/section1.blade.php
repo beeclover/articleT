@@ -16,7 +16,7 @@
             </p>
             <div class="flex gap-[8px] flex-wrap">
               @foreach ($post->buttons as $button)
-                <a href="{!! $button['b_button_link'] !!}" class="btn-deepSpaceRodeo rounded-full text-[16px] lg:text-[18px] font-normal px-[28px]" @if($button['b_button_link_target'])target="_blank"@endif>{!! $button['b_button_text'] !!}</a>
+                <a href="{!! $button['b_button_link'] !!}" class="btn-primary rounded-full text-[16px] lg:text-[18px] font-normal px-[28px]" @if($button['b_button_link_target'])target="_blank"@endif>{!! $button['b_button_text'] !!}</a>
               @endforeach
             </div>
           </div>

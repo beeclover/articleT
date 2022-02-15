@@ -2,7 +2,7 @@
   Section Name: 뉴스레터 배너
 --}}
 
-<section class="bg-deepSpaceRodeo py-[28px] lg:py-[55px]">
+<section class="bg-primary py-[28px] lg:py-[55px]">
   <div class="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-x-[80px] gap-y-[28px]">
     <div class="text-white text-center lg:text-left">
       <div class="text-[22px] sm:text-[28px] mb-[16px] sm:mb-[12px]">

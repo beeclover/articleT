@@ -30,7 +30,7 @@
       white-space: nowrap;
 
       &::after {
-        @apply bg-deepSpaceRodeo;
+        @apply bg-primary;
 
         content: '';
         position: absolute;
@@ -68,7 +68,7 @@
       @apply h-[var(--h-m-gnb-nav)] flex items-center text-opacity-50;
 
       a:hover {
-        @apply text-deepSpaceRodeo;
+        @apply text-primary;
       }
 
       &:hover,

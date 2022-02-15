@@ -23,7 +23,7 @@
         {!! $title !!}
       </h1>
 
-      <div class="entry-tags text-deepSpaceRodeo">
+      <div class="entry-tags text-primary">
         @if(has_tag())
           @foreach(get_the_tags() as $tag)
           <a href="{!! get_term_link($tag) !!}">#{!! $tag->name !!}</a>

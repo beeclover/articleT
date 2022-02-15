@@ -3,7 +3,7 @@
     <a href="{!! $post->permalink !!}">
       <img src="{!! $post->thumbnail !!}" class="w-full h-full object-cover">
     </a>
-    <a href="{!! $post->postTypeLink !!}" class="content__hero-thumbnail-label btn-deepSpaceRodeo">
+    <a href="{!! $post->postTypeLink !!}" class="content__hero-thumbnail-label btn-primary">
       {!! $post->postTypeLabel !!}
     </a>
   </div>

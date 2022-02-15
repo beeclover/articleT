@@ -8,7 +8,7 @@
   <div id="Talentbank" class="scrollmargintop">
     @include('partials.banner.header', [
       'label' => 'TalentBank',
-      'labelBg' => 'bg-deepSpaceRodeo',
+      'labelBg' => 'bg-primary',
       'title' => '기업과 전문가를 연결하여 더 큰 가치를 만들어 내는 곳',
       'bgUrl' => get_theme_file_uri('resources/images/header-01@3x.jpg'),
       'content' => <<<EOD
@@ -22,7 +22,7 @@ EOD,
       <div class="text-center">
         <h2 class="text-[26px] font-bold mb-[20px]">
           “Paper Work로 끝나지 않습니다.<br/>
-          <span class="text-deepSpaceRodeo">탤런트뱅크 전문가는 함께 문제를 해결</span>해 나갑니다.”
+          <span class="text-primary">탤런트뱅크 전문가는 함께 문제를 해결</span>해 나갑니다.”
         </h2>
         <div class="prose">
           <p>
@@ -166,7 +166,7 @@ EOD,
   <div id="For_Client" class="scrollmargintop">
     @include('partials.banner.header', [
       'label' => 'For Client',
-      'labelBg' => 'bg-deepSpaceRodeo',
+      'labelBg' => 'bg-primary',
       'title' => <<<EOD
       경험이 풍부한 전문인력을 바로 업무에 투입해<br/>
       단기간 고효율의 성과를 달성하세요.
@@ -203,7 +203,7 @@ EOD,
             </div>
           </div>
           <div class="bg-lighthouse px-[12px] py-[28px] lg:py-[33px] flex flex-col items-center border-t border-cerebralGrey">
-            <div class="text-[16px] lg:text-[19px] font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">20년 경력의 COO출신 신사업 전문가 매칭</div>
+            <div class="text-[16px] lg:text-[19px] font-semibold pointUnderLine ring-primary ring-opacity-20" style="--h: 50%">20년 경력의 COO출신 신사업 전문가 매칭</div>
             <div class="prose text-[12px] lg:text-[14px]">
               <ul>
                 <li>비즈니스 모델 분석을 보강을 통해 성공적인 신사업 추진</li>
@@ -335,7 +335,7 @@ EOD,
       </div>
       <ul class="grid lg:flex flex-wrap gap-x-[60px] justify-center mb-[40px] lg:mb-[80px]">
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-primary w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 1</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project<br/>
@@ -361,7 +361,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-primary w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 3</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               전문가 선정
@@ -386,7 +386,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-deepSpaceRodeo w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-primary w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 5</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               Project 시작
@@ -407,7 +407,7 @@ EOD,
   <div id="For_Expert" class="scrollmargintop">
     @include('partials.banner.header', [
       'label' => 'For Expert',
-      'labelBg' => 'bg-deepSpaceRodeo',
+      'labelBg' => 'bg-primary',
       'title' => <<<EOD
         아직도 많은 기업들에겐 당신의 ‘내공’이 필요합니다.
 EOD,
@@ -486,14 +486,14 @@ EOD,
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[12px] gap-x-[30px]">
           <div class="border border-cerebralGrey bg-white px-[24px] lg:px-[45px] py-[36px] pt-[52px] lg:pb-[65px] lg:pt-[84px] relative">
-            <div class="bg-deepSpaceRodeo text-white text-[13px] lg:text-[17px] px-[19px] lg:px-[45px] py-[13px] lg:py-[30px] grid place-content-center top-0 right-[24px] lg:right-[38px] absolute">사례 A</div>
+            <div class="bg-primary text-white text-[13px] lg:text-[17px] px-[19px] lg:px-[45px] py-[13px] lg:py-[30px] grid place-content-center top-0 right-[24px] lg:right-[38px] absolute">사례 A</div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[20px] gap-x-[34px]">
               <div class="lg:col-span-2 text-[18px] lg:text-[25px] font-bold mb-[8px] lg:mb-[36px]">
-                <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">식자재 HMR</span><br/>
+                <span class="font-semibold pointUnderLine ring-primary ring-opacity-20" style="--h: 50%">식자재 HMR</span><br/>
                 국내외 영업 전문가가 필요합니다.
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">기업고객의 니즈</div>
+                <div class="text-primary font-bold mb-[11px] text-[14px] lg:text-[16px]">기업고객의 니즈</div>
                 <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   서울 소재 외식업체이며, 그동안 해왔던 캡티브 마켓
                   중심의 식자재 사업에서 외부 식자재 사업으로 적극
@@ -502,7 +502,7 @@ EOD,
                 </div>
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
+                <div class="text-primary font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
                 <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   <span class="text-aero">
                     대상(주)에서 B2B식자재 유통사업전략 수립 및
@@ -514,7 +514,7 @@ EOD,
               </div>
               <div class="lg:col-span-2 mt-[8px] lg:mt-[30px] mb-[4px] lg:mb-[25px] h-px bg-cerebralGrey"></div>
               <div class="lg:col-span-2">
-                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px]">근무형태</div>
+                <div class="text-primary font-bold mb-[11px] text-[14px]">근무형태</div>
                 <div class="lg:text-[19px] tracking-[-0.56px]">
                   <b>주 1일</b> / 6시간 상근(3개월)
                 </div>
@@ -522,14 +522,14 @@ EOD,
             </div>
           </div>
           <div class="border border-cerebralGrey bg-white px-[24px] lg:px-[45px] py-[36px] pt-[52px] lg:pb-[65px] lg:pt-[84px] relative">
-            <div class="bg-deepSpaceRodeo text-white text-[13px] lg:text-[17px] px-[19px] lg:px-[45px] py-[13px] lg:py-[30px] grid place-content-center top-0 right-[24px] lg:right-[38px] absolute">사례 B</div>
+            <div class="bg-primary text-white text-[13px] lg:text-[17px] px-[19px] lg:px-[45px] py-[13px] lg:py-[30px] grid place-content-center top-0 right-[24px] lg:right-[38px] absolute">사례 B</div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-[20px] gap-x-[34px]">
               <div class="lg:col-span-2 text-[18px] lg:text-[25px] font-bold mb-[8px] lg:mb-[36px]">
-                <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%">신사업 시장조사 및 사업 타당성</span>을<br/>
+                <span class="font-semibold pointUnderLine ring-primary ring-opacity-20" style="--h: 50%">신사업 시장조사 및 사업 타당성</span>을<br/>
                 검토해줄 전문가를 모십니다.
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">기업고객의 니즈</div>
+                <div class="text-primary font-bold mb-[11px] text-[14px] lg:text-[16px]">기업고객의 니즈</div>
                 <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   글로벌 기업으로부터 한국 내 H/W 제품 사업 관련하여
                   제휴를 제안 받은 상황으로 사업에 필요한 시장 및
@@ -538,7 +538,7 @@ EOD,
                 </div>
               </div>
               <div>
-                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
+                <div class="text-primary font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
                 <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
                   <span class="text-aero">
                     넷마블, 한빛소프트 출신 20년 경력<br/>
@@ -550,7 +550,7 @@ EOD,
               </div>
               <div class="lg:col-span-2 mt-[8px] lg:mt-[30px] mb-[4px] lg:mb-[25px] h-px bg-cerebralGrey"></div>
               <div class="lg:col-span-2">
-                <div class="text-deepSpaceRodeo font-bold mb-[11px] text-[14px]">근무형태</div>
+                <div class="text-primary font-bold mb-[11px] text-[14px]">근무형태</div>
                 <div class="lg:text-[19px] tracking-[-0.56px]">
                   <b>주 1~2회</b> / 비상근(3개월)
                 </div>
@@ -581,11 +581,11 @@ EOD,
               @include('partials.img', ['ex' => 'png', 'name' => 'about-us-13', 'class' => 'absolute lg:static w-[100px] lg:w-auto left-1/2 -translate-x-1/2 lg:translate-x-0 bottom-0'])
             </div>
             <div class="col-span-2 lg:col-span-1 pt-[10px] grid grid-cols-2 items-center">
-              <div class="text-deepSpaceRodeo text-[13px]">Expert interview</div>
+              <div class="text-primary text-[13px]">Expert interview</div>
             </div>
             <div class="col-span-2 lg:col-span-1">
               <div class="text-[22px] lg:text-[26px] mb-[16px] lg:mb-[19px]">
-                <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%"><b>김경희</b> 전문가</span>
+                <span class="font-semibold pointUnderLine ring-primary ring-opacity-20" style="--h: 50%"><b>김경희</b> 전문가</span>
               </div>
               <div class="tracking-[-0.32px] text-[13px]">
                 現 이화창의 경영센터 대표<br/>
@@ -607,11 +607,11 @@ EOD,
               @include('partials.img', ['ex' => 'png', 'name' => 'about-us-14', 'class' => 'absolute lg:static w-[100px] lg:w-auto left-1/2 -translate-x-1/2 lg:translate-x-0 bottom-0'])
             </div>
             <div class="col-span-2 lg:col-span-1 pt-[10px] grid grid-cols-2 items-center">
-              <div class="text-deepSpaceRodeo text-[13px]">Expert interview</div>
+              <div class="text-primary text-[13px]">Expert interview</div>
             </div>
             <div class="col-span-2 lg:col-span-1">
               <div class="text-[22px] lg:text-[26px] mb-[16px] lg:mb-[19px]">
-                <span class="font-semibold pointUnderLine ring-deepSpaceRodeo ring-opacity-20" style="--h: 50%"><b>김지석</b> 전문가</span>
+                <span class="font-semibold pointUnderLine ring-primary ring-opacity-20" style="--h: 50%"><b>김지석</b> 전문가</span>
               </div>
               <div class="tracking-[-0.32px] text-[13px]">
                 現 탤런트뱅크 전문가
