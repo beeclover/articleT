@@ -3,7 +3,7 @@ import Swiper from 'swiper';
 function recentPosts() {
 
   new Swiper('#swipercontainerS5', {
-    spaceBetween: 20,
+    spaceBetween: 26,
     slidesPerView: 'auto',
     pagination: {
       clickable: true,
