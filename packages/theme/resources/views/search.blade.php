@@ -22,9 +22,9 @@
         <div class="text-[14px] lg:text-[24px]">검색결과 <span class="text-primary font-bold">{!! $count !!}</span>개를 찾았습니다.</div>
       </div>
       <div class="pt-[40px] lg:pt-[80px] pb-[28px] lg:pb-[60px] border-t-[2px] border-b-[2px] border-black">
-        <div class="grid gap-y-[52px] lg:gap-y-[121px] listDivider__rows2">
+        <div class="grid gap-y-[52px] lg:gap-y-[62px]">
           @while(have_posts()) @php(the_post())
-            <div class="xl:-card__s3 xl:!card__s4">
+            <div class="lg:-card__s7 lg:!card__s6">
               @includeFirst(['partials.content-search', 'partials.content'])
             </div>
           @endwhile

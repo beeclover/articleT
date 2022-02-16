@@ -41,15 +41,6 @@ class Archive extends Composer
         ];
     }
 
-    public function __construct()
-    {
-        $term = get_queried_object();
-        var_dump($term);
-        if ($term->taxonomy === 'hashtag') {
-            // wp_reset_postdata();
-            // $GLOBALS['wp_query'];
-        }
-    }
     /**
      * Returns the post title.
      *
