@@ -6,6 +6,9 @@ const colorReset = {
 };
 
 const colors = {
+  // deepSpaceRodeo: '#332878',
+  primary: '#0064b2',
+  secondary: '#cdce00',
   lighthouse: '#f4f4f4',
   basaltGrey: '#999999',
   cerebralGrey: '#cccccc',
@@ -14,8 +17,6 @@ const colors = {
   squant: '#666666',
   gravelFint: '#bbbbbb',
   blackOut: '#222222',
-  // deepSpaceRodeo: '#332878',
-  primary: '#0064b2',
   dugong: '#707070',
   cultured: '#f8f8f8',
   brightGray: '#eeeeee',

@@ -348,7 +348,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-secondary w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 2</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               BD 배정 및<br/>
@@ -373,7 +373,7 @@ EOD,
           </div>
         </li>
         <li class="flex gap-[16px] relative items-center mb-[16px] lg:mb-0">
-          <div class="text-white bg-[#57BAD4] w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
+          <div class="text-white bg-secondary w-[80px] h-[80px] lg:w-[180px] lg:h-[180px] xl:w-[200px] xl:h-[200px] flex rounded-full items-center justify-center text-center">
             <div class="lg:absolute left-1/2 top-[36px] lg:-translate-x-1/2 opacity-75 text-[12px] lg:text-[16px]">STEP 4</div>
             <div class="hidden lg:block underline text-[20px] font-bold whitespace-nowrap">
               3자 미팅 및 <br/>
@@ -504,7 +504,7 @@ EOD,
               <div>
                 <div class="text-primary font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
                 <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
-                  <span class="text-aero">
+                  <span class="text-secondary">
                     대상(주)에서 B2B식자재 유통사업전략 수립 및
                     실행 경험의 전문가 매칭
                   </span><br/>
@@ -540,7 +540,7 @@ EOD,
               <div>
                 <div class="text-primary font-bold mb-[11px] text-[14px] lg:text-[16px]">프로젝트 성과</div>
                 <div class="text-[12px] lg:text-[13px] text-carbon tracking-[-0.26px] leading-relaxed">
-                  <span class="text-aero">
+                  <span class="text-secondary">
                     넷마블, 한빛소프트 출신 20년 경력<br/>
                     게임 사업 전문가 매칭
                   </span><br/>
