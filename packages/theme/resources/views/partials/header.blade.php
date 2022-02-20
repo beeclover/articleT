@@ -8,7 +8,7 @@
     <header class="header__main" :class="{'menu-open sm:pr-[15px]': menuSelected === 'menu' || widget}">
       <div class="header__main-inner">
         <div class="flex items-center gap-x-[20px] h-full">
-          <a href="/" class="header__main-logo">
+          <a class="homepage logo" href="https://www.talentbank.co.kr/" target="_blank" rel="noopener noreferrer">
             <img src="{!! $siteLogo !!}" alt="homepage logo">
           </a>
           <div class="hidden lg:block h-full">
@@ -22,7 +22,7 @@
             </div>
             {{-- 중간 사이즈 검색 최소화 --}}
             <div class="block xl:hidden">
-              <button 
+              <button
                 class="btn-search"
                 @click.prevent="
                   menuSelected === 'search' ? menuSelected = null : menuSelected = 'search';
@@ -42,7 +42,7 @@
           <a href="{!! $newsletterLink !!}" class="hidden lg:block py-[10px] px-[20px] btn-blackOut font-normal text-[14px]">
             뉴스레터 구독
           </a>
-          <button 
+          <button
             class="block lg:hidden btn-menu"
             @click.prevent="
               menuSelected === 'menu' ? menuSelected = null : menuSelected = 'menu';
