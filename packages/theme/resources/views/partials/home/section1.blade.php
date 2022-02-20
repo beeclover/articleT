@@ -29,4 +29,5 @@
       </div>
     @endforeach
   </div>
+  <div class="swiper-pagination mainnbanner__navigation"></div>
 </section>

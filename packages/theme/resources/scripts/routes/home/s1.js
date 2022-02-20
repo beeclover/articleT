@@ -14,5 +14,10 @@ export default () => {
     fadeEffect: {
       crossFade: true,
     },
+    pagination: {
+      clickable: true,
+      el: targetEl.querySelector('.swiper-pagination'),
+      type: 'bullets',
+    },
   });
 };

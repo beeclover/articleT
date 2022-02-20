@@ -57,3 +57,9 @@
     --swiper-pagination-bullet-inactive-color: #d1d1d1;
   }
 }
+
+.mainnbanner__navigation {
+  --swiper-pagination-bullet-size: 12px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
+  bottom: 37px !important;
+}
