@@ -1,3 +1,4 @@
 module.exports = {
-  ...require('@beeclover/prettier-config'),
+  ...require('@beeclover/eslint-config'),
+  ...require('@beeclover/eslint-config/prettier'),
 };
