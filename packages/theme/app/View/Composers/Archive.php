@@ -68,7 +68,6 @@ class Archive extends Composer
         return match (get_post_type()) {
             'life' => 'bg-secondary',
             'insight' => 'bg-primary',
-            'tb-story' => 'bg-tertiary',
             default => 'bg-black'
         };
     }
