@@ -29,5 +29,5 @@
       </div>
     @endforeach
   </div>
-  <div class="swiper-pagination mainnbanner__navigation"></div>
+  <div class="swiper-pagination mainnbanner__navigation hidden lg:block"></div>
 </section>
