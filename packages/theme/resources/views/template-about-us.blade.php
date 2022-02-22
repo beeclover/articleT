@@ -585,17 +585,17 @@ EOD,
             </div>
             <div class="col-span-2 lg:col-span-1">
               <div class="text-[22px] lg:text-[26px] mb-[16px] lg:mb-[19px]">
-                <span class="font-semibold pointUnderLine ring-primary ring-opacity-20" style="--h: 50%"><b>김경희</b> 전문가</span>
+                <span class="font-semibold pointUnderLine ring-primary ring-opacity-20" style="--h: 50%"><b>황윤아</b> 전문가</span>
               </div>
               <div class="tracking-[-0.32px] text-[13px]">
-                現 이화창의 경영센터 대표<br/>
-                前 삼성SDS 엔터프라이즈 솔루션 사업팀 부장
+                現 탤런트뱅크 전문가<br/>
+                前 미래에셋 투자센터 팀장
               </div>
             </div>
           </div>
           <div class="text-[13px] tracking-[-0.36px] text-davyGrey">
             지인의 추천으로 탤런트뱅크를 처음 알게 되었으며 중소기업 입장에서는 전문적인 영역의 인력 확보가
-            어려운 실정인데 전문가는 필요한 시간만큼만 제공하고 기업입장에서는 부담 없어 모두 만족스러운
+            어려운 실정인데  전문가는 필요한 시간만큼만 제공하고 기업입장에서는 부담 없어 모두 만족스러운
             매칭이라고 생각합니다.<br/>
             처음 매칭이 되고 어떻게 시작해야 되는지 몰랐는데 탤런트뱅크PM이 체계적으로 관리를 잘 해주셨습니다.
             계약도 온라인을 통해 쉽게 할 수 있어서 좋았습니다.
