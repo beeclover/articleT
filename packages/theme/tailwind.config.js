@@ -9,6 +9,7 @@ const colors = {
   // deepSpaceRodeo: '#332878',
   primary: '#0064b2',
   secondary: '#49bdec',
+  tertiary: '#cdce26',
   lighthouse: '#f4f4f4',
   basaltGrey: '#999999',
   cerebralGrey: '#cccccc',
