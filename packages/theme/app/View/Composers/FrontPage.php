@@ -110,7 +110,7 @@ class FrontPage extends Composer
 
     public function getHashPosts()
     {
-        $hashtags = get_field('main-hashtag', 'option');
+        $hashtags = get_field('main-tag', 'option');
         foreach ($hashtags as $hashtag) {
             $posts = get_posts(array(
                 'post_type' => ['insight', 'life', 'tb-story'],
