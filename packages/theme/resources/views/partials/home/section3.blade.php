@@ -15,7 +15,7 @@
     <form action="{!! $newsletterLink !!}" method="get" class="grid grid-cols-1 lg:grid-cols-[8fr,3fr] gap-x-[32px] gap-y-[28px] lg:gap-y-[16px] self-center justify-center sm:justify-self-end">
       <input type="text" id="email" name="email" class="py-[10px] px-[24px] text-[14px] lg:text-[16px] btn border-none" placeholder="Email Address">
       <div class="justify-self-center">
-        <button type="submit" class="btn-black py-[10px] px-[48px] font-medium text-[16px] lg:text-[16px]">구독하기</button>
+        <button type="submit" class="btn-black py-[10px] px-[48px] font-medium text-[16px] lg:text-[16px]">뉴스레터 구독</button>
       </div>
     </form>
   </div>
