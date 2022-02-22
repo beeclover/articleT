@@ -71,10 +71,10 @@
     <div>
       <div class="shadow-sm sm:text-sm border border-cerebralGrey rounded-[4px] bg-cultured prose prose-sm p-[20px] lg:p-[40px] text-davyGrey h-[340px] overflow-y-scroll mb-[34px]">
           <h2>개인정보 수집 • 이용 동의</h2>
-          <p>탤런트뱅크는 article T 뉴스레터 발송을 위해 최소한의 개인정보를 수집하고 이용합니다.</p>
+          <p>아티클 T 는 article T 뉴스레터 발송을 위해 최소한의 개인정보를 수집하고 이용합니다.</p>
           <h3>수집 • 이용 목적</h3>
           <ul>
-            <li>탤런트뱅크 이벤트 참여기회 제공</li>
+            <li>아티클 T  이벤트 참여기회 제공</li>
             <li>Article T 뉴스레터 발송</li>
           </ul>
           <h3>수집 • 이용 항목</h3>
