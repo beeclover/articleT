@@ -1,0 +1,56 @@
+&__page {
+  @apply h-[var(--h-pageheader)] lg:container mx-auto relative overflow-hidden mt-[31px] lg:mt-[45px];
+
+  --h-pageheader: 248px;
+  @media (min-width: theme('screens.sm')) {
+    --h-pageheader: 234px;
+  }
+  @media (min-width: theme('screens.lg')) {
+    --h-pageheader: 220px;
+  }
+
+  &-inner {
+    @apply text-white h-full;
+
+    @apply flex flex-wrap items-center;
+  }
+  &-main {
+    @apply relative z-10 w-full px-[40px];
+  }
+  &-title {
+    @apply text-[26px] mb-[28px] font-bold;
+
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      bottom: -9px;
+    }
+
+    @media (min-width: theme('screens.lg')) {
+      @apply text-[28px];
+    }
+
+    @media (max-width: theme('screens.lg')) {
+      br {
+        display: none;
+      }
+    }
+  }
+  &-subtitle {
+    @apply text-[18px];
+    font-weight: normal;
+
+    @media (min-width: theme('screens.lg')) {
+      @apply text-[21px];
+    }
+  }
+  &-bg {
+    @apply absolute w-full h-full object-cover top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  }
+}
