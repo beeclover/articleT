@@ -6,7 +6,7 @@
 
 @section('content')
   <div id="Talentbank" class="scrollmargintop">
-    @include('partials.banner.header', [
+    @include('partials.banner.section-header', [
       'label' => 'TalentBank',
       'labelBg' => 'bg-primary',
       'title' => '기업과 전문가를 연결하여 더 큰 가치를 만들어 내는 곳',
@@ -164,7 +164,7 @@ EOD,
     </div>
   </section>
   <div id="For_Client" class="scrollmargintop">
-    @include('partials.banner.header', [
+    @include('partials.banner.section-header', [
       'label' => 'For Client',
       'labelBg' => 'bg-primary',
       'title' => <<<EOD
@@ -405,7 +405,7 @@ EOD,
     </div>
   </section>
   <div id="For_Expert" class="scrollmargintop">
-    @include('partials.banner.header', [
+    @include('partials.banner.section-header', [
       'label' => 'For Expert',
       'labelBg' => 'bg-primary',
       'title' => <<<EOD
