@@ -24,6 +24,8 @@
       border-opacity-30
       px-[var(--container-px)];
 
+    @apply container mx-auto;
+
     &-item {
       @apply h-full flex items-center text-[16px] relative;
 

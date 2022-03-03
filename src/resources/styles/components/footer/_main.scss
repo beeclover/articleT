@@ -57,7 +57,7 @@
       }
 
       @media (min-width: theme('screens.sm')) {
-        @apply grid-cols-[230px,230px,230px] gap-x-[15px];
+        @apply grid-cols-[minmax(auto,230px),minmax(auto,230px),minmax(auto,230px)] gap-x-[15px];
 
         .comoany {
           order: 1;

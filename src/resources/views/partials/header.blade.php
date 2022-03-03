@@ -11,9 +11,17 @@
     <header class="header__main" :class="{'menu-open sm:pr-[15px]': menuSelected === 'menu' || widget}">
       <div class="header__main-inner">
         <div class="flex items-center gap-x-[81px] h-full">
-          <a class="homepage logo" href="/">
-            <img src="{!! $siteLogo !!}" alt="homepage logo">
-          </a>
+          <div class="flex gap-x-[7px] items-end">
+            <a class="homepage logo hidden lg:inline" href="/">
+              <img src="{!! $siteLogo !!}" alt="homepage logo">
+            </a>
+            <button aria-label="로고 홈으로가기" class="homepage logo inline lg:hidden" @click.prevent="$store.modal.familySite.open()">
+              <img src="{!! $siteLogo !!}" alt="homepage logo" >
+            </button>
+            <button class="w-[16px] h-[16px] lg:hidden" aria-label="패밀리 사이트 메뉴 열기" @click.prevent="$store.modal.familySite.open()">
+              @include('partials.img', ['ex' => 'png', 'name' => 'icon-circle-down'])
+            </button>
+          </div>
           <div class="hidden lg:block h-full">
             {!! $gnb !!}
           </div>

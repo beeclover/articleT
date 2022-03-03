@@ -3,6 +3,8 @@
   @yield('content')
 </div>
 @include('partials.footer')
+@include('partials.modal')
+
 
 {{--
   tailwind class

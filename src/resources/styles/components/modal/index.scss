@@ -1,0 +1,18 @@
+.modal {
+  &__familySite {
+    @apply mt-[var(--bar-wp)] max-h-[80%] h-[560px] rounded-b-[40px] bg-[color:#212121] text-white;
+
+    &-container {
+      @apply py-[80px];
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-header {
+      font-size: 15px;
+      line-height: 1.47;
+      text-align: center;
+    }
+  }
+}
