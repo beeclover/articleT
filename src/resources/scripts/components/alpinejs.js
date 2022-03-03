@@ -20,7 +20,9 @@ document.addEventListener('alpine:init', () => {
       },
       close() {
         this.on = false;
-        bodyScrollLock(false);
+        setTimeout(() => {
+          bodyScrollLock(false);
+        }, 200);
       },
       open() {
         this.on = true;
