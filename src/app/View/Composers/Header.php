@@ -21,6 +21,7 @@ class Header extends Composer
             'gnb' => $this->gnb(),
             'm_gnb' => $this->m_gnb(),
             'gnc' => $this->gnc(),
+            'articleRecruitmentBtn' => $this->articleRecruitmentBtn(),
         ];
     }
 
@@ -54,5 +55,10 @@ class Header extends Composer
             'menu_class' => 'header__cover',
             'walker' => new Cover(),
         ]);
+    }
+
+    public function articleRecruitmentBtn()
+    {
+        return get_field('article-recruitment', 'option');
     }
 }

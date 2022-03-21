@@ -7,6 +7,18 @@
 }
 
 @layer components {
+  .btn-white {
+    @extend %basebtn;
+    @apply py-2
+      px-4
+      text-raisinBlack
+      border
+      border-raisinBlack
+      font-normal
+      rounded-full
+      focus:outline-none
+      focus:ring-2;
+  }
   .btn-gray {
     @extend %basebtn;
     @apply py-2

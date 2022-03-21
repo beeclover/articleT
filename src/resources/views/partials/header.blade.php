@@ -50,9 +50,14 @@
               </div>
             </div>
           </div>
-          <a href="{!! $newsletterLink !!}" class="hidden lg:block py-[10px] px-[20px] btn-blackOut font-normal text-[14px]">
-            뉴스레터 구독
-          </a>
+          <div class="flex gap-x-[10px]">
+            <a href="{!! $articleRecruitmentBtn['url'] !!}" target="{!! $articleRecruitmentBtn['target'] !!}" class="hidden lg:block py-[10px] px-[20px] btn-white font-normal text-[14px]">
+              아티클 모집
+            </a>
+            <a href="{!! $newsletterLink !!}" class="hidden lg:block py-[10px] px-[20px] btn-blackOut font-normal text-[14px]">
+              뉴스레터 구독
+            </a>
+          </div>
           <button
             class="block lg:hidden btn-menu"
             @click.prevent="
