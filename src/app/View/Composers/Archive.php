@@ -37,7 +37,6 @@ class Archive extends Composer
             'labelBg' => $this->labelBg(),
             'bgImg' => $this->bgImg(),
             'tags' => $this->getTags(),
-            'obTags' => $this->getObTags(),
             'content' => $this->content(),
         ];
     }
@@ -64,8 +63,9 @@ class Archive extends Composer
         return get_the_archive_description();
     }
 
-    public function content() {
-        if (is_post_type_archive() && $description = get_field(get_post_type().'_description', 'option')) {
+    public function content()
+    {
+        if (is_post_type_archive() && $description = get_field(get_post_type() . '_description', 'option')) {
             return $description;
         }
     }
@@ -124,23 +124,6 @@ EOD;
             return $dump;
         } else {
             return null;
-        }
-    }
-
-    public function getObTags()
-    {
-        $term = get_queried_object();
-        if ($term instanceof WP_Post_Type) {
-            return match ((get_queried_object())->name) {
-                'insight' => '#산업트렌드 #소비재 #에너지 #헬스케어 #공공분야 #유통/리테일 #금융서비스 #정보통신기술 #B2B사례 #B2C사례',
-                'life' => '#전문가인터뷰 #CEO인터뷰 #인사이트 #비즈니스정보 #고용트렌드',
-                'tb-story' => '#탤런트뱅크서비스소개 #100%활용방법 #뉴스룸 #이벤트',
-                default => null
-            };
-        }
-
-        if ($hashtags = get_field('hashtags', $term->taxonomy . "_" . $term->term_id)) {
-            return $hashtags;
         }
     }
 }

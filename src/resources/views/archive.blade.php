@@ -19,7 +19,7 @@
   @include('partials.banner.header', [
     'title' => $title,
     'bgImg' =>  $bgImg,
-    'content' => $content ?? $obTags ?? $tags ?? $description ?? '',
+    'content' => $content ?? $description ?? $tags ?? '',
     'dimBg' => true
   ])
   <div class="container mx-auto py-[50px] sm:py-[60px]">
