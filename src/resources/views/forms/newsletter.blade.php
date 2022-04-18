@@ -115,7 +115,7 @@
       <div class="relative flex items-center">
         <div class="flex items-center text-[18px] text-gray-700">
           <input id="stb_policy" name="stb_policy_true" type="checkbox" class="focus:ring-primary w-[22px] h-[22px] text-primary border-gray-300 rounded" required>
-          <label for="stb_policy" class="ml-3 text-[18px] leading-snug text-gray-700">위와 같은 개인정보 수집 및 이용 및 취급위탁에 동의하십니까? (필수)</label>
+          <label for="stb_policy" class="ml-3 text-[18px] leading-snug text-gray-700">위와 같은 개인정보 수집 및 이용과 광고성 정보 수신에 동의합니다. (필수)</label>
         </div>
       </div>
     </div>
