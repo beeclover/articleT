@@ -1,0 +1,65 @@
+&__collection {
+  $p: &;
+  @apply grid grid-rows-[1fr,60px,auto];
+
+  &-meta {
+    @apply text-blackOut;
+
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+
+    time {
+      @apply text-[color:#707070] font-light;
+    }
+  }
+
+  #{$p} &-term {
+    @apply py-[7px] px-[12px] btn-seaSerpent transform translate-y-1/2;
+    @apply w-auto h-auto top-auto right-auto rounded-none;
+
+    font-size: 14px;
+  }
+
+  &-title {
+    height: 3.33333em;
+    a {
+      @apply line-clamp-2;
+    }
+
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &-thumbnail {
+    @apply aspect-w-16 aspect-h-9;
+
+    --tw-aspect-w: 24;
+    --tw-aspect-h: 17;
+
+    order: -1;
+    margin-bottom: 35px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+
+  &-footer {
+    margin-top: 15px;
+  }
+
+  &-readmore {
+    margin-top: 16px;
+    display: flex;
+
+    @media (min-width: theme('screens.sm')) {
+      margin-top: 24px;
+    }
+  }
+}
