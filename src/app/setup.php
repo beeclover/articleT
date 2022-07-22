@@ -265,7 +265,7 @@ add_action('pre_get_posts', function ($query) {
 
 if (get_home_url() === 'https://article.talentbank.co.kr') {
     add_action('wp_head', function () {
-?>
+echo <<<EOD
         <!-- Google Tag Manager -->
         <script>
             (function(w, d, s, l, i) {
@@ -284,7 +284,7 @@ if (get_home_url() === 'https://article.talentbank.co.kr') {
             })(window, document, 'script', 'dataLayer', 'GTM-MGPP4LS');
         </script>
         <!-- End Google Tag Manager -->
-    <?php
+EOD;
     });
 
     add_action('wp_body_open', function () {
